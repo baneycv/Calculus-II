@@ -1,0 +1,423 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<!--Generated on Fri Jun  5 15:21:21 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div id="p1" class="ltx_para">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252, Review and 7.1: Riemann Integral and Area Between Curves</span></p>
+</div>
+<div id="p2" class="ltx_para">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Recall.</span> Assume that <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is continuous on the interval <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="[a,b]" display="inline"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math>. We partitionthe interval into <math id="S0.I1.i1.p1.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> subintervals, so that the distance of each subinterval was, for <math id="S0.I1.i1.p1.m4" class="ltx_Math" alttext="1\leq k\leq n" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mi>n</mi></mrow></math></p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\Delta x=\frac{b-a}{n}" display="block"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mfrac><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mi>n</mi></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="a=x_{0}&lt;x_{1}&lt;x_{2}&lt;\dots&lt;x_{k}&lt;\dots&lt;x_{n}=b" display="block"><mrow><mi>a</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>k</mi></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mi>b</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="x_{k}=a+k\Delta x" display="block"><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">If we were finding the area for example, <math id="S0.I1.i1.p1.m5" class="ltx_Math" alttext="\Delta x" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></math> gave us the width of the rectangle that we were placing in the function to estimate. The height of the rectangle can be found using the left-endpoint rule, right endpoint rule, midpoint rule, or any point inside the subinterval. So, assuming we are looking at a subinterval <math id="S0.I1.i1.p1.m6" class="ltx_Math" alttext="[x_{k-1},x_{k}]" display="inline"><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">]</mo></mrow></math>, we can pick any point inside that interval, so that <math id="S0.I1.i1.p1.m7" class="ltx_Math" alttext="x_{k-1}\leq t_{k}\leq x_{k}" display="inline"><mrow><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>≤</mo><msub><mi>t</mi><mi>k</mi></msub><mo>≤</mo><msub><mi>x</mi><mi>k</mi></msub></mrow></math> to evaluate the function to find the height of the rectangle, <math id="S0.I1.i1.p1.m8" class="ltx_Math" alttext="f(t_{k})" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+<img src="im1.png" id="S0.I1.i1.p1.g1" class="ltx_graphics ltx_centering ltx_img_square" width="138" height="133" alt="[Uncaptioned image]">
+<p class="ltx_p">Finding the area of one rectangle, we have that</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="A_{k}=f(t_{k})(x_{k}-x_{k-1})=f(t_{k})\Delta x." display="block"><mrow><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Summing up all of the <math id="S0.I1.i1.p1.m9" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> rectangles, we would find that</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="A_{n}=\sum_{k=1}^{n}f(t_{k})\Delta x." display="block"><mrow><mrow><msub><mi>A</mi><mi>n</mi></msub><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We observed in Calculus I (and the Worksheet 1), so long as <math id="S0.I1.i1.p1.m10" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is non-negative and continuous for all <math id="S0.I1.i1.p1.m11" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> in <math id="S0.I1.i1.p1.m12" class="ltx_Math" alttext="[a,b]" display="inline"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math>, that as <math id="S0.I1.i1.p1.m13" class="ltx_Math" alttext="n\rightarrow\infty" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, <math id="S0.I1.i1.p1.m14" class="ltx_Math" alttext="\Delta x\rightarrow 0" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>, and we would find that,</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="A=\lim_{n\rightarrow\infty}\sum_{k=1}^{n}f(t_{k})\,\Delta x=I" display="block"><mrow><mi>A</mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mi>I</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We know that the Riemann Sum converges, and it converges to the integral (antiderivative)</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="I=\int_{a}^{b}f(x)\,dx" display="block"><mrow><mi>I</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">So this quantity’s physical meaning is the area (it could also be the distance if <math id="S0.I1.i1.p1.m15" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> were velocity and <math id="S0.I1.i1.p1.m16" class="ltx_Math" alttext="\Delta x" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></math> time).
+<br class="ltx_break">Laslty, if we know that there is a function <math id="S0.I1.i1.p1.m17" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> defined on <math id="S0.I1.i1.p1.m18" class="ltx_Math" alttext="[a,b]" display="inline"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math> such that <math id="S0.I1.i1.p1.m19" class="ltx_Math" alttext="F^{\prime}(x)=f(x)" display="inline"><mrow><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> for all <math id="S0.I1.i1.p1.m20" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> in <math id="S0.I1.i1.p1.m21" class="ltx_Math" alttext="[a,b]" display="inline"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math>, then, so long as <math id="S0.I1.i1.p1.m22" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is continuous, we have that,</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="\int_{a}^{b}f(x)\,dx=F(b)-F(a)." display="block"><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 1:</span> Let <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="f(x)=x^{1/3}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></math>. Determine the area bounded between the graph of <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and the <math id="S0.I1.i2.p1.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis for <math id="S0.I1.i2.p1.m4" class="ltx_Math" alttext="1\leq x\leq 8" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>8</mn></mrow></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> Since <math id="S0.I1.i2.p1.m5" class="ltx_Math" alttext="f(x)\geq 0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow></math> on the interval, we can evaluate the definite integral. In this case, we can think of the height of the rectangle to be <math id="S0.I1.i2.p1.m6" class="ltx_Math" alttext="f(x)=x^{1/3}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></math>, and <math id="S0.I1.i2.p1.m7" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math> as the width. Thus, <math id="S0.I1.i2.p1.m8" class="ltx_Math" alttext="A^{*}=x^{1/3}\,dx" display="inline"><mrow><msup><mi>A</mi><mo>∗</mo></msup><mo>=</mo><mrow><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math>. We then add these value over the interval <math id="S0.I1.i2.p1.m9" class="ltx_Math" alttext="[1,8]" display="inline"><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mn>8</mn><mo stretchy="false">]</mo></mrow></math>.
+<br class="ltx_break"></p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex14">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex9.m1" class="ltx_Math" alttext="\displaystyle\int_{1}^{8}x^{1/3}\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mn>8</mn></msubsup></mstyle><mrow><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex9.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex9.m3" class="ltx_Math" alttext="\displaystyle\left[\frac{x^{4/3}}{4/3}\right]_{1}^{8}" display="inline"><msubsup><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mrow><mn>4</mn><mo>/</mo><mn>3</mn></mrow></msup><mrow><mn>4</mn><mo>/</mo><mn>3</mn></mrow></mfrac></mstyle><mo>]</mo></mrow><mn>1</mn><mn>8</mn></msubsup></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex10.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex10.m2" class="ltx_Math" alttext="\displaystyle\left[\frac{3}{4}x^{4/3}\right]_{1}^{8}" display="inline"><msubsup><mrow><mo>[</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mrow><mn>4</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>]</mo></mrow><mn>1</mn><mn>8</mn></msubsup></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex11.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex11.m2" class="ltx_Math" alttext="\displaystyle\frac{3}{4}\left(8^{4/3}\right)-\frac{3}{4}\left(1^{4/3}\right)" display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><msup><mn>8</mn><mrow><mn>4</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><msup><mn>1</mn><mrow><mn>4</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex12.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex12.m2" class="ltx_Math" alttext="\displaystyle\frac{3}{4}\left(16\right)-\frac{3}{4}\left(1\right)" display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mn>16</mn><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex13.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex13.m2" class="ltx_Math" alttext="\displaystyle 12-\frac{3}{4}" display="inline"><mrow><mn>12</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex14.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex14.m2" class="ltx_Math" alttext="\displaystyle\frac{45}{4}." display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>45</mn><mn>4</mn></mfrac></mstyle><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">What Happens if <math id="S0.I1.i3.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is negative?</span> Consider again a function <math id="S0.I1.i3.p1.m2" class="ltx_Math" alttext="f(x)\leq 0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow></math> for all <math id="S0.I1.i3.p1.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> in the interval <math id="S0.I1.i3.p1.m4" class="ltx_Math" alttext="a\leq x\leq b" display="inline"><mrow><mi>a</mi><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>b</mi></mrow></math>, and let <math id="S0.I1.i3.p1.m5" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> be the region bounded between the graph of <math id="S0.I1.i3.p1.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and the <math id="S0.I1.i3.p1.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis.</p>
+<img src="im3.png" id="S0.I1.i3.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="200" height="134" alt="[Uncaptioned image]">
+<p class="ltx_p">If we were to consider the Riemann Sum in this case for <math id="S0.I1.i3.p1.m8" class="ltx_Math" alttext="a=x_{0}&lt;x_{1}&lt;x_{2}&lt;\dots&lt;x_{k}&lt;\dots&lt;x_{n}=b" display="inline"><mrow><mi>a</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>k</mi></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mi>b</mi></mrow></math>, we would find that we would be adding values that are all negative or equal to zero. That is to say that</p>
+<table id="S0.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex15.m1" class="ltx_Math" alttext="f(a)+f(x_{1})+f(x_{2})+\cdots+f(b)\leq 0." display="block"><mrow><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus the integral would yield a negative value, which could not be the area under the curve as area must be a positive quantity. Thus, we have the following, that for <math id="S0.I1.i3.p1.m9" class="ltx_Math" alttext="f(x)\leq 0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow></math> on <math id="S0.I1.i3.p1.m10" class="ltx_Math" alttext="[a,b]" display="inline"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math>, we have that</p>
+<table id="S0.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex16.m1" class="ltx_Math" alttext="\int_{a}^{b}f(x)\,dx=-\left(\mbox{area of $R$}\right)." display="block"><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mo>(</mo><mrow><mtext>area of </mtext><mi>R</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 2:</span> Let</p>
+<table id="S0.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex17.m1" class="ltx_Math" alttext="f(x)=x^{2}-4." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i4.p2" class="ltx_para">
+<p class="ltx_p">Determine the area bounded between the graph of <math id="S0.I1.i4.p2.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and the <math id="S0.I1.i4.p2.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis on</p>
+<table id="S0.Ex18" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex18.m1" class="ltx_Math" alttext="0\leq x\leq 3." display="block"><mrow><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>3</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span> Note that the graph of <math id="S0.I1.i4.p2.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is below the <math id="S0.I1.i4.p2.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis for <math id="S0.I1.i4.p2.m5" class="ltx_Math" alttext="0\leq x\leq 2" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>2</mn></mrow></math>, and then positive again for <math id="S0.I1.i4.p2.m6" class="ltx_Math" alttext="2\leq x\leq 3" display="inline"><mrow><mn>2</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>3</mn></mrow></math>. Thus, we have to break the integral up into two parts in order to evaluate the area under the curve.</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex24">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Area</span></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex19.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex19.m3" class="ltx_Math" alttext="\displaystyle-\int_{0}^{2}(x^{2}-4)\,dx+\int_{2}^{3}(x^{2}-4)\,dx" display="inline"><mrow><mrow><mo>−</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>2</mn><mn>3</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex20.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex20.m2" class="ltx_Math" alttext="\displaystyle-\left[\frac{x^{3}}{3}-4x\right]_{0}^{2}+\left[\frac{x^{3}}{3}-4x%
+\right]_{2}^{3}" display="inline"><mrow><mrow><mo>−</mo><msubsup><mrow><mo>[</mo><mrow><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mstyle><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>]</mo></mrow><mn>0</mn><mn>2</mn></msubsup></mrow><mo>+</mo><msubsup><mrow><mo>[</mo><mrow><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mstyle><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>]</mo></mrow><mn>2</mn><mn>3</mn></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex21.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex21.m2" class="ltx_Math" alttext="\displaystyle-\left[\left(\frac{8}{3}-8\right)-0\right]+\left[\left(9-12\right%
+)-\left(\frac{8}{3}-8\right)\right]" display="inline"><mrow><mrow><mo>−</mo><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mn>8</mn><mn>3</mn></mfrac></mstyle><mo>−</mo><mn>8</mn></mrow><mo>)</mo></mrow><mo>−</mo><mn>0</mn></mrow><mo>]</mo></mrow></mrow><mo>+</mo><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mrow><mn>9</mn><mo>−</mo><mn>12</mn></mrow><mo>)</mo></mrow><mo>−</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mn>8</mn><mn>3</mn></mfrac></mstyle><mo>−</mo><mn>8</mn></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex22.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex22.m2" class="ltx_Math" alttext="\displaystyle-\left(-\frac{16}{3}\right)+\left[-3-\left(-\frac{16}{3}\right)\right]" display="inline"><mrow><mrow><mo>−</mo><mrow><mo>(</mo><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>16</mn><mn>3</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mo>[</mo><mrow><mrow><mo>−</mo><mn>3</mn></mrow><mo>−</mo><mrow><mo>(</mo><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>16</mn><mn>3</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex23.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex23.m2" class="ltx_Math" alttext="\displaystyle\frac{16}{3}+\frac{7}{3}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>16</mn><mn>3</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>7</mn><mn>3</mn></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex24.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex24.m2" class="ltx_Math" alttext="\displaystyle\frac{23}{3}." display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>23</mn><mn>3</mn></mfrac></mstyle><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S0.I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Area Between Curves</span> Now we are interested in finding the area between two curves. Assume that <math id="S0.I1.i5.p1.m1" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="S0.I1.i5.p1.m2" class="ltx_Math" alttext="g(x)" display="inline"><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> are continuous functions on the interval <math id="S0.I1.i5.p1.m3" class="ltx_Math" alttext="[a,b]" display="inline"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math></p>
+<img src="Slide001.jpg" id="S0.I1.i5.p1.g1" class="ltx_graphics ltx_centering ltx_img_square" width="141" height="128" alt="[Uncaptioned image]">
+<p class="ltx_p">Following the same procedure as above, we partition the interval into <math id="S0.I1.i5.p1.m4" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> subintervals, so that <math id="S0.I1.i5.p1.m5" class="ltx_Math" alttext="\displaystyle\Delta x=\frac{b-a}{n}" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mi>n</mi></mfrac></mstyle></mrow></math>, and for <math id="S0.I1.i5.p1.m6" class="ltx_Math" alttext="1\leq k\leq n" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mi>n</mi></mrow></math>, <math id="S0.I1.i5.p1.m7" class="ltx_Math" alttext="x_{k}=a+k\Delta x" display="inline"><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math>, so that
+<math id="S0.I1.i5.p1.m8" class="ltx_Math" alttext="a=x_{0}&lt;x_{1}&lt;x_{2}&lt;\dots&lt;x_{k}&lt;\dots&lt;x_{n}=b" display="inline"><mrow><mi>a</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>k</mi></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mi>b</mi></mrow></math>. See the figure below,</p>
+<img src="im2.png" id="S0.I1.i5.p1.g2" class="ltx_graphics ltx_centering ltx_img_square" width="173" height="155" alt="[Uncaptioned image]">
+<p class="ltx_p">We pick <math id="S0.I1.i5.p1.m9" class="ltx_Math" alttext="t_{k}" display="inline"><msub><mi>t</mi><mi>k</mi></msub></math> in each interval <math id="S0.I1.i5.p1.m10" class="ltx_Math" alttext="[x_{k-1},x_{k}]" display="inline"><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">]</mo></mrow></math> to evaluate the function to find the height of the rectangle. We see to get the complete height, we see that we subtract the values of the functions, <math id="S0.I1.i5.p1.m11" class="ltx_Math" alttext="f(t_{k})-g(t_{k})" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, and putting it all together, we get</p>
+<table id="S0.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex25.m1" class="ltx_Math" alttext="A_{approx}=\sum_{k=1}^{n}[f(t_{k})-g(t_{k})]\,\Delta x" display="block"><mrow><msub><mi>A</mi><mrow><mi>a</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">]</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We take <math id="S0.I1.i5.p1.m12" class="ltx_Math" alttext="n\rightarrow\infty" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math> so <math id="S0.I1.i5.p1.m13" class="ltx_Math" alttext="\Delta x\rightarrow 0" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>, and we find that</p>
+<table id="S0.E1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E1.m1" class="ltx_Math" alttext="A=\lim_{n\rightarrow\infty}\sum_{k=1}^{n}[f(t_{k})-g(t_{k})]\,\Delta x=\int_{a%
+}^{b}[f(x)-g(x)]\,dx" display="block"><mrow><mi>A</mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">]</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo rspace="0em">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">]</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr></tbody>
+</table>
+<ol id="S0.I1.i5.I1" class="ltx_enumerate">
+<li id="S0.I1.i5.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i5.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">In order to use this formula we need to know which function is on the top and which one is on the bottom as that will make a difference as to the order in which we subtract
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i5.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i5.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">We also have to be aware of whether or not the graphs intersect on the interval, and if they switch positions as we would then need to have two integrals.
+<br class="ltx_break"></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li id="S0.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span> 
+<div id="S0.I1.i6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 3:</span> Find the area of the region bounded by the graph <math id="S0.I1.i6.p1.m1" class="ltx_Math" alttext="y=x^{2}+2" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></mrow></math> and <math id="S0.I1.i6.p1.m2" class="ltx_Math" alttext="y=-x" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mo>−</mo><mi>x</mi></mrow></mrow></math>, <math id="S0.I1.i6.p1.m3" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S0.I1.i6.p1.m4" class="ltx_Math" alttext="x=1" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> We start by drawing picture, and from that we determine which graph is on top.
+<br class="ltx_break"></p>
+<img src="Slide008.jpg" id="S0.I1.i6.p1.g1" class="ltx_graphics ltx_centering ltx_img_square" width="125" height="130" alt="[Uncaptioned image]">
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex29">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex26.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><mi>A</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex26.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex26.m3" class="ltx_Math" alttext="\displaystyle\int_{0}^{1}[(x^{2}-1)-(-x)]\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">[</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex27.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex27.m2" class="ltx_Math" alttext="\displaystyle\int_{0}^{1}(x^{2}+x-1)\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex28.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex28.m2" class="ltx_Math" alttext="\displaystyle\left.\frac{x^{3}}{3}+\frac{x^{2}}{2}-x\right|_{0}^{1}" display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mstyle></mrow><mo>−</mo><msubsup><mrow><mi>x</mi><mo>|</mo></mrow><mn>0</mn><mn>1</mn></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex29.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex29.m2" class="ltx_Math" alttext="\displaystyle\frac{17}{6}" display="inline"><mstyle displaystyle="true"><mfrac><mn>17</mn><mn>6</mn></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span> 
+<div id="S0.I1.i7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 4:</span> Find the area of the region bounded by the graph of <math id="S0.I1.i7.p1.m1" class="ltx_Math" alttext="f(x)=2-x^{2}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></math> and <math id="S0.I1.i7.p1.m2" class="ltx_Math" alttext="g(x)=x" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> In this particular example, we aren’t given an interval, but by drawing a picture, we see that</p>
+<img src="Slide009.jpg" id="S0.I1.i7.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="180" height="135" alt="[Uncaptioned image]">
+<p class="ltx_p">Therefore, to find the endpoints of the region, we need to determine where the equations intersect. We do this by solving <math id="S0.I1.i7.p1.m3" class="ltx_Math" alttext="2-x^{2}=x" display="inline"><mrow><mrow><mn>2</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>=</mo><mi>x</mi></mrow></math>. We find that <math id="S0.I1.i7.p1.m4" class="ltx_Math" alttext="x=-2" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mn>2</mn></mrow></mrow></math> and <math id="S0.I1.i7.p1.m5" class="ltx_Math" alttext="x=1" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math>. So we set up and evaluate the integral,</p>
+<table id="S0.EGx4" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex32">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex30.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><mi>A</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex30.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex30.m3" class="ltx_Math" alttext="\displaystyle\int_{-2}^{1}[(2-x^{2})-x]\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mrow><mo>−</mo><mn>2</mn></mrow><mn>1</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">[</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">]</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex31.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex31.m2" class="ltx_Math" alttext="\displaystyle\left.-\frac{x^{3}}{3}-\frac{x^{2}}{2}+2x\right|_{-2}^{1}" display="inline"><mrow><mrow><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mstyle></mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mstyle></mrow><mo>+</mo><msubsup><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>|</mo></mrow><mrow><mo>−</mo><mn>2</mn></mrow><mn>1</mn></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex32.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex32.m2" class="ltx_Math" alttext="\displaystyle\frac{9}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mn>9</mn><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span> 
+<div id="S0.I1.i8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 5:</span> Find the area of the region between the graph of <math id="S0.I1.i8.p1.m1" class="ltx_Math" alttext="f(x)=3x^{3}-x^{2}-10x" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>10</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math> and <math id="S0.I1.i8.p1.m2" class="ltx_Math" alttext="g(x)=-x^{2}+2x" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> We determine where the graphs intersect. We find this occurs at <math id="S0.I1.i8.p1.m3" class="ltx_Math" alttext="x=-2" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mn>2</mn></mrow></mrow></math>, <math id="S0.I1.i8.p1.m4" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>, and <math id="S0.I1.i8.p1.m5" class="ltx_Math" alttext="x=2" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math>. Drawing a picture, we see we have two regions of intersection, which means we are going to have two different integrals.
+<br class="ltx_break"></p>
+<img src="Slide011.jpg" id="S0.I1.i8.p1.g1" class="ltx_graphics ltx_centering ltx_img_square" width="106" height="129" alt="[Uncaptioned image]">
+<table id="S0.EGx5" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex35">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex33.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><mi>A</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex33.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex33.m3" class="ltx_Math" alttext="\displaystyle\int_{-2}^{0}[f(x)-g(x)]\,dx+\int_{0}^{2}[g(x)-f(x)]\,dx" display="inline"><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mrow><mo>−</mo><mn>2</mn></mrow><mn>0</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">]</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">]</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex34.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex34.m2" class="ltx_math_unparsed" alttext="\displaystyle\left[\frac{3x^{4}}{4}-6x^{2}\right]-{-2}^{0}+\left[-\frac{3x^{4}%
+}{4}+6x^{2}\right]" display="inline"><mrow><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mn>4</mn></mfrac></mstyle><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>]</mo></mrow><mo rspace="0em">−</mo><mo lspace="0em">−</mo><msup><mn>2</mn><mn>0</mn></msup><mo>+</mo><mrow><mo>[</mo><mo lspace="0em">−</mo><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mn>4</mn></mfrac></mstyle><mo>+</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>]</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex35.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex35.m2" class="ltx_Math" alttext="\displaystyle 24" display="inline"><mn>24</mn></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Jun  5 15:21:21 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>
