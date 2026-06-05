@@ -6,62 +6,36 @@
 
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-article.css" type="text/css">
-<link rel="stylesheet" href="https://latex.vercel.app/style.css">
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<style>
-/* Remove borders and box-shadows from display math blocks */
-.ltx_equation, .displaymath, div.displaymath {
-  border: none !important;
-  background: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin: 1em 0 !important;
-}
-
-/* Remove borders from equation tables */
-table.ltx_eqn_table, .ltx_eqn_table {
-  border: none !important;
-  border-collapse: collapse !important;
-  box-shadow: none !important;
-  background: none !important;
-}
-
-/* Optional: remove border from all <td> in equations */
-.ltx_eqn_table td {
-  border: none !important;
-}
 
 <style>
   body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
     line-height: 1.6;
     margin: 2rem auto;
-    max-width: 75%
+    max-width: 900px;
     padding: 0 1rem;
     background: #fff;
     color: #000;
   }
 
-  div.enumerate .item,
-  div.itemize .item,
-  div.description .item {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
+  .ltx_text.ltx_font_bold,
+  .ltx_font_bold {
+    font-weight: 700 !important;
   }
 
-  .itemlabel {
-    font-weight: bold;
-    min-width: 2rem;
+  math {
+    font-size: 1em;
   }
 
-  .itembody {
-    flex: 1;
+  math[display="block"],
+  .ltx_equation math {
+    font-size: 1.15em;
   }
 
-  .displaymath, div.displaymath,
-  .ltx_equation {
+  .ltx_equation,
+  .displaymath,
+  div.displaymath {
     border: none !important;
     background: none !important;
     box-shadow: none !important;
@@ -69,36 +43,27 @@ table.ltx_eqn_table, .ltx_eqn_table {
     margin: 1em 0 !important;
   }
 
-  table.ltx_eqn_table, .ltx_eqn_table {
+  table.ltx_eqn_table,
+  .ltx_eqn_table {
     border: none !important;
     border-collapse: collapse !important;
     box-shadow: none !important;
     background: none !important;
+    width: 100%;
   }
 
   .ltx_eqn_table td {
     border: none !important;
   }
-</style>
 
-<style>
-  div.enumerate .item,
-  div.itemize .item,
-  div.description .item {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .itemlabel {
-    display: inline;
+  .ltx_tag_item {
     font-weight: bold;
+    margin-right: 0.5rem;
   }
 
-  .itembody {
-    display: inline;
-    flex: 1;
+  img.ltx_graphics {
+    max-width: 100%;
+    height: auto;
   }
 </style>
 </head>
