@@ -1,0 +1,452 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<!--Generated on Fri Jun  5 15:23:46 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div id="p1" class="ltx_para">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252, 7.2: Volume by Area of Known Cross-Section</span></p>
+</div>
+<div id="p2" class="ltx_para">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Motivation</span> Consider a right rectangular prism lying along the <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis, along the interval <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="a\leq x\leq b" display="inline"><mrow><mi>a</mi><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>b</mi></mrow></math>. The cross-sections of the prism have dimensions <math id="S0.I1.i1.p1.m3" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math> and <math id="S0.I1.i1.p1.m4" class="ltx_Math" alttext="w" display="inline"><mi>w</mi></math>, and we know that the “height” or thickness of the prism is <math id="S0.I1.i1.p1.m5" class="ltx_Math" alttext="b-a" display="inline"><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></math>.</p>
+<img src="crossection.png" id="S0.I1.i1.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="222" height="111" alt="[Uncaptioned image]">
+<p class="ltx_p">We can define the area of the cross-section , or slice of the prism, perpendicular to the <math id="S0.I1.i1.p1.m6" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis, as <math id="S0.I1.i1.p1.m7" class="ltx_Math" alttext="A^{*}=lw" display="inline"><mrow><msup><mi>A</mi><mo>∗</mo></msup><mo>=</mo><mrow><mi>l</mi><mo>⁢</mo><mi>w</mi></mrow></mrow></math>. Thus, we should find that the volume is</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex3">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\displaystyle V" display="inline"><mi>V</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex1.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex1.m3" class="ltx_Math" alttext="\displaystyle lwh" display="inline"><mrow><mi>l</mi><mo>⁢</mo><mi>w</mi><mo>⁢</mo><mi>h</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex2.m2" class="ltx_Math" alttext="\displaystyle lw(b-a)" display="inline"><mrow><mi>l</mi><mo>⁢</mo><mi>w</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex3.m2" class="ltx_Math" alttext="\displaystyle A^{*}(b-a)" display="inline"><mrow><msup><mi>A</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">Indeed, a general principle of volume, for a solid with a constant cross-section of area <math id="S0.I1.i1.p1.m8" class="ltx_Math" alttext="A^{*}" display="inline"><msup><mi>A</mi><mo>∗</mo></msup></math>, can be understood as,</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="V=A^{*}h." display="block"><mrow><mrow><mi>V</mi><mo>=</mo><mrow><msup><mi>A</mi><mo>∗</mo></msup><mo>⁢</mo><mi>h</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Extension to Other Solids</span> Now consider a solid <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> has cross-sections with area <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="A(x)" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> for <math id="S0.I1.i2.p1.m3" class="ltx_Math" alttext="a\leq x\leq b" display="inline"><mrow><mi>a</mi><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>b</mi></mrow></math>. We will assume <math id="S0.I1.i2.p1.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is a continuous function.
+Suppose we have cross-sections that traverse the solid laterally, either perpendicular to the <math id="S0.I1.i2.p1.m5" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis or perpendicular to the <math id="S0.I1.i2.p1.m6" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis, with known areas. These cross-sections could be squares, rectangles, triangles, semi-circles. We wish to find the volume of this solid.</p>
+<img src="Slide062.jpg" id="S0.I1.i2.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="144" height="108" alt="[Uncaptioned image]">
+<p class="ltx_p">We partition the interval into <math id="S0.I1.i2.p1.m7" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> subintervals, so that the distance of each subinterval was, for <math id="S0.I1.i2.p1.m8" class="ltx_Math" alttext="0\leq k\leq n" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mi>n</mi></mrow></math></p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\Delta x=\frac{b-a}{n}" display="block"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mfrac><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mi>n</mi></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="a=x_{0}&lt;x_{1}&lt;x_{2}&lt;\dots&lt;x_{k}&lt;\dots&lt;x_{n}=b" display="block"><mrow><mi>a</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>k</mi></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mi>b</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="x_{k}=a+k\Delta x" display="block"><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Consider one of the intervals, say the <math id="S0.I1.i2.p1.m9" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-th interval <math id="S0.I1.i2.p1.m10" class="ltx_Math" alttext="[x_{k-1},x_{k}]" display="inline"><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">]</mo></mrow></math>. It will have thickness <math id="S0.I1.i2.p1.m11" class="ltx_Math" alttext="\Delta x" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></math>. What will dictate the other dimensions for a given cross-section is its location along the <math id="S0.I1.i2.p1.m12" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis. So on this interval we will use a point <math id="S0.I1.i2.p1.m13" class="ltx_Math" alttext="t_{k}" display="inline"><msub><mi>t</mi><mi>k</mi></msub></math> in the interval, thus the cross-sectional area <math id="S0.I1.i2.p1.m14" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> depends on <math id="S0.I1.i2.p1.m15" class="ltx_Math" alttext="t_{k}" display="inline"><msub><mi>t</mi><mi>k</mi></msub></math>. Therefore, the volume of the slice on this interval is going to be <math id="S0.I1.i2.p1.m16" class="ltx_Math" alttext="\Delta V=A(t_{k})\Delta x" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>V</mi></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math>. So we add all these up,</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="V_{n}=\sum_{k=1}^{n}A(t_{k})\Delta x" display="block"><mrow><msub><mi>V</mi><mi>n</mi></msub><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This is a Riemann Sum, for which we know will converge as <math id="S0.I1.i2.p1.m17" class="ltx_Math" alttext="n\rightarrow\infty" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, <math id="S0.I1.i2.p1.m18" class="ltx_Math" alttext="\Delta x\rightarrow 0" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>, we obtain the following formula,</p>
+<table id="S0.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex9.m1" class="ltx_Math" alttext="V=\int_{a}^{b}A(x)\,dx" display="block"><mrow><mi>V</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i2.p2" class="ltx_para">
+<p class="ltx_p">For solids where the cross-sections are perpendicular to the <math id="S0.I1.i2.p2.m1" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis, for <math id="S0.I1.i2.p2.m2" class="ltx_Math" alttext="c\leq y\leq d" display="inline"><mrow><mi>c</mi><mo>≤</mo><mi>y</mi><mo>≤</mo><mi>d</mi></mrow></math>, we find <math id="S0.I1.i2.p2.m3" class="ltx_Math" alttext="A(y)" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math>, and set up the formula as</p>
+<table id="S0.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex10.m1" class="ltx_Math" alttext="V=\int_{c}^{d}A(y)\,dy." display="block"><mrow><mrow><mi>V</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mi>c</mi><mi>d</mi></msubsup><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>y</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<img src="Slide063.jpg" id="S0.I1.i2.p2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="144" height="108" alt="[Uncaptioned image]">
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Method.</span></p>
+<ol id="S0.I1.i3.I1" class="ltx_enumerate">
+<li id="S0.I1.i3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i3.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">We draw a graph of the base. Do not attempt to draw a three dimensional figure. Use a straight line to depict how the cross-section lies on along the base of the solid.</p>
+</div>
+</li>
+<li id="S0.I1.i3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i3.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Determine the dimensions of the cross-section.</p>
+</div>
+</li>
+<li id="S0.I1.i3.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i3.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Draw representative cross-section and determine a formula for its area</p>
+</div>
+</li>
+<li id="S0.I1.i3.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i3.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Set up the integral and evaluate.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 1:</span> Suppose the base of a solid is the region <math id="S0.I1.i4.p1.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, which is the region bounded between the graphs of <math id="S0.I1.i4.p1.m2" class="ltx_Math" alttext="y=1-x/2" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi>x</mi><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math> and <math id="S0.I1.i4.p1.m3" class="ltx_Math" alttext="y=-1+x/2" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>+</mo><mrow><mi>x</mi><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math>, and the <math id="S0.I1.i4.p1.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis, for <math id="S0.I1.i4.p1.m5" class="ltx_Math" alttext="x\geq 0" display="inline"><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></math>. Suppose the cross-sections are equilateral triangles with the base each cross-section perpendicular to the <math id="S0.I1.i4.p1.m6" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis. Determine the volume of the solid. The area of an equilateral triangle is <math id="S0.I1.i4.p1.m7" class="ltx_Math" alttext="\displaystyle A=\frac{\sqrt{3}}{4}s^{2}" display="inline"><mrow><mi>A</mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><msqrt><mn>3</mn></msqrt><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>s</mi><mn>2</mn></msup></mrow></mrow></math> where <math id="S0.I1.i4.p1.m8" class="ltx_Math" alttext="s" display="inline"><mi>s</mi></math> is the length of a side of the triangle.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span>. We first sketch a diagram of the situation where the base is the figure on the left and the cross-section is the figure on the right;</p>
+<img src="ex1.jpg" id="S0.I1.i4.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="308" height="205" alt="[Uncaptioned image]">
+<p class="ltx_p">We see that the dimensions of the equilateral triangles will be</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex12">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex11.m1" class="ltx_Math" alttext="\displaystyle s(x)" display="inline"><mrow><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex11.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex11.m3" class="ltx_Math" alttext="\displaystyle\left(1-\frac{x}{2}\right)-\left(-1+\frac{x}{2}\right)" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mi>x</mi><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>−</mo><mrow><mo>(</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>x</mi><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex12.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex12.m2" class="ltx_Math" alttext="\displaystyle 2-x" display="inline"><mrow><mn>2</mn><mo>−</mo><mi>x</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">Thus, using the formula for the area of an equilateral triangle, we have that</p>
+<table id="S0.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex13.m1" class="ltx_Math" alttext="A(x)=\frac{\sqrt{3}}{4}(2-x)^{2}," display="block"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msqrt><mn>3</mn></msqrt><mn>4</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">for <math id="S0.I1.i4.p1.m9" class="ltx_Math" alttext="0\leq x\leq 2" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>2</mn></mrow></math>.
+Thus,</p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex19">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex14.m1" class="ltx_Math" alttext="\displaystyle V" display="inline"><mi>V</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex14.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex14.m3" class="ltx_Math" alttext="\displaystyle\int_{0}^{2}A(x)\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup></mstyle><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex15.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex15.m2" class="ltx_Math" alttext="\displaystyle\int_{0}^{2}\frac{\sqrt{3}}{4}(2-x)^{2}\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msqrt><mn>3</mn></msqrt><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex16.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex16.m2" class="ltx_Math" alttext="\displaystyle\frac{\sqrt{3}}{4}\int_{0}^{2}(4-4x+x^{2})\,dx" display="inline"><mrow><mstyle displaystyle="true"><mfrac><msqrt><mn>3</mn></msqrt><mn>4</mn></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>4</mn><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex17.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex17.m2" class="ltx_Math" alttext="\displaystyle\frac{\sqrt{3}}{4}\left[4x-2x^{2}+\frac{x^{3}}{3}\right]_{0}^{2}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><msqrt><mn>3</mn></msqrt><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msubsup><mrow><mo>[</mo><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mstyle></mrow><mo>]</mo></mrow><mn>0</mn><mn>2</mn></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex18.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex18.m2" class="ltx_Math" alttext="\displaystyle\frac{\sqrt{3}}{4}\left(8-8+\frac{8}{3}\right)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><msqrt><mn>3</mn></msqrt><mn>4</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mn>8</mn><mo>−</mo><mn>8</mn></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>8</mn><mn>3</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex19.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex19.m2" class="ltx_Math" alttext="\displaystyle\frac{2\sqrt{3}}{3}." display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac></mstyle><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S0.I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 2:</span> The base of a solid is the region bounded between the <math id="S0.I1.i5.p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis and the graph of <math id="S0.I1.i5.p1.m2" class="ltx_Math" alttext="y=x^{2}" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math> for <math id="S0.I1.i5.p1.m3" class="ltx_Math" alttext="0\leq x\leq 3" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>3</mn></mrow></math>. Suppose the solid has known cross-sections which are semi-circles whose diameter extends from the <math id="S0.I1.i5.p1.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis to the graph of <math id="S0.I1.i5.p1.m5" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>. Determine the volume of the solid.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> Sketching the region with the base on the left and the cross-section on the right:</p>
+<img src="ex2.jpg" id="S0.I1.i5.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="308" height="205" alt="[Uncaptioned image]">
+<p class="ltx_p">The base of the solid lies on the interval</p>
+<table id="S0.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex20.m1" class="ltx_Math" alttext="0\leq x\leq 3." display="block"><mrow><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>3</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i5.p2" class="ltx_para">
+<p class="ltx_p">At a fixed value of <math id="S0.I1.i5.p2.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, the diameter of the semicircular cross-section is the vertical distance from the <math id="S0.I1.i5.p2.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis to the graph of <math id="S0.I1.i5.p2.m3" class="ltx_Math" alttext="y=x^{2}" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math>. Therefore,</p>
+</div>
+<div id="S0.I1.i5.p3" class="ltx_para">
+<table id="S0.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex21.m1" class="ltx_Math" alttext="d(x)=x^{2}." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i5.p4" class="ltx_para">
+<p class="ltx_p">Hence the radius is</p>
+</div>
+<div id="S0.I1.i5.p5" class="ltx_para">
+<table id="S0.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex22.m1" class="ltx_Math" alttext="r(x)=\frac{d(x)}{2}=\frac{x^{2}}{2}." display="block"><mrow><mrow><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i5.p6" class="ltx_para">
+<p class="ltx_p">The area of a semicircle is</p>
+</div>
+<div id="S0.I1.i5.p7" class="ltx_para">
+<table id="S0.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex23.m1" class="ltx_Math" alttext="A(x)=\frac{1}{2}\pi r(x)^{2}." display="block"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i5.p8" class="ltx_para">
+<p class="ltx_p">Thus,</p>
+</div>
+<div id="S0.I1.i5.p9" class="ltx_para">
+<table id="S0.EGx4" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex26">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex24.m1" class="ltx_Math" alttext="\displaystyle A(x)" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex24.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex24.m3" class="ltx_Math" alttext="\displaystyle\frac{1}{2}\pi\left(\frac{x^{2}}{2}\right)^{2}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mstyle><mo>)</mo></mrow><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex25.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex25.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{2}\pi\cdot\frac{x^{4}}{4}" display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>π</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>4</mn></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex26.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex26.m2" class="ltx_Math" alttext="\displaystyle\frac{\pi}{8}x^{4}." display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>8</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i5.p10" class="ltx_para">
+<p class="ltx_p">Therefore, the volume is</p>
+</div>
+<div id="S0.I1.i5.p11" class="ltx_para">
+<table id="S0.EGx5" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex31">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex27.m1" class="ltx_Math" alttext="\displaystyle V" display="inline"><mi>V</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex27.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex27.m3" class="ltx_Math" alttext="\displaystyle\int_{0}^{3}A(x)\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>3</mn></msubsup></mstyle><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex28.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex28.m2" class="ltx_Math" alttext="\displaystyle\int_{0}^{3}\frac{\pi}{8}x^{4}\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>3</mn></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>8</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex29.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex29.m2" class="ltx_Math" alttext="\displaystyle\frac{\pi}{8}\left[\frac{x^{5}}{5}\right]_{0}^{3}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>8</mn></mfrac></mstyle><mo>⁢</mo><msubsup><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>5</mn></msup><mn>5</mn></mfrac></mstyle><mo>]</mo></mrow><mn>0</mn><mn>3</mn></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex30.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex30.m2" class="ltx_Math" alttext="\displaystyle\frac{\pi}{8}\cdot\frac{243}{5}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>8</mn></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>243</mn><mn>5</mn></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex31.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex31.m2" class="ltx_Math" alttext="\displaystyle\frac{243\pi}{40}." display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>243</mn><mo>⁢</mo><mi>π</mi></mrow><mn>40</mn></mfrac></mstyle><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span> 
+<div id="S0.I1.i6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 3:</span> Determine the volume of a right pyramid of height <math id="S0.I1.i6.p1.m1" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math>, and with a square base with sides of length <math id="S0.I1.i6.p1.m2" class="ltx_Math" alttext="b" display="inline"><mi>b</mi></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> We draw a picture of the situation.</p>
+<img src="Slide066.jpg" id="S0.I1.i6.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="144" height="108" alt="[Uncaptioned image]"><img src="Slide067.jpg" id="S0.I1.i6.p1.g2" class="ltx_graphics ltx_centering ltx_img_landscape" width="144" height="108" alt="[Uncaptioned image]">
+<p class="ltx_p">The area of a square is <math id="S0.I1.i6.p1.m3" class="ltx_Math" alttext="A=s^{2}" display="inline"><mrow><mi>A</mi><mo>=</mo><msup><mi>s</mi><mn>2</mn></msup></mrow></math>, where <math id="S0.I1.i6.p1.m4" class="ltx_Math" alttext="s" display="inline"><mi>s</mi></math> is the length of the side. If we locate a cross-section of the pyramid at some point on the <math id="S0.I1.i6.p1.m5" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis, it will divide the region into a smaller triangle inside a bigger one (see the figure on the right above). Solving for all the pertinent dimensions, we find that</p>
+<table id="S0.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex32.m1" class="ltx_Math" alttext="\frac{h-y}{h}=\frac{s(y)}{b/2}" display="block"><mrow><mfrac><mrow><mi>h</mi><mo>−</mo><mi>y</mi></mrow><mi>h</mi></mfrac><mo>=</mo><mfrac><mrow><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>b</mi><mo>/</mo><mn>2</mn></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Solving for <math id="S0.I1.i6.p1.m6" class="ltx_Math" alttext="s" display="inline"><mi>s</mi></math>, we get that <math id="S0.I1.i6.p1.m7" class="ltx_Math" alttext="\displaystyle s(y)=\frac{b}{h}(h-y)" display="inline"><mrow><mrow><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mi>b</mi><mi>h</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>h</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Hence,</p>
+<table id="S0.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex33.m1" class="ltx_Math" alttext="A(y)=\frac{b^{2}}{h^{2}}(h-y)^{2}" display="block"><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>b</mi><mn>2</mn></msup><msup><mi>h</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>h</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<table id="S0.EGx6" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex37">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex34.m1" class="ltx_Math" alttext="\displaystyle V" display="inline"><mi>V</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex34.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex34.m3" class="ltx_Math" alttext="\displaystyle\int_{0}^{h}\frac{b^{2}}{h^{2}}(h-y)^{2}\,dy" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>h</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi>b</mi><mn>2</mn></msup><msup><mi>h</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>h</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>y</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex35.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex35.m2" class="ltx_Math" alttext="\displaystyle\frac{b^{2}}{h^{2}}\int_{0}^{h}\left(h^{2}-2hy+y^{2}\right)\,dy" display="inline"><mrow><mstyle displaystyle="true"><mfrac><msup><mi>b</mi><mn>2</mn></msup><msup><mi>h</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>h</mi></msubsup></mstyle><mrow><mrow><mo>(</mo><mrow><mrow><msup><mi>h</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>y</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex36.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex36.m2" class="ltx_Math" alttext="\displaystyle\frac{b^{2}}{h^{2}}\left.\left(h^{2}y-hy^{2}+\frac{y^{3}}{3}%
+\right)\right|_{0}^{h}" display="inline"><msubsup><mrow><mrow><mstyle displaystyle="true"><mfrac><msup><mi>b</mi><mn>2</mn></msup><msup><mi>h</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><msup><mi>h</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>−</mo><mrow><mi>h</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><msup><mi>y</mi><mn>3</mn></msup><mn>3</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>|</mo></mrow><mn>0</mn><mi>h</mi></msubsup></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex37.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex37.m2" class="ltx_Math" alttext="\displaystyle\frac{b^{2}h}{3}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><mi>h</mi></mrow><mn>3</mn></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i6.p2" class="ltx_para">
+<p class="ltx_p">This will give us <math id="S0.I1.i6.p2.m1" class="ltx_Math" alttext="\displaystyle V=\frac{b^{2}h}{3}" display="inline"><mrow><mi>V</mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><mi>h</mi></mrow><mn>3</mn></mfrac></mstyle></mrow></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Jun  5 15:23:46 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>
