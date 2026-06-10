@@ -73,3 +73,11 @@ section > .ltx_title +.ltx_date +.ltx_para > .ltx_p {text-indent:0em; }
 .ltx_theorem .ltx_title + .ltx_para,
 .ltx_theorem .ltx_title + .ltx_para .ltx_p,
 .ltx_theorem .ltx_title + .ltx_p  { margin-top:0em; }
+.ltx_p {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+.ltx_p math {
+  white-space: nowrap;
+}
