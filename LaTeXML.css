@@ -530,3 +530,43 @@ cite                 { font-style: normal; }
     border-radius: 8px;
     margin: 1em 0;
 }
+/* Custom strategy boxes */
+
+.ltx_theorem,
+.ltx_theorem_strategy,
+.ltx_theorem_oddpowerstrategy,
+.ltx_theorem_evenpowerstrategy,
+.ltx_theorem_tangentsecantstrategy {
+    background: #f0fff4;
+    border-left: 5px solid #38a169;
+    padding: 1em 1.25em;
+    margin: 1.5em 0;
+    border-radius: 8px;
+}
+
+.ltx_theorem .ltx_title,
+.ltx_theorem_strategy .ltx_title,
+.ltx_theorem_oddpowerstrategy .ltx_title,
+.ltx_theorem_evenpowerstrategy .ltx_title,
+.ltx_theorem_tangentsecantstrategy .ltx_title,
+.ltx_theorem .ltx_title_theorem,
+.ltx_theorem_strategy .ltx_title_theorem,
+.ltx_theorem_oddpowerstrategy .ltx_title_theorem,
+.ltx_theorem_evenpowerstrategy .ltx_title_theorem,
+.ltx_theorem_tangentsecantstrategy .ltx_title_theorem {
+    display: inline-block;
+    background: #c6f6d5;
+    padding: 0.35em 0.75em;
+    font-weight: 700;
+    margin-bottom: 0.75em;
+    border-radius: 2px;
+}
+
+.ltx_theorem .ltx_item,
+.ltx_theorem_strategy .ltx_item,
+.ltx_theorem_oddpowerstrategy .ltx_item,
+.ltx_theorem_evenpowerstrategy .ltx_item,
+.ltx_theorem_tangentsecantstrategy .ltx_item {
+    white-space: normal;
+    margin-bottom: 0.75em;
+}
