@@ -570,3 +570,48 @@ cite                 { font-style: normal; }
     white-space: normal;
     margin-bottom: 0.75em;
 }
+/* ============================================================
+   Strategy boxes for LaTeXML-generated HTML
+   Paste this at the bottom of LaTeXML.css.
+   ============================================================ */
+
+.ltx_theorem_oddpowerstrategy,
+.ltx_theorem_evenpowerstrategy,
+.ltx_theorem_tangentsecantstrategy,
+.ltx_theorem.ltx_theorem_oddpowerstrategy,
+.ltx_theorem.ltx_theorem_evenpowerstrategy,
+.ltx_theorem.ltx_theorem_tangentsecantstrategy {
+    background: #f0fff4;
+    border-left: 5px solid #38a169;
+    padding: 1em 1.25em;
+    margin: 1.5em 0;
+    border-radius: 8px;
+}
+
+.ltx_theorem_oddpowerstrategy > .ltx_title,
+.ltx_theorem_evenpowerstrategy > .ltx_title,
+.ltx_theorem_tangentsecantstrategy > .ltx_title,
+.ltx_theorem_oddpowerstrategy .ltx_title_theorem,
+.ltx_theorem_evenpowerstrategy .ltx_title_theorem,
+.ltx_theorem_tangentsecantstrategy .ltx_title_theorem {
+    display: inline-block;
+    background: #c6f6d5;
+    padding: 0.35em 0.75em;
+    font-weight: 700;
+    margin-bottom: 0.75em;
+    border-radius: 2px;
+}
+
+.ltx_theorem_oddpowerstrategy .ltx_item,
+.ltx_theorem_evenpowerstrategy .ltx_item,
+.ltx_theorem_tangentsecantstrategy .ltx_item {
+    white-space: normal;
+    margin-bottom: 0.75em;
+}
+
+.ltx_theorem_oddpowerstrategy .ltx_equation,
+.ltx_theorem_evenpowerstrategy .ltx_equation,
+.ltx_theorem_tangentsecantstrategy .ltx_equation {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
