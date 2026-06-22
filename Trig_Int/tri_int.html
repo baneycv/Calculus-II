@@ -1,0 +1,659 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Cross-Sectional Area</title>
+<!--Generated on Thu Jun  5 10:05:33 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../ltx-article.css" type="text/css">
+
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    background: #fff;
+    color: #000;
+  }
+
+  .ltx_text.ltx_font_bold,
+  .ltx_font_bold {
+    font-weight: 700 !important;
+  }
+
+  math {
+    font-size: 1em;
+  }
+
+  math[display="block"],
+  .ltx_equation math {
+    font-size: 1.05em;
+  }
+
+  .ltx_equation,
+  .displaymath,
+  div.displaymath {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1em 0 !important;
+  }
+
+  table.ltx_eqn_table,
+  .ltx_eqn_table {
+    border: none !important;
+    border-collapse: collapse !important;
+    box-shadow: none !important;
+    background: none !important;
+    width: 100%;
+  }
+
+  .ltx_eqn_table td {
+    border: none !important;
+  }
+
+  .ltx_tag_item {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  img.ltx_graphics {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 35%;
+    height: auto;
+}
+</style>
+</head>
+
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div id="p1" class="ltx_para">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252, 8.3 Trigonometric Integrals
+<br class="ltx_break"></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">We are interested in this chapter at looking at integrals of the form <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\int\sin^{m}x\cos^{n}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mi>m</mi></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mi>n</mi></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math> and <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\int\sec^{m}x\tan^{n}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sec</mi><mi>m</mi></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mi>n</mi></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math>. Depending on the values of <math id="S0.I1.i1.p1.m3" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> and <math id="S0.I1.i1.p1.m4" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>, this will change our strategy for breaking down the integrand to something we can integrate. In each case,</p>
+<ul id="S0.I1.i1.I1" class="ltx_itemize">
+<li id="S0.I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">We will give the main tools (Trigonometric Identities) used as they will change depending on the values of <math id="S0.I1.i1.I1.i1.p1.m1" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> and <math id="S0.I1.i1.I1.i1.p1.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> and the trigonometric functions involved.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">We will give the integration strategy. <span class="ltx_text ltx_font_bold">NOTE:</span> In some cases there will be multiple strategies that apply. The answers produced may be different, however, the answers may be equivalent.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">You are responsible for figuring out a strategy to handle <math id="S0.I1.i1.I1.i3.p1.m1" class="ltx_Math" alttext="\cot^{m}x\csc^{n}x" display="inline"><mrow><msup><mi>cot</mi><mi>m</mi></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>csc</mi><mi>n</mi></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math>
+<br class="ltx_break"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="\sin^{m}x\cos^{n}x" display="inline"><mrow><msup><mi>sin</mi><mi>m</mi></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mi>n</mi></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math><span class="ltx_text ltx_font_bold">, where either <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> or <math id="S0.I1.i2.p1.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is odd
+<br class="ltx_break"><span class="ltx_ERROR undefined">{mdframed}</span></span>[
+backgroundcolor=strategyback,
+linecolor=strategyframe,
+linewidth=1.2pt,
+leftline=true,
+rightline=false,
+topline=false,
+bottomline=false,
+innerleftmargin=12pt,
+innerrightmargin=12pt,
+innertopmargin=10pt,
+innerbottommargin=10pt,
+skipabove=12pt,
+skipbelow=12pt
+]
+<span class="ltx_text" style="background-color:#C6F6D5;">  <span class="ltx_text ltx_font_bold">Odd Power Strategy</span></span></p>
+</div>
+<div id="S0.I1.i2.p2" class="ltx_para">
+<ul id="S0.I1.i2.I1" class="ltx_itemize">
+<li id="S0.I1.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Main Tool</span> Pythagorean Identity, <math id="S0.I1.i2.I1.i1.p1.m1" class="ltx_Math" alttext="\sin^{2}x+\cos^{2}x=1" display="inline"><mrow><mrow><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Step 1:</span> Which ever exponent odd, take out one power. For example,</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\cos^{5}x=\cos^{4}x\cos x" display="block"><mrow><mrow><msup><mi>cos</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<br class="ltx_break">
+<p class="ltx_p">OR
+<br class="ltx_break"></p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\cos^{5}x\sin^{3}x=\cos^{5}x\sin^{2}x\sin x" display="block"><mrow><mrow><msup><mi>cos</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi>cos</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<br class="ltx_break">
+</div>
+</li>
+<li id="S0.I1.i2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i2.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Step 2:</span> Apply the Pythagorean Identity to the exponent that has been made even
+<br class="ltx_break"></p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\cos^{5}x=\cos^{4}x\cos x=(\underbrace{\cos^{2}x}_{1-\sin^{2}x})^{2}\cos x=(1-%
+\sin^{2}x)^{2}\cos x" display="block"><mrow><mrow><msup><mi>cos</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><munder><munder accentunder="true"><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>⏟</mo></munder><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></munder><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<br class="ltx_break">
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\cos^{5}x\sin^{3}x=\cos^{5}x\underbrace{\sin^{2}x}_{1-\cos^{2}x}\sin x=\cos^{5%
+}x(1-\cos^{2}x)\sin x" display="block"><mrow><mrow><msup><mi>cos</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi>cos</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><munder><munder accentunder="true"><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>⏟</mo></munder><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></munder><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>cos</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<br class="ltx_break">
+</div>
+</li>
+<li id="S0.I1.i2.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i2.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Step 3:</span> Simplify and use <math id="S0.I1.i2.I1.i4.p1.m1" class="ltx_Math" alttext="u" display="inline"><mi>u</mi></math>-substitution
+<br class="ltx_break"></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Example A:</span> Evaluate <math id="S0.I1.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\int\sin^{3}x\cos^{4}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_italic">Solution:</span></p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\displaystyle\int\sin^{3}x\cos^{4}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex5.m2" class="ltx_Math" alttext="\displaystyle=\int\sin^{2}x\cos^{4}x\sin x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex6.m1" class="ltx_Math" alttext="\displaystyle=\int(1-\cos^{2}x)\cos^{4}x\sin x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex7.m1" class="ltx_Math" alttext="\displaystyle=\int(\cos^{4}x-\cos^{6}x)\sin x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><msup><mi>cos</mi><mn>6</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Let <math id="S0.I1.i3.p1.m2" class="ltx_Math" alttext="u=\cos x" display="inline"><mrow><mi>u</mi><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></math>, <math id="S0.I1.i3.p1.m3" class="ltx_Math" alttext="du=\sin x\,dx" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math>, which means that <math id="S0.I1.i3.p1.m4" class="ltx_Math" alttext="-du=\sin x\,dx" display="inline"><mrow><mrow><mo>−</mo><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow></mrow><mo>=</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math>.</p>
+<table id="S0.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex9.m1" class="ltx_Math" alttext="-\int(u^{4}-u^{6})\,du=-\frac{u^{5}}{5}+\frac{u^{7}}{7}+C" display="block"><mrow><mrow><mo>−</mo><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>u</mi><mn>4</mn></msup><mo>−</mo><msup><mi>u</mi><mn>6</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><msup><mi>u</mi><mn>5</mn></msup><mn>5</mn></mfrac></mrow><mo>+</mo><mfrac><msup><mi>u</mi><mn>7</mn></msup><mn>7</mn></mfrac><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Hence,</p>
+<table id="S0.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex10.m1" class="ltx_Math" alttext="\int\sin^{3}x\cos^{4}x\,dx=\frac{\cos^{7}x}{7}-\frac{\cos^{5}x}{5}+C" display="block"><mrow><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mrow><msup><mi>cos</mi><mn>7</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>7</mn></mfrac><mo>−</mo><mfrac><mrow><msup><mi>cos</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>5</mn></mfrac></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Example B:</span> Evaluate <math id="S0.I1.i4.p1.m1" class="ltx_Math" alttext="\displaystyle\int\sin^{5}x\cos^{3}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_italic">Solution:</span></p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex11.m1" class="ltx_Math" alttext="\displaystyle\int\sin^{5}x\cos^{3}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex11.m2" class="ltx_Math" alttext="\displaystyle=\int\sin^{5}x\cos^{2}x\cos x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex12.m1" class="ltx_Math" alttext="\displaystyle=\int\sin^{5}x(1-\sin^{2}x)\cos x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mrow><msup><mi>sin</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex13.m1" class="ltx_Math" alttext="\displaystyle=\int(\sin^{5}x-\sin^{7}x)\cos x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>sin</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><msup><mi>sin</mi><mn>7</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex14.m1" class="ltx_Math" alttext="\displaystyle=\frac{\sin^{6}x}{6}-\frac{\sin^{8}x}{8}+C" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sin</mi><mn>6</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>6</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sin</mi><mn>8</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>8</mn></mfrac></mstyle></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S0.I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Example C:</span> Evaluate <math id="S0.I1.i5.p1.m1" class="ltx_Math" alttext="\displaystyle\int\frac{\cos^{3}x}{\sqrt{\sin x}}\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mfrac><mrow><msup><mi>cos</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msqrt><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msqrt></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_italic">Solution:</span></p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex15.m1" class="ltx_Math" alttext="\displaystyle\int\frac{\cos^{3}x}{\sqrt{\sin x}}\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mfrac><mrow><msup><mi>cos</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msqrt><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></msqrt></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex15.m2" class="ltx_Math" alttext="\displaystyle=\int\cos^{3}x\sin^{-1/2}x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>cos</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex16.m1" class="ltx_Math" alttext="\displaystyle=\int\cos^{2}x\sin^{-1/2}x\cos x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex17.m1" class="ltx_Math" alttext="\displaystyle=\int(1-\sin^{2}x)\sin^{-1/2}x\cos x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex18.m1" class="ltx_Math" alttext="\displaystyle=\int(\sin^{-1/2}x-\sin^{3/2}x)\cos x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>sin</mi><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><msup><mi>sin</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex19.m1" class="ltx_Math" alttext="\displaystyle=2\sin^{1/2}x-\frac{2}{5}\sin^{5/2}x+C" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>5</mn></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mrow><mn>5</mn><mo>/</mo><mn>2</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span> 
+<div id="S0.I1.i6.p1" class="ltx_para">
+<p class="ltx_p"><math id="S0.I1.i6.p1.m1" class="ltx_Math" alttext="\sin^{m}x\cos^{n}x" display="inline"><mrow><msup><mi>sin</mi><mi>m</mi></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mi>n</mi></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math><span class="ltx_text ltx_font_bold">, where <math id="S0.I1.i6.p1.m2" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> or <math id="S0.I1.i6.p1.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> are both even
+<br class="ltx_break"><span class="ltx_ERROR undefined">{mdframed}</span></span>[
+backgroundcolor=strategyback,
+linecolor=strategyframe,
+linewidth=1.2pt,
+leftline=true,
+rightline=false,
+topline=false,
+bottomline=false,
+innerleftmargin=12pt,
+innerrightmargin=12pt,
+innertopmargin=10pt,
+innerbottommargin=10pt,
+skipabove=12pt,
+skipbelow=12pt
+]
+<span class="ltx_text" style="background-color:#C6F6D5;">  <span class="ltx_text ltx_font_bold">Even Power Strategy</span></span></p>
+</div>
+<div id="S0.I1.i6.p2" class="ltx_para">
+<ul id="S0.I1.i6.I1" class="ltx_itemize">
+<li id="S0.I1.i6.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i6.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Main Tool</span> Half Angle Formulas, <math id="S0.I1.i6.I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\sin^{2}x=\frac{1-\cos 2x}{2}" display="inline"><mrow><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mn>2</mn></mfrac></mstyle></mrow></math> and <math id="S0.I1.i6.I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\cos^{2}x=\frac{1+\cos 2x}{2}" display="inline"><mrow><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mn>2</mn></mfrac></mstyle></mrow></math>.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i6.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i6.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Step 1:</span> Write both terms as some power of <math id="S0.I1.i6.I1.i2.p1.m1" class="ltx_Math" alttext="\cos^{2}x" display="inline"><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></math> or <math id="S0.I1.i6.I1.i2.p1.m2" class="ltx_Math" alttext="\sin^{2}" display="inline"><msup><mi>sin</mi><mn>2</mn></msup></math>,</p>
+<table id="S0.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex20.m1" class="ltx_Math" alttext="\cos^{4}x=(\cos^{2}x)^{2}" display="block"><mrow><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<br class="ltx_break">
+<p class="ltx_p">OR
+<br class="ltx_break"></p>
+<table id="S0.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex21.m1" class="ltx_Math" alttext="\sin^{6}x\cos^{2}x=(\sin^{2}x)^{3}\cos^{2}x" display="block"><mrow><mrow><msup><mi>sin</mi><mn>6</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<br class="ltx_break">
+</div>
+</li>
+<li id="S0.I1.i6.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i6.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Step 2:</span> Apply the Half Angle Formula and simplify. Goal is to reduce to an expression that can be integrated</p>
+<table id="S0.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex22.m1" class="ltx_Math" alttext="\cos^{4}x=(\cos^{2}x)^{2}=\left(\frac{1+\cos 2x}{2}\right)^{2}" display="block"><mrow><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mn>2</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<br class="ltx_break">
+<table id="S0.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex23.m1" class="ltx_Math" alttext="\sin^{6}x\cos^{2}x=(\sin^{2}x)^{3}\cos^{2}x=\left(\frac{1-\cos 2x}{2}\right)^{%
+3}\left(\frac{1+\cos 2x}{2}\right)" display="block"><mrow><mrow><msup><mi>sin</mi><mn>6</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mn>2</mn></mfrac><mo>)</mo></mrow><mn>3</mn></msup><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mn>2</mn></mfrac><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<br class="ltx_break">
+</div>
+</li>
+<li id="S0.I1.i6.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i6.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Step 3:</span> Continue to apply the Half-Angle Formulas until the problem is reduced to something that can be integrated</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li id="S0.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span> 
+<div id="S0.I1.i7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Example D:</span> Evaluate <math id="S0.I1.i7.p1.m1" class="ltx_Math" alttext="\displaystyle\int\cos^{4}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"></p>
+<table id="S0.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex24.m1" class="ltx_Math" alttext="\displaystyle\int\cos^{4}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex24.m2" class="ltx_Math" alttext="\displaystyle=\int\left(\cos^{2}x\right)^{2}\ ,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><msup><mrow><mo>(</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mstyle><mo>,</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex25.m1" class="ltx_Math" alttext="\displaystyle=\int\left(\frac{1+\cos 2x}{2}\right)^{2}\ ,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><msup><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mn>2</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow></mstyle><mo>,</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex26"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex26.m1" class="ltx_Math" alttext="\displaystyle=\int\left(\frac{1}{4}+\frac{\cos 2x}{2}+\frac{\cos^{2}2x}{4}%
+\right)\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex27"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex27.m1" class="ltx_Math" alttext="\displaystyle=\int\left[\frac{1}{4}+\frac{\cos 2x}{2}+\frac{1+\cos 4x}{8}%
+\right]\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo>[</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mn>8</mn></mfrac></mrow><mo>]</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex28.m1" class="ltx_Math" alttext="\displaystyle=\int\left(\frac{3+4\cos 2x+\cos 4x}{8}\right)\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo>(</mo><mfrac><mrow><mn>3</mn><mo>+</mo><mrow><mn>4</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mn>8</mn></mfrac><mo>)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex29.m1" class="ltx_Math" alttext="\displaystyle=\frac{3x}{8}+\frac{\sin 2x}{4}+\frac{\sin 4x}{32}+C" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow><mn>8</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mn>4</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mn>32</mn></mfrac></mstyle><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span> 
+<div id="S0.I1.i8.p1" class="ltx_para">
+<p class="ltx_p"><math id="S0.I1.i8.p1.m1" class="ltx_Math" alttext="\tan^{m}x\sec^{n}x" display="inline"><mrow><msup><mi>tan</mi><mi>m</mi></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mi>n</mi></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math><span class="ltx_text ltx_font_bold">, for any <math id="S0.I1.i8.p1.m2" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> or <math id="S0.I1.i8.p1.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>
+<br class="ltx_break"><span class="ltx_ERROR undefined">{mdframed}</span></span>[
+backgroundcolor=strategyback,
+linecolor=strategyframe,
+linewidth=1.2pt,
+leftline=true,
+rightline=false,
+topline=false,
+bottomline=false,
+innerleftmargin=12pt,
+innerrightmargin=12pt,
+innertopmargin=10pt,
+innerbottommargin=10pt,
+skipabove=12pt,
+skipbelow=12pt
+]
+<span class="ltx_text" style="background-color:#C6F6D5;">  <span class="ltx_text ltx_font_bold">Tangent-Secant Strategy</span></span></p>
+</div>
+<div id="S0.I1.i8.p2" class="ltx_para">
+<ul id="S0.I1.i8.I1" class="ltx_itemize">
+<li id="S0.I1.i8.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i8.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Main Tools</span> Pythagorean Identity, <math id="S0.I1.i8.I1.i1.p1.m1" class="ltx_Math" alttext="\tan^{2}x+1=\sec^{2}x" display="inline"><mrow><mrow><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></math> OR <math id="S0.I1.i8.I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\tan x=\frac{\sin x}{\cos x}" display="inline"><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow></math> AND <math id="S0.I1.i8.I1.i1.p1.m3" class="ltx_Math" alttext="\displaystyle\sec x=\frac{1}{\cos x}" display="inline"><mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow></math>.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i8.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i8.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Option 1</span> Convert to a product of a polynomial of <math id="S0.I1.i8.I1.i2.p1.m1" class="ltx_Math" alttext="\tan x" display="inline"><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></math> and <math id="S0.I1.i8.I1.i2.p1.m2" class="ltx_Math" alttext="\sec^{2}x" display="inline"><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></math>, and use u-substitution.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i8.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i8.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Option 2</span> Convert to a polynomial of <math id="S0.I1.i8.I1.i3.p1.m1" class="ltx_Math" alttext="\sec x" display="inline"><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></math> and <math id="S0.I1.i8.I1.i3.p1.m2" class="ltx_Math" alttext="\sec x\tan x" display="inline"><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math> and use u-substitution.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i8.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i8.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Option 3</span> Convert to expressions of <math id="S0.I1.i8.I1.i4.p1.m1" class="ltx_Math" alttext="\sin x" display="inline"><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></math> and <math id="S0.I1.i8.I1.i4.p1.m2" class="ltx_Math" alttext="\cos x" display="inline"><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></math> and use methods listed above.
+<br class="ltx_break"></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="S0.I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span> 
+<div id="S0.I1.i9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Example E-1</span> Evaluate <math id="S0.I1.i9.p1.m1" class="ltx_Math" alttext="\displaystyle\int\sec^{4}x\tan^{3}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sec</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_italic">Solution:</span> We will use Option 1.
+<br class="ltx_break"></p>
+<table id="S0.EGx5" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex30"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex30.m1" class="ltx_Math" alttext="\displaystyle\int\sec^{4}x\tan^{3}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sec</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex30.m2" class="ltx_Math" alttext="\displaystyle=\int\sec^{2}x\tan^{3}x\sec^{2}x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex31"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex31.m1" class="ltx_Math" alttext="\displaystyle=\int(1+\tan^{2}x)\tan^{3}x\sec^{2}x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex32"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex32.m1" class="ltx_Math" alttext="\displaystyle=\int(\tan^{3}x+\tan^{5}x)\sec^{2}x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><msup><mi>tan</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex33"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex33.m1" class="ltx_Math" alttext="\displaystyle=\frac{\tan^{4}x}{4}+\frac{\tan^{6}x}{6}+C" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mi>tan</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>4</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>tan</mi><mn>6</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>6</mn></mfrac></mstyle><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li id="S0.I1.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span> 
+<div id="S0.I1.i10.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Example E-2</span> Evaluate <math id="S0.I1.i10.p1.m1" class="ltx_Math" alttext="\displaystyle\int\sec^{4}x\tan^{3}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sec</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_italic">Solution:</span> Let’s now use Option 2.
+<br class="ltx_break"></p>
+<table id="S0.EGx6" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex35"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex35.m1" class="ltx_Math" alttext="\displaystyle\int\sec^{4}x\tan^{3}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sec</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex35.m2" class="ltx_Math" alttext="\displaystyle=\int\sec^{3}x\tan^{2}x\sec x\tan x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sec</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex36"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex36.m1" class="ltx_Math" alttext="\displaystyle=\int(1+\tan^{2}x)\tan^{3}x\sec^{2}x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex37"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex37.m1" class="ltx_Math" alttext="\displaystyle=\int\sec^{3}x(\sec^{2}x-1)\sec x\tan x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mrow><msup><mi>sec</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex38"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex38.m1" class="ltx_Math" alttext="\displaystyle=\int(\sec^{5}x-\sec^{3}x)\sec x\tan x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>sec</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><msup><mi>sec</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex39"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex39.m1" class="ltx_Math" alttext="\displaystyle=\frac{\sec^{6}x}{6}-\frac{\sec^{4}x}{4}+C" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sec</mi><mn>6</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>6</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sec</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>4</mn></mfrac></mstyle></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span> 
+<div id="S0.I1.i11.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Example E-3</span> Evaluate <math id="S0.I1.i11.p1.m1" class="ltx_Math" alttext="\displaystyle\int\sec^{4}x\tan^{3}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sec</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_italic">Solution:</span> Let’s now use Option 3.
+<br class="ltx_break"></p>
+<table id="S0.EGx7" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex40"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex40.m1" class="ltx_Math" alttext="\displaystyle\int\sec^{4}x\tan^{3}x\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sec</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex40.m2" class="ltx_Math" alttext="\displaystyle=\int\left(\frac{1}{\cos x}\right)^{4}\left(\frac{\sin x}{\cos x}%
+\right)^{3}\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac><mo>)</mo></mrow><mn>4</mn></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mfrac><mo>)</mo></mrow><mn>3</mn></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex41"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex41.m1" class="ltx_Math" alttext="\displaystyle=\int\sin^{3}x\cos^{-7}x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex42"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex42.m1" class="ltx_Math" alttext="\displaystyle=\int\sin^{2}x\cos^{-7}x\sin x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex43"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex43.m1" class="ltx_Math" alttext="\displaystyle=\int(1-\cos^{2}x)\cos^{-7}x\sin x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex44"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex44.m1" class="ltx_Math" alttext="\displaystyle=\int(\cos^{-7}x-\cos^{-5}x)\sin x\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>cos</mi><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mrow><msup><mi>cos</mi><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex45"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex45.m1" class="ltx_Math" alttext="\displaystyle=\frac{\cos^{-6}x}{6}-\frac{\cos^{-4}x}{4}+C" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mi>cos</mi><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>6</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>cos</mi><mrow><mo>−</mo><mn>4</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>4</mn></mfrac></mstyle></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex46"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex46.m1" class="ltx_Math" alttext="\displaystyle=\frac{\sec^{6}x}{6}-\frac{\sec^{4}x}{4}+C" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sec</mi><mn>6</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>6</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sec</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>4</mn></mfrac></mstyle></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Mon Jun 22 10:11:23 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -507,3 +507,26 @@ cite                 { font-style: normal; }
 .ltx_minipage > .ltx_graphics {
   max-width:100%;
 }
+.ltx_theorem.strategy {
+    background: #f0fff4;
+    border-left: 5px solid #38a169;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 1em 0;
+}
+
+.ltx_theorem.tool {
+    background: #eef7ff;
+    border-left: 5px solid #3182ce;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 1em 0;
+}
+
+.ltx_theorem.warning {
+    background: #fff5f5;
+    border-left: 5px solid #e53e3e;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 1em 0;
+}
