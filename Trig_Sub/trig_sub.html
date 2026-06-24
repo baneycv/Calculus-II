@@ -1,75 +1,57 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Trigonometric Substitution</title>
-<!--Generated on Thu Jun  5 10:05:33 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
-
-<link rel="stylesheet" href="../LaTeXML.css" type="text/css">
-<link rel="stylesheet" href="../ltx-article.css" type="text/css">
-
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>Strategy</title>
+<!--Generated on Wed Jun 24 16:39:08 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<link href="LaTeXML.css" rel="stylesheet" type="text/css"/>
+<link href="ltx-article.css" rel="stylesheet" type="text/css"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <style>
-  body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 2rem auto;
-    max-width: 900px;
-    padding: 0 1rem;
-    background: #fff;
-    color: #000;
-  }
-
-  .ltx_text.ltx_font_bold,
-  .ltx_font_bold {
-    font-weight: 700 !important;
-  }
-
-  math {
-    font-size: 1em;
-  }
-
-  math[display="block"],
-  .ltx_equation math {
-    font-size: 1.05em;
-  }
-
-  .ltx_equation,
-  .displaymath,
-  div.displaymath {
-    border: none !important;
-    background: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    margin: 1em 0 !important;
-  }
-
-  table.ltx_eqn_table,
-  .ltx_eqn_table {
-    border: none !important;
-    border-collapse: collapse !important;
-    box-shadow: none !important;
-    background: none !important;
-    width: 100%;
-  }
-
-  .ltx_eqn_table td {
-    border: none !important;
-  }
-
-  .ltx_tag_item {
-    font-weight: bold;
-    margin-right: 0.5rem;
-  }
-
-  img.ltx_graphics {
-    display: block;
-    margin: 1.5rem auto;
-    max-width: 35%;
-    height: auto;
+/* Layout-only fixes for the trigonometric-substitution triangle block. */
+.trig-sub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.35rem;
+  align-items: stretch;
+  margin: 1.25rem 0 1rem 0;
 }
-</style>
-</head>
-
+.trig-sub-case {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.85rem 0.9rem;
+}
+.trig-sub-case p {
+  margin: 0;
+}
+.trig-sub-equation {
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.02rem;
+}
+.trig-sub-triangle-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 0.25rem 0.35rem 0.25rem;
+}
+.trig-sub-triangle {
+  width: min(100%, 300px);
+  height: auto;
+  overflow: visible;
+}
+.trig-sub-triangle text {
+  font-family: serif;
+  font-size: 16px;
+}
+.trig-sub-triangle .angle-label {
+  font-style: italic;
+}
+.trig-sub-note {
+  margin-top: 0.75rem;
+}
+</style></head>
 <body>
 <div class="ltx_page_main">
 <div class="ltx_page_content">
@@ -93,59 +75,63 @@
 </table>
 <p class="ltx_p">The goal is to eliminate the square root from the problem. To this end, we use the following substitutions and corresponding triangles.</p>
 </div>
+
 <div class="ltx_theorem ltx_theorem_strategy" id="Thmstrategyx1">
 <h6 class="ltx_title ltx_runin ltx_title_theorem">Strategy </h6>
-<div class="ltx_para" id="Thmstrategyx1.p1">
-<p class="ltx_p ltx_align_center"><span class="ltx_text ltx_font_bold">Trigonometric Substitution <math alttext="(a&gt;0)" class="ltx_Math" display="inline" id="Thmstrategyx1.m1"><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></math></span></p>
+<div class="ltx_para"><p class="ltx_p ltx_align_center"><span class="ltx_text ltx_font_bold">Trigonometric Substitution (a &gt; 0)</span></p></div>
+<div class="trig-sub-grid">
+<section class="trig-sub-case">
+<p><span class="ltx_text ltx_font_bold">For integrals involving √(a² − u²), let</span></p>
+<div class="trig-sub-equation">u = a sin z   ⟹   u/a = sin z,   √(a² − u²) = a cos z.</div>
+<div class="trig-sub-triangle-wrap">
+<svg aria-label="Right triangle for u equals a sine z. Angle z is at the lower left. The hypotenuse is a, the opposite side is u, and the adjacent side is the square root of a squared minus u squared." class="trig-sub-triangle" id="trig-sub-triangle-a2-minus-u2" role="img" viewbox="0 0 300 185" xmlns="http://www.w3.org/2000/svg">
+<desc>Right triangle for u equals a sine z. Angle z is at the lower left. The hypotenuse is a, the opposite side is u, and the adjacent side is the square root of a squared minus u squared.</desc>
+<path d="M 34 138 L 220 138 L 220 42 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M 202 138 L 202 120 L 220 120" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M 70 138 A 36 36 0 0 0 64 119" fill="none" stroke="currentColor" stroke-width="1.2"></path>
+<text class="angle-label" x="75" y="130">z</text>
+<text text-anchor="middle" x="120" y="162">√(a² − u²)</text>
+<text text-anchor="start" x="236" y="94">u</text>
+<text text-anchor="middle" x="116" y="78">a</text>
+</svg>
 </div>
-<div class="ltx_para ltx_noindent" id="Thmstrategyx1.p2">
-<p class="ltx_p"><span class="ltx_text ltx_font_bold">For integrals involving <math alttext="\sqrt{a^{2}-u^{2}}" class="ltx_Math" display="inline" id="Thmstrategyx1.p2.m1"><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></msqrt></math>, let</span></p>
+</section>
+<section class="trig-sub-case">
+<p><span class="ltx_text ltx_font_bold">For integrals involving √(u² + a²), let</span></p>
+<div class="trig-sub-equation">u = a tan z   ⟹   u/a = tan z,   √(u² + a²) = a sec z.</div>
+<div class="trig-sub-triangle-wrap">
+<svg aria-label="Right triangle for u equals a tangent z. Angle z is at the lower left. The adjacent side is a, the opposite side is u, and the hypotenuse is the square root of u squared plus a squared." class="trig-sub-triangle" id="trig-sub-triangle-u2-plus-a2" role="img" viewbox="0 0 300 185" xmlns="http://www.w3.org/2000/svg">
+<desc>Right triangle for u equals a tangent z. Angle z is at the lower left. The adjacent side is a, the opposite side is u, and the hypotenuse is the square root of u squared plus a squared.</desc>
+<path d="M 34 138 L 220 138 L 220 42 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M 202 138 L 202 120 L 220 120" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M 70 138 A 36 36 0 0 0 64 119" fill="none" stroke="currentColor" stroke-width="1.2"></path>
+<text class="angle-label" x="75" y="130">z</text>
+<text text-anchor="middle" x="120" y="162">a</text>
+<text text-anchor="start" x="236" y="94">u</text>
+<text text-anchor="middle" x="116" y="78">√(u² + a²)</text>
+</svg>
 </div>
-<div class="ltx_para" id="Thmstrategyx1.p3">
-<table class="ltx_equation ltx_eqn_table" id="S0.Ex2">
-<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math alttext="u=a\sin z\qquad\Longrightarrow\qquad\frac{u}{a}=\sin z,\qquad\sqrt{a^{2}-u^{2}%
-}=a\cos z." class="ltx_Math" display="block" id="S0.Ex2.m1"><mrow><mrow><mrow><mi>u</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mspace width="2em"></mspace><mo stretchy="false">⟹</mo></mrow></mrow><mspace width="2em"></mspace><mrow><mrow><mfrac><mi>u</mi><mi>a</mi></mfrac><mo>=</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo rspace="2.167em">,</mo><mrow><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-</tr></tbody>
-</table>
-<svg aria-label="Right triangle for the substitution u = a sin z. Angle z is at the lower left. The hypotenuse is a, the opposite side is u, and the adjacent side is the square root of a squared minus u squared." class="ltx_picture ltx_centering" height="80.26" id="Thmstrategyx1.p3.pic1" overflow="visible" role="img" version="1.1" width="114.35"><desc>Right triangle for the substitution u = a sin z. Angle z is at the lower left. The hypotenuse is a, the opposite side is u, and the adjacent side is the square root of a squared minus u squared.</desc><g fill="#000000" stroke="#000000" transform="translate(0,80.26) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,15.46)"><g stroke-width="0.8pt"><path d="M 0 0 L 96.38 0 L 96.38 64.25 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 87.01 0 L 87.01 9.37 L 96.38 9.37" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 31.75 -10.85)"><foreignobject height="12" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="70"><math alttext="\sqrt{a^{2}-u^{2}}" class="ltx_Math" display="inline" id="Thmstrategyx1.p3.pic1.m1"><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></msqrt></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 101.27 29.15)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.92"><math alttext="u" class="ltx_Math" display="inline" id="Thmstrategyx1.p3.pic1.m2"><mi>u</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 35.99 37.01)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.31"><math alttext="a" class="ltx_Math" display="inline" id="Thmstrategyx1.p3.pic1.m3"><mi>a</mi></math></foreignobject></g><path d="M 18.74 0 C 18.74 3.73 17.62 7.38 15.54 10.48" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 21.91 4.52)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="Thmstrategyx1.p3.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
-<p class="ltx_p"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span></p>
+</section>
+<section class="trig-sub-case">
+<p><span class="ltx_text ltx_font_bold">For integrals involving √(u² − a²), let</span></p>
+<div class="trig-sub-equation">u = a sec z   ⟹   u/a = sec z,   √(u² − a²) = a tan z.</div>
+<div class="trig-sub-triangle-wrap">
+<svg aria-label="Right triangle for u equals a secant z. Angle z is at the lower left. The adjacent side is a, the hypotenuse is u, and the opposite side is the square root of u squared minus a squared." class="trig-sub-triangle" id="trig-sub-triangle-u2-minus-a2" role="img" viewbox="0 0 300 185" xmlns="http://www.w3.org/2000/svg">
+<desc>Right triangle for u equals a secant z. Angle z is at the lower left. The adjacent side is a, the hypotenuse is u, and the opposite side is the square root of u squared minus a squared.</desc>
+<path d="M 34 138 L 220 138 L 220 42 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M 202 138 L 202 120 L 220 120" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M 70 138 A 36 36 0 0 0 64 119" fill="none" stroke="currentColor" stroke-width="1.2"></path>
+<text class="angle-label" x="75" y="130">z</text>
+<text text-anchor="middle" x="120" y="162">a</text>
+<text text-anchor="start" x="236" y="94">√(u² − a²)</text>
+<text text-anchor="middle" x="116" y="78">u</text>
+</svg>
 </div>
-<div class="ltx_para ltx_noindent" id="Thmstrategyx1.p4">
-<p class="ltx_p"><span class="ltx_text ltx_font_bold">For integrals involving <math alttext="\sqrt{u^{2}+a^{2}}" class="ltx_Math" display="inline" id="Thmstrategyx1.p4.m1"><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math>, let</span></p>
+</section>
 </div>
-<div class="ltx_para" id="Thmstrategyx1.p5">
-<table class="ltx_equation ltx_eqn_table" id="S0.Ex3">
-<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math alttext="u=a\tan z\qquad\Longrightarrow\qquad\frac{u}{a}=\tan z,\qquad\sqrt{u^{2}+a^{2}%
-}=a\sec z." class="ltx_Math" display="block" id="S0.Ex3.m1"><mrow><mrow><mrow><mi>u</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mspace width="2em"></mspace><mo stretchy="false">⟹</mo></mrow></mrow><mspace width="2em"></mspace><mrow><mrow><mfrac><mi>u</mi><mi>a</mi></mfrac><mo>=</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo rspace="2.167em">,</mo><mrow><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-</tr></tbody>
-</table>
-<svg aria-label="Right triangle for the substitution u = a tan z. Angle z is at the lower left. The adjacent side is a, the opposite side is u, and the hypotenuse is the square root of u squared plus a squared." class="ltx_picture ltx_centering" height="80.26" id="Thmstrategyx1.p5.pic1" overflow="visible" role="img" version="1.1" width="114.35"><desc>Right triangle for the substitution u = a tan z. Angle z is at the lower left. The adjacent side is a, the opposite side is u, and the hypotenuse is the square root of u squared plus a squared.</desc><g fill="#000000" stroke="#000000" transform="translate(0,80.26) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,15.46)"><g stroke-width="0.8pt"><path d="M 0 0 L 96.38 0 L 96.38 64.25 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 87.01 0 L 87.01 9.37 L 96.38 9.37" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 44.53 -10.85)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.31"><math alttext="a" class="ltx_Math" display="inline" id="Thmstrategyx1.p5.pic1.m1"><mi>a</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 101.27 29.15)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.92"><math alttext="u" class="ltx_Math" display="inline" id="Thmstrategyx1.p5.pic1.m2"><mi>u</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 11.18 37.01)"><foreignobject height="12" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="70"><math alttext="\sqrt{u^{2}+a^{2}}" class="ltx_Math" display="inline" id="Thmstrategyx1.p5.pic1.m3"><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math></foreignobject></g><path d="M 18.74 0 C 18.74 3.73 17.62 7.38 15.54 10.48" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 21.91 4.52)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="Thmstrategyx1.p5.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
-<p class="ltx_p"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span></p>
+<div class="ltx_para trig-sub-note"><p class="ltx_p">In each case, choose z so the indicated square root is positive.</p></div>
 </div>
-<div class="ltx_para ltx_noindent" id="Thmstrategyx1.p6">
-<p class="ltx_p"><span class="ltx_text ltx_font_bold">For integrals involving <math alttext="\sqrt{u^{2}-a^{2}}" class="ltx_Math" display="inline" id="Thmstrategyx1.p6.m1"><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math>, let</span></p>
-</div>
-<div class="ltx_para" id="Thmstrategyx1.p7">
-<table class="ltx_equation ltx_eqn_table" id="S0.Ex4">
-<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math alttext="u=a\sec z\qquad\Longrightarrow\qquad\frac{u}{a}=\sec z,\qquad\sqrt{u^{2}-a^{2}%
-}=a\tan z." class="ltx_Math" display="block" id="S0.Ex4.m1"><mrow><mrow><mrow><mi>u</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mspace width="2em"></mspace><mo stretchy="false">⟹</mo></mrow></mrow><mspace width="2em"></mspace><mrow><mrow><mfrac><mi>u</mi><mi>a</mi></mfrac><mo>=</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo rspace="2.167em">,</mo><mrow><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-</tr></tbody>
-</table>
-<svg aria-label="Right triangle for the substitution u = a sec z. Angle z is at the lower left. The adjacent side is a, the hypotenuse is u, and the opposite side is the square root of u squared minus a squared." class="ltx_picture ltx_centering" height="80.26" id="Thmstrategyx1.p7.pic1" overflow="visible" role="img" version="1.1" width="140.77"><desc>Right triangle for the substitution u = a sec z. Angle z is at the lower left. The adjacent side is a, the hypotenuse is u, and the opposite side is the square root of u squared minus a squared.</desc><g fill="#000000" stroke="#000000" transform="translate(0,80.26) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,15.46)"><g stroke-width="0.8pt"><path d="M 0 0 L 96.38 0 L 96.38 64.25 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 87.01 0 L 87.01 9.37 L 96.38 9.37" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 44.53 -10.85)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.31"><math alttext="a" class="ltx_Math" display="inline" id="Thmstrategyx1.p7.pic1.m1"><mi>a</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 101.27 27.87)"><foreignobject height="12" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="70"><math alttext="\sqrt{u^{2}-a^{2}}" class="ltx_Math" display="inline" id="Thmstrategyx1.p7.pic1.m2"><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 35.38 37.01)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.92"><math alttext="u" class="ltx_Math" display="inline" id="Thmstrategyx1.p7.pic1.m3"><mi>u</mi></math></foreignobject></g><path d="M 18.74 0 C 18.74 3.73 17.62 7.38 15.54 10.48" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 21.91 4.52)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="Thmstrategyx1.p7.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
-</div>
-<div class="ltx_para" id="Thmstrategyx1.p8">
-<p class="ltx_p">In each case, choose <math alttext="z" class="ltx_Math" display="inline" id="Thmstrategyx1.p8.m1"><mi>z</mi></math> so the indicated square root is positive.</p>
-</div>
-</div>
+
 <div class="ltx_para" id="S0.I1.i1.p2">
 <p class="ltx_p">Before using this as an integration technique, we will (1) become familiar with the algebra associated with simplifying these square roots, (2) examine how they induce a right triangle configuration, and then (3) put these ideas together to integrate.</p>
 </div>
@@ -298,7 +284,7 @@
 </table>
 </div>
 <div class="ltx_para" id="Thmstrategyx2.p3">
-<svg aria-label="Reference right triangle for trigonometric ratios. Angle z is at the lower left. The adjacent side is x, the opposite side is y, and the hypotenuse is r." class="ltx_picture ltx_centering" height="101.05" id="Thmstrategyx2.pic1" overflow="visible" role="img" version="1.1" width="130.72"><desc>Reference right triangle for trigonometric ratios. Angle z is at the lower left. The adjacent side is x, the opposite side is y, and the hypotenuse is r.</desc><g fill="#000000" stroke="#000000" transform="translate(0,101.05) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,15.46)"><g stroke-width="0.8pt"><path d="M 0 0 L 113.39 0 L 113.39 85.04 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 102.05 0 L 102.05 11.34 L 113.39 11.34" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 52.74 -10.85)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.91"><math alttext="x" class="ltx_Math" display="inline" id="Thmstrategyx2.pic1.m1"><mi>x</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 118.27 40.89)"><foreignobject height="8.65" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.28"><math alttext="y" class="ltx_Math" display="inline" id="Thmstrategyx2.pic1.m2"><mi>y</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 45.18 47.41)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.63"><math alttext="r" class="ltx_Math" display="inline" id="Thmstrategyx2.pic1.m3"><mi>r</mi></math></foreignobject></g><path d="M 19.84 0 C 19.84 4.29 18.45 8.47 15.87 11.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 23.41 4.11)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="Thmstrategyx2.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
+<svg aria-label="Reference right triangle for trigonometric ratios. Angle z is at the lower left, adjacent side x, opposite side y, and hypotenuse r." class="ltx_picture ltx_centering" height="101.05" id="Thmstrategyx2.pic1" overflow="visible" role="img" version="1.1" width="130.72"><desc>Reference right triangle for trigonometric ratios. Angle z is at the lower left, adjacent side x, opposite side y, and hypotenuse r.</desc><g fill="#000000" stroke="#000000" transform="translate(0,101.05) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,15.46)"><g stroke-width="0.8pt"><path d="M 0 0 L 113.39 0 L 113.39 85.04 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 102.05 0 L 102.05 11.34 L 113.39 11.34" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 52.74 -10.85)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.91"><math alttext="x" class="ltx_Math" display="inline" id="Thmstrategyx2.pic1.m1"><mi>x</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 118.27 40.89)"><foreignobject height="8.65" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.28"><math alttext="y" class="ltx_Math" display="inline" id="Thmstrategyx2.pic1.m2"><mi>y</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 45.18 47.41)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.63"><math alttext="r" class="ltx_Math" display="inline" id="Thmstrategyx2.pic1.m3"><mi>r</mi></math></foreignobject></g><path d="M 19.84 0 C 19.84 4.29 18.45 8.47 15.87 11.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 23.41 4.11)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="Thmstrategyx2.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
 </div>
 </div>
 </li>
@@ -407,7 +393,7 @@
 <br class="ltx_break"/><span class="ltx_text ltx_font_bold">Solution:</span> Let <math alttext="x=3\sin z" class="ltx_Math" display="inline" id="S0.I1.i9.p1.m2"><mrow><mi>x</mi><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>, <math alttext="dx=3\cos z\,dz" class="ltx_Math" display="inline" id="S0.I1.i9.p1.m3"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></math>, <math alttext="x/3=\sin z" class="ltx_Math" display="inline" id="S0.I1.i9.p1.m4"><mrow><mrow><mi>x</mi><mo>/</mo><mn>3</mn></mrow><mo>=</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math>, and <math alttext="z=\arcsin(x/3)" class="ltx_Math" display="inline" id="S0.I1.i9.p1.m5"><mrow><mi>z</mi><mo>=</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
 </div>
 <div class="ltx_para" id="S0.I1.i9.p2">
-<svg aria-label="Right triangle used to recover cosine from sine. Angle z is at the lower left. The opposite side is x, the hypotenuse is 3, and the adjacent side is the square root of 9 minus x squared." class="ltx_picture ltx_centering" height="102.91" id="S0.I1.i9.pic1" overflow="visible" role="img" version="1.1" width="147.1"><desc>Right triangle used to recover cosine from sine. Angle z is at the lower left. The opposite side is x, the hypotenuse is 3, and the adjacent side is the square root of 9 minus x squared.</desc><g fill="#000000" stroke="#000000" transform="translate(0,102.91) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,18.42)"><g stroke-width="0.8pt"><path d="M 0 0 L 129.14 0 L 129.14 83.94 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 117.84 0 L 117.84 11.3 L 129.14 11.3" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 49.84 -13.81)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="29.46"><math alttext="\sqrt{9-x^{2}}" class="ltx_Math" display="inline" id="S0.I1.i9.pic1.m1"><msqrt><mrow><mn>9</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 134.02 38.99)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.91"><math alttext="x" class="ltx_Math" display="inline" id="S0.I1.i9.pic1.m2"><mi>x</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 52.76 46.86)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><math alttext="3" class="ltx_Math" display="inline" id="S0.I1.i9.pic1.m3"><mn>3</mn></math></foreignobject></g><path d="M 22.6 0 C 22.6 4.37 21.33 8.64 18.95 12.31" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 27.15 5.09)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="S0.I1.i9.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
+<svg aria-label="Right triangle used to recover cosine from sine. Angle z is at the lower left, opposite side x, hypotenuse 3, and adjacent side square root of 9 minus x squared." class="ltx_picture ltx_centering" height="102.91" id="S0.I1.i9.pic1" overflow="visible" role="img" version="1.1" width="147.1"><desc>Right triangle used to recover cosine from sine. Angle z is at the lower left, opposite side x, hypotenuse 3, and adjacent side square root of 9 minus x squared.</desc><g fill="#000000" stroke="#000000" transform="translate(0,102.91) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,18.42)"><g stroke-width="0.8pt"><path d="M 0 0 L 129.14 0 L 129.14 83.94 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 117.84 0 L 117.84 11.3 L 129.14 11.3" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 49.84 -13.81)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="29.46"><math alttext="\sqrt{9-x^{2}}" class="ltx_Math" display="inline" id="S0.I1.i9.pic1.m1"><msqrt><mrow><mn>9</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 134.02 38.99)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.91"><math alttext="x" class="ltx_Math" display="inline" id="S0.I1.i9.pic1.m2"><mi>x</mi></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 52.76 46.86)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><math alttext="3" class="ltx_Math" display="inline" id="S0.I1.i9.pic1.m3"><mn>3</mn></math></foreignobject></g><path d="M 22.6 0 C 22.6 4.37 21.33 8.64 18.95 12.31" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 27.15 5.09)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="S0.I1.i9.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
 </div>
 <div class="ltx_para" id="S0.I1.i9.p3">
 <table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx4">
@@ -480,7 +466,7 @@
 <br class="ltx_break"/><span class="ltx_text ltx_font_bold">Solution:</span> Notice that <math alttext="\sqrt{4x^{2}+1}=\sqrt{(2x)^{2}+1}" class="ltx_Math" display="inline" id="S0.I1.i10.p1.m2"><mrow><msqrt><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></mrow></math>. Let <math alttext="2x=\tan z" class="ltx_Math" display="inline" id="S0.I1.i10.p1.m3"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math>, so <math alttext="2\,dx=\sec^{2}z\,dz" class="ltx_Math" display="inline" id="S0.I1.i10.p1.m4"><mrow><mrow><mn>2</mn><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></math>, which means <math alttext="dx=\frac{1}{2}\sec^{2}z\,dz" class="ltx_Math" display="inline" id="S0.I1.i10.p1.m5"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></math>, and <math alttext="z=\arctan(2x)" class="ltx_Math" display="inline" id="S0.I1.i10.p1.m6"><mrow><mi>z</mi><mo>=</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
 </div>
 <div class="ltx_para" id="S0.I1.i10.p2">
-<svg aria-label="Right triangle used to recover secant from tangent. Angle z is at the lower left. The opposite side is 2x, the adjacent side is 1, and the hypotenuse is the square root of 4x squared plus 1." class="ltx_picture ltx_centering" height="93.22" id="S0.I1.i10.pic1" overflow="visible" role="img" version="1.1" width="134.65"><desc>Right triangle used to recover secant from tangent. Angle z is at the lower left. The opposite side is 2x, the adjacent side is 1, and the hypotenuse is the square root of 4x squared plus 1.</desc><g fill="#000000" stroke="#000000" transform="translate(0,93.22) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,18.42)"><g stroke-width="0.8pt"><path d="M 0 0 L 109.77 0 L 109.77 74.25 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 99.43 0 L 99.43 10.33 L 109.76 10.33" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 51.42 -13.81)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><math alttext="1" class="ltx_Math" display="inline" id="S0.I1.i10.pic1.m1"><mn>1</mn></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 114.65 32.67)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="14.83"><math alttext="2x" class="ltx_Math" display="inline" id="S0.I1.i10.pic1.m2"><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 10.54 43.17)"><foreignobject height="10.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="39.46"><math alttext="\sqrt{4x^{2}+1}" class="ltx_Math" display="inline" id="S0.I1.i10.pic1.m3"><msqrt><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></msqrt></math></foreignobject></g><path d="M 20.98 0 C 20.98 4.43 19.58 8.75 16.98 12.33" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 25.53 4.77)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="S0.I1.i10.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
+<svg aria-label="Right triangle used to recover secant from tangent. Angle z is at the lower left, adjacent side 1, opposite side 2x, and hypotenuse square root of 4 x squared plus 1." class="ltx_picture ltx_centering" height="93.22" id="S0.I1.i10.pic1" overflow="visible" role="img" version="1.1" width="134.65"><desc>Right triangle used to recover secant from tangent. Angle z is at the lower left, adjacent side 1, opposite side 2x, and hypotenuse square root of 4 x squared plus 1.</desc><g fill="#000000" stroke="#000000" transform="translate(0,93.22) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,18.42)"><g stroke-width="0.8pt"><path d="M 0 0 L 109.77 0 L 109.77 74.25 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 99.43 0 L 99.43 10.33 L 109.76 10.33" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 51.42 -13.81)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><math alttext="1" class="ltx_Math" display="inline" id="S0.I1.i10.pic1.m1"><mn>1</mn></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 114.65 32.67)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="14.83"><math alttext="2x" class="ltx_Math" display="inline" id="S0.I1.i10.pic1.m2"><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 10.54 43.17)"><foreignobject height="10.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="39.46"><math alttext="\sqrt{4x^{2}+1}" class="ltx_Math" display="inline" id="S0.I1.i10.pic1.m3"><msqrt><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></msqrt></math></foreignobject></g><path d="M 20.98 0 C 20.98 4.43 19.58 8.75 16.98 12.33" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 25.53 4.77)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="S0.I1.i10.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
 </div>
 <div class="ltx_para" id="S0.I1.i10.p3">
 <table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx5">
@@ -534,7 +520,7 @@
 <br class="ltx_break"/><span class="ltx_text ltx_font_bold">Solution:</span> Let <math alttext="x=\sqrt{3}\sec z" class="ltx_Math" display="inline" id="S0.I1.i11.p1.m2"><mrow><mi>x</mi><mo>=</mo><mrow><msqrt><mn>3</mn></msqrt><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>, <math alttext="dx=\sqrt{3}\sec z\tan z\,dz" class="ltx_Math" display="inline" id="S0.I1.i11.p1.m3"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><msqrt><mn>3</mn></msqrt><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></math>, <math alttext="x/\sqrt{3}=\sec z" class="ltx_Math" display="inline" id="S0.I1.i11.p1.m4"><mrow><mrow><mi>x</mi><mo>/</mo><msqrt><mn>3</mn></msqrt></mrow><mo>=</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math>, and <math alttext="z=\operatorname{arcsec}(x/\sqrt{3})" class="ltx_Math" display="inline" id="S0.I1.i11.p1.m5"><mrow><mi>z</mi><mo>=</mo><mrow><mi>arcsec</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>/</mo><msqrt><mn>3</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
 </div>
 <div class="ltx_para" id="S0.I1.i11.p2">
-<svg aria-label="Right triangle used to recover tangent from secant. Angle z is at the lower left. The adjacent side is the square root of 3, the hypotenuse is x, and the opposite side is the square root of x squared minus 3." class="ltx_picture ltx_centering" height="94.84" id="S0.I1.i11.pic1" overflow="visible" role="img" version="1.1" width="155.89"><desc>Right triangle used to recover tangent from secant. Angle z is at the lower left. The adjacent side is the square root of 3, the hypotenuse is x, and the opposite side is the square root of x squared minus 3.</desc><g fill="#000000" stroke="#000000" transform="translate(0,94.84) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,18.42)"><g stroke-width="0.8pt"><path d="M 0 0 L 119.45 0 L 119.45 75.87 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 108.8 0 L 108.8 10.65 L 119.45 10.65" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 56.27 -13.81)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><math alttext="\sqrt{3}" class="ltx_Math" display="inline" id="S0.I1.i11.pic1.m1"><msqrt><mn>3</mn></msqrt></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 124.34 33.48)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="26.39"><math alttext="\sqrt{x^{2}-3}" class="ltx_Math" display="inline" id="S0.I1.i11.pic1.m2"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></mrow></msqrt></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 46.93 42.82)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.91"><math alttext="x" class="ltx_Math" display="inline" id="S0.I1.i11.pic1.m3"><mi>x</mi></math></foreignobject></g><path d="M 20.98 0 C 20.98 4.43 19.58 8.75 16.98 12.33" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 25.53 4.77)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="S0.I1.i11.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
+<svg aria-label="Right triangle used to recover tangent from secant. Angle z is at the lower left, adjacent side square root of 3, hypotenuse x, and opposite side square root of x squared minus 3." class="ltx_picture ltx_centering" height="94.84" id="S0.I1.i11.pic1" overflow="visible" role="img" version="1.1" width="155.89"><desc>Right triangle used to recover tangent from secant. Angle z is at the lower left, adjacent side square root of 3, hypotenuse x, and opposite side square root of x squared minus 3.</desc><g fill="#000000" stroke="#000000" transform="translate(0,94.84) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,18.42)"><g stroke-width="0.8pt"><path d="M 0 0 L 119.45 0 L 119.45 75.87 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 108.8 0 L 108.8 10.65 L 119.45 10.65" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 56.27 -13.81)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><math alttext="\sqrt{3}" class="ltx_Math" display="inline" id="S0.I1.i11.pic1.m1"><msqrt><mn>3</mn></msqrt></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 124.34 33.48)"><foreignobject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="26.39"><math alttext="\sqrt{x^{2}-3}" class="ltx_Math" display="inline" id="S0.I1.i11.pic1.m2"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></mrow></msqrt></math></foreignobject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 46.93 42.82)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.91"><math alttext="x" class="ltx_Math" display="inline" id="S0.I1.i11.pic1.m3"><mi>x</mi></math></foreignobject></g><path d="M 20.98 0 C 20.98 4.43 19.58 8.75 16.98 12.33" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 25.53 4.77)"><foreignobject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math alttext="z" class="ltx_Math" display="inline" id="S0.I1.i11.pic1.m4"><mi>z</mi></math></foreignobject></g></g></g></svg>
 </div>
 <div class="ltx_para" id="S0.I1.i11.p3">
 <table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx6">
