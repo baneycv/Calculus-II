@@ -1,0 +1,759 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Trigonometric Substitution.</title>
+<!--Generated on Fri Jun 26 15:17:34 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div id="p1" class="ltx_para">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252, 8.4 Trigonometric Substitution
+<br class="ltx_break"></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Purpose</span>. We now explore Integrals that contain square roots that are in the form of <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="\sqrt{a^{2}-x^{2}}" display="inline"><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></math>, <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="\sqrt{x^{2}+a^{2}}" display="inline"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math>, <math id="S0.I1.i1.p1.m3" class="ltx_Math" alttext="\sqrt{x^{2}-a^{2}}" display="inline"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math>. The goal is to eliminate the square root from the problem. To this end, we use these substitutions, and corresponding triangles,
+<span class="ltx_text ltx_font_bold">Trigonometric Substitution <math id="S0.I1.i1.p1.m4" class="ltx_Math" alttext="(a&gt;0)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></math>
+<br class="ltx_break"></span></p>
+</div>
+<div id="Thmtrigsubboxx1" class="ltx_theorem ltx_theorem_trigsubbox">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Trigonometric Substitution</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtrigsubboxx1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">For integrals involving <math id="Thmtrigsubboxx1.p1.m1" class="ltx_Math" alttext="\sqrt{a^{2}-u^{2}}" display="inline"><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></msqrt></math>, let</span></p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="u=a\sin z\,\,\implies\,\,\frac{u}{a}=\sin z" display="block"><mrow><mi>u</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo lspace="0.608em" rspace="0.608em" stretchy="false">⟹</mo><mfrac><mi>u</mi><mi>a</mi></mfrac><mo>=</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Then <math id="Thmtrigsubboxx1.p1.m2" class="ltx_Math" alttext="\sqrt{a^{2}-u^{2}}=a\cos z" display="inline"><mrow><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math> where <math id="Thmtrigsubboxx1.p1.m3" class="ltx_Math" alttext="-\pi/2&lt;z&lt;\pi/2" display="inline"><mrow><mrow><mo>−</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo>&lt;</mo><mi>z</mi><mo>&lt;</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow></math>. Furthermore</p>
+<img src="Slide24.jpg" id="Thmtrigsubboxx1.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="87" height="65" alt="[Uncaptioned image]">
+</div>
+</div>
+<div id="Thmtrigsubboxx2" class="ltx_theorem ltx_theorem_trigsubbox">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Trigonometric Substitution</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtrigsubboxx2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">For integrals involving <math id="Thmtrigsubboxx2.p1.m1" class="ltx_Math" alttext="\sqrt{u^{2}+a^{2}}" display="inline"><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math>, let</span></p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="u=a\tan z\,\,\implies\,\,\frac{u}{a}=\tan z" display="block"><mrow><mi>u</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo lspace="0.608em" rspace="0.608em" stretchy="false">⟹</mo><mfrac><mi>u</mi><mi>a</mi></mfrac><mo>=</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Then <math id="Thmtrigsubboxx2.p1.m2" class="ltx_Math" alttext="\sqrt{u^{2}+a^{2}}=a\sec z" display="inline"><mrow><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math> where <math id="Thmtrigsubboxx2.p1.m3" class="ltx_Math" alttext="-\pi/2&lt;z&lt;\pi/2" display="inline"><mrow><mrow><mo>−</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo>&lt;</mo><mi>z</mi><mo>&lt;</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow></math>. Furthermore</p>
+<img src="Slide25.jpg" id="Thmtrigsubboxx2.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="87" height="65" alt="[Uncaptioned image]">
+</div>
+</div>
+<div id="Thmtrigsubboxx3" class="ltx_theorem ltx_theorem_trigsubbox">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Trigonometric Substitution</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtrigsubboxx3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">For integrals involving <math id="Thmtrigsubboxx3.p1.m1" class="ltx_Math" alttext="\sqrt{u^{2}-a^{2}}" display="inline"><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math>, let</span></p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="u=a\sec z\,\,\implies\,\,\frac{u}{a}=\sec z" display="block"><mrow><mi>u</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo lspace="0.608em" rspace="0.608em" stretchy="false">⟹</mo><mfrac><mi>u</mi><mi>a</mi></mfrac><mo>=</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Then <math id="Thmtrigsubboxx3.p1.m2" class="ltx_Math" alttext="\sqrt{u^{2}-a^{2}}=a\tan z" display="inline"><mrow><msqrt><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math> where <math id="Thmtrigsubboxx3.p1.m3" class="ltx_Math" alttext="-\pi/2&lt;z&lt;\pi/2" display="inline"><mrow><mrow><mo>−</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo>&lt;</mo><mi>z</mi><mo>&lt;</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow></math>. Furthermore</p>
+<img src="Slide26.jpg" id="Thmtrigsubboxx3.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="87" height="65" alt="[Uncaptioned image]">
+</div>
+</div>
+<div id="S0.I1.i1.p2" class="ltx_para">
+<p class="ltx_p">Before using this for an integration technique, we will (1) Become familiar with the algebra associated with simplifying these types of integrals, (2) Examine how they induce a right triangle configuration, and then (3) put these ideas together to integrate.</p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 1:</span> Suppose <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="x=5\sin z" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mn>5</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>. Simplify <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="\sqrt{25-x^{2}}" display="inline"><msqrt><mrow><mn>25</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex8">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\displaystyle\sqrt{25-x^{2}}" display="inline"><msqrt><mrow><mn>25</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex4.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex4.m3" class="ltx_Math" alttext="\displaystyle\sqrt{25-(5\sin z)^{2}}" display="inline"><msqrt><mrow><mn>25</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>5</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex5.m2" class="ltx_Math" alttext="\displaystyle\sqrt{25-25\sin^{2}z}" display="inline"><msqrt><mrow><mn>25</mn><mo>−</mo><mrow><mn>25</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex6.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex6.m2" class="ltx_Math" alttext="\displaystyle\sqrt{25(1-\sin^{2}z)}" display="inline"><msqrt><mrow><mn>25</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex7.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex7.m2" class="ltx_Math" alttext="\displaystyle\sqrt{25\cos^{2}z}" display="inline"><msqrt><mrow><mn>25</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex8.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex8.m2" class="ltx_Math" alttext="\displaystyle 5\cos z" display="inline"><mrow><mn>5</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i2.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 2:</span> Suppose <math id="S0.I1.i2.p2.m1" class="ltx_Math" alttext="x=3\tan z" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>. Simplify <math id="S0.I1.i2.p2.m2" class="ltx_Math" alttext="\sqrt{x^{2}+9}" display="inline"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>9</mn></mrow></msqrt></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex13">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex9.m1" class="ltx_Math" alttext="\displaystyle\sqrt{x^{2}+9}" display="inline"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>9</mn></mrow></msqrt></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex9.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex9.m3" class="ltx_Math" alttext="\displaystyle\sqrt{(3\tan z)^{2}+9}" display="inline"><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>9</mn></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex10.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex10.m2" class="ltx_Math" alttext="\displaystyle\sqrt{9\tan^{2}z+9}" display="inline"><msqrt><mrow><mrow><mn>9</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo>+</mo><mn>9</mn></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex11.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex11.m2" class="ltx_Math" alttext="\displaystyle\sqrt{9(\tan^{2}z+1)}" display="inline"><msqrt><mrow><mn>9</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex12.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex12.m2" class="ltx_Math" alttext="\displaystyle\sqrt{9\sec^{2}z}" display="inline"><msqrt><mrow><mn>9</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex13.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex13.m2" class="ltx_Math" alttext="\displaystyle 3\sec z" display="inline"><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 3:</span> Suppose <math id="S0.I1.i2.p2.m3" class="ltx_Math" alttext="x=a\sec z" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>. Simplify <math id="S0.I1.i2.p2.m4" class="ltx_Math" alttext="\sqrt{x^{2}-a^{2}}" display="inline"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span>
+Similarly, for <math id="S0.I1.i2.p2.m5" class="ltx_Math" alttext="\sqrt{x^{2}-a^{2}}" display="inline"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math>, we let <math id="S0.I1.i2.p2.m6" class="ltx_Math" alttext="x=a\sec z" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math> for <math id="S0.I1.i2.p2.m7" class="ltx_Math" alttext="\pi/2&lt;z&lt;\pi/2" display="inline"><mrow><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow><mo>&lt;</mo><mi>z</mi><mo>&lt;</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow></math>, we have that,</p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex18">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex14.m1" class="ltx_Math" alttext="\displaystyle\sqrt{x^{2}-a^{2}}" display="inline"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex14.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex14.m3" class="ltx_Math" alttext="\displaystyle\sqrt{(a\sec z)^{2}-a^{2}}" display="inline"><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex15.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex15.m2" class="ltx_Math" alttext="\displaystyle\sqrt{a^{2}\sec^{2}z-a^{2}}" display="inline"><msqrt><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex16.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex16.m2" class="ltx_Math" alttext="\displaystyle\sqrt{a^{2}(\sec^{2}z-1)}" display="inline"><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex17.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex17.m2" class="ltx_Math" alttext="\displaystyle\sqrt{a^{2}\tan^{2}z}" display="inline"><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></msqrt></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex18.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex18.m2" class="ltx_Math" alttext="\displaystyle a\tan z" display="inline"><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Trigonometric Ratios Review</span></p>
+</div>
+<div id="S0.I1.i3.p2" class="ltx_para">
+<p class="ltx_p">When converting answers back into terms of <math id="S0.I1.i3.p2.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, we frequently use right triangles and the basic trigonometric ratios.</p>
+</div>
+<div id="Thmtrigsubboxx4" class="ltx_theorem ltx_theorem_trigsubbox">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Trigonometric Substitution</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div class="ltx_logical-block ltx_minipage ltx_align_middle" style="width:364.1pt;">
+            
+<div id="Thmtrigsubboxx4.p1" class="ltx_para">
+<table id="S0.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex19.m1" class="ltx_Math" alttext="\sin z=\frac{y}{r}\qquad\cos z=\frac{x}{r}" display="block"><mrow><mrow><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>y</mi><mi>r</mi></mfrac></mrow><mspace width="2.167em"></mspace><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>x</mi><mi>r</mi></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<table id="S0.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex20.m1" class="ltx_Math" alttext="\tan z=\frac{y}{x}\qquad\sec z=\frac{r}{x}" display="block"><mrow><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>y</mi><mi>x</mi></mfrac></mrow><mspace width="2.167em"></mspace><mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>r</mi><mi>x</mi></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<table id="S0.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex21.m1" class="ltx_Math" alttext="\csc z=\frac{r}{y}\qquad\cot z=\frac{x}{y}" display="block"><mrow><mrow><mrow><mi>csc</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>r</mi><mi>y</mi></mfrac></mrow><mspace width="2.167em"></mspace><mrow><mrow><mi>cot</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>x</mi><mi>y</mi></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+          
+</div>
+<div id="Thmtrigsubboxx4.p2" class="ltx_para ltx_minipage ltx_align_middle" style="width:168.0pt;">
+<svg id="Thmtrigsubboxx4.pic1" class="ltx_picture" height="98.69" overflow="visible" version="1.1" width="127.57"><g fill="#000000" stroke="#000000" transform="translate(0,98.69) matrix(1 0 0 -1 0 0) translate(0.55,0) translate(0,15.46)"><g stroke-width="0.8pt"><path d="M 0 0 L 110.24 0 L 110.24 82.68 Z" style="fill:none"></path></g><g stroke-width="0.4pt"><path d="M 99.21 0 L 99.21 11.02 L 110.24 11.02" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 51.16 -10.85)"><foreignObject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.91"><math id="Thmtrigsubboxx4.pic1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math></foreignObject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 115.12 39.7)"><foreignObject height="8.65" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.28"><math id="Thmtrigsubboxx4.pic1.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math></foreignObject></g><g fill="#000000" stroke="#000000" transform="matrix(0.79865 0.60182 -0.60182 0.79865 48.7 44.35)"><foreignObject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.63"><math id="Thmtrigsubboxx4.pic1.m3" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math></foreignObject></g><path d="M 19.29 0 C 19.29 4.17 17.94 8.24 15.43 11.57" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 22.66 3.91)"><foreignObject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.04"><math id="Thmtrigsubboxx4.pic1.m4" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math></foreignObject></g></g></g></svg>
+</div>
+</div>
+<div id="S0.I1.i3.p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 4:</span> Suppose</p>
+</div>
+<div id="S0.I1.i3.p4" class="ltx_para">
+<table id="S0.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex22.m1" class="ltx_Math" alttext="\sin z=\frac{x}{3}." display="block"><mrow><mrow><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>x</mi><mn>3</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i3.p5" class="ltx_para">
+<p class="ltx_p">Find <math id="S0.I1.i3.p5.m1" class="ltx_Math" alttext="\cos z" display="inline"><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span>
+Draw a right triangle with opposite side <math id="S0.I1.i3.p5.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and hypotenuse <math id="S0.I1.i3.p5.m3" class="ltx_Math" alttext="3" display="inline"><mn>3</mn></math>. By the Pythagorean Theorem,</p>
+</div>
+<div id="S0.I1.i3.p6" class="ltx_para">
+<table id="S0.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex23.m1" class="ltx_Math" alttext="r=\sqrt{9-x^{2}}." display="block"><mrow><mrow><mi>r</mi><mo>=</mo><msqrt><mrow><mn>9</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i3.p7" class="ltx_para">
+<p class="ltx_p">Therefore,</p>
+</div>
+<div id="S0.I1.i3.p8" class="ltx_para">
+<table id="S0.Ex24" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex24.m1" class="ltx_Math" alttext="\cos z=\frac{\sqrt{9-x^{2}}}{3}." display="block"><mrow><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><msqrt><mrow><mn>9</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mn>3</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 6:</span> Suppose</p>
+</div>
+<div id="S0.I1.i3.p9" class="ltx_para">
+<table id="S0.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex25.m1" class="ltx_Math" alttext="\tan z=\frac{x}{4}." display="block"><mrow><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>x</mi><mn>4</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i3.p10" class="ltx_para">
+<p class="ltx_p">Find <math id="S0.I1.i3.p10.m1" class="ltx_Math" alttext="\sec z" display="inline"><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="S0.I1.i3.p11" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<div id="S0.I1.i3.p12" class="ltx_para">
+<p class="ltx_p">Since</p>
+</div>
+<div id="S0.I1.i3.p13" class="ltx_para">
+<table id="S0.Ex26" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex26.m1" class="ltx_Math" alttext="\tan z=\frac{y}{x}," display="block"><mrow><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>y</mi><mi>x</mi></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i3.p14" class="ltx_para">
+<p class="ltx_p">By the Pythagorean Theorem,</p>
+</div>
+<div id="S0.I1.i3.p15" class="ltx_para">
+<table id="S0.Ex27" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex27.m1" class="ltx_Math" alttext="r^{2}=x^{2}+4^{2}=x^{2}+16." display="block"><mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>16</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i3.p16" class="ltx_para">
+<p class="ltx_p">Therefore,</p>
+</div>
+<div id="S0.I1.i3.p17" class="ltx_para">
+<table id="S0.Ex28" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex28.m1" class="ltx_Math" alttext="r=\sqrt{x^{2}+16}." display="block"><mrow><mrow><mi>r</mi><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>16</mn></mrow></msqrt></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i3.p18" class="ltx_para">
+<p class="ltx_p">Since</p>
+</div>
+<div id="S0.I1.i3.p19" class="ltx_para">
+<table id="S0.Ex29" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex29.m1" class="ltx_Math" alttext="\sec z=\frac{r}{x}," display="block"><mrow><mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>r</mi><mi>x</mi></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i3.p20" class="ltx_para">
+<p class="ltx_p">we obtain</p>
+</div>
+<div id="S0.I1.i3.p21" class="ltx_para">
+<table id="S0.Ex30" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex30.m1" class="ltx_Math" alttext="\sec z=\frac{r}{4}=\frac{\sqrt{x^{2}+16}}{4}." display="block"><mrow><mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mfrac><mi>r</mi><mn>4</mn></mfrac><mo>=</mo><mfrac><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>16</mn></mrow></msqrt><mn>4</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Integration Technique</span></p>
+<ol id="S0.I1.i4.I1" class="ltx_enumerate">
+<li id="S0.I1.i4.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i4.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Set-Up Substitutions</span> You will need <math id="S0.I1.i4.I1.i1.p1.m1" class="ltx_Math" alttext="x=" display="inline"><mrow><mi>x</mi><mo>=</mo><mi></mi></mrow></math>, then find <math id="S0.I1.i4.I1.i1.p1.m2" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math>, solve for the trig function, and solve for the angle.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i4.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i4.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Draw the Triangle</span>. Using the information from (a), draw the triangle, and solve for the missing side. You should end up with the square root in the integral.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i4.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i4.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Simplify the square root</span> Make the substitutions (including <math id="S0.I1.i4.I1.i3.p1.m1" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math>, and simplify the square root.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i4.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i4.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Integrate</span> 
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i4.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I1.i4.I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Back Substitute.</span> Using the triangle, express your result as a function in terms of the original variable.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S0.I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 5</span>: Evaluate <math id="S0.I1.i5.p1.m1" class="ltx_Math" alttext="\displaystyle\int\frac{dx}{x^{2}\sqrt{9-x^{2}}}" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msqrt><mrow><mn>9</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mrow></mstyle></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> Let <math id="S0.I1.i5.p1.m2" class="ltx_Math" alttext="x=3\sin z" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>, <math id="S0.I1.i5.p1.m3" class="ltx_Math" alttext="dx=3\cos z\,dz" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></math>, <math id="S0.I1.i5.p1.m4" class="ltx_Math" alttext="x/3=\sin z" display="inline"><mrow><mrow><mi>x</mi><mo>/</mo><mn>3</mn></mrow><mo>=</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math> and <math id="S0.I1.i5.p1.m5" class="ltx_Math" alttext="\arcsin(x/3)=z" display="inline"><mrow><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>x</mi><mo>/</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mi>z</mi></mrow></math>.
+<br class="ltx_break"></p>
+</div>
+<div id="S0.I1.i5.p2" class="ltx_para">
+<img src="Slide27.jpg" id="S0.I1.i5.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="137" height="103" alt="[Uncaptioned image]">
+</div>
+<div id="S0.I1.i5.p3" class="ltx_para">
+<table id="S0.EGx4" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex37">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex31.m1" class="ltx_Math" alttext="\displaystyle\frac{dx}{x^{2}\sqrt{9-x^{2}}}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msqrt><mrow><mn>9</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex31.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex31.m3" class="ltx_Math" alttext="\displaystyle\frac{3\cos z\,dz}{(3\sin z)^{2}\sqrt{9-(3\sin z)^{2}}}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><msqrt><mrow><mn>9</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex32.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex32.m2" class="ltx_Math" alttext="\displaystyle\frac{3\cos z\,dz}{9\sin^{2}z\sqrt{9-9\sin^{2}z}}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow><mrow><mn>9</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo>⁢</mo><msqrt><mrow><mn>9</mn><mo>−</mo><mrow><mn>9</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></msqrt></mrow></mrow></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex33.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex33.m2" class="ltx_Math" alttext="\displaystyle\frac{3\cos z\,dz}{9\sin^{2}z\sqrt{9(1-\sin^{2}z)}}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow><mrow><mn>9</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo>⁢</mo><msqrt><mrow><mn>9</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt></mrow></mrow></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex34.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex34.m2" class="ltx_Math" alttext="\displaystyle\frac{3\cos z\,dz}{9\sin^{2}z\sqrt{9\cos^{2}z}}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow><mrow><mn>9</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo>⁢</mo><msqrt><mrow><mn>9</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></msqrt></mrow></mrow></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex35.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex35.m2" class="ltx_Math" alttext="\displaystyle\frac{3\cos z\,dz}{9\sin^{2}z\cdot 3\cos z}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow><mrow><mn>9</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mrow><mi>z</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>3</mn></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex36.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex36.m2" class="ltx_Math" alttext="\displaystyle\frac{dz}{9\sin^{2}z}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow><mrow><mn>9</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex37.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex37.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{9}\csc^{2}z\,dz" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>9</mn></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><msup><mi>csc</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">Thus,</p>
+<table id="S0.Ex38" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex38.m1" class="ltx_Math" alttext="\int\frac{1}{9}\csc^{2}z\,dz=-\frac{1}{9}\cot z+C" display="block"><mrow><mrow><mo>∫</mo><mrow><mfrac><mn>1</mn><mn>9</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><msup><mi>csc</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>9</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>cot</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Using the triangle, we can get this back into terms of <math id="S0.I1.i5.p3.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, obtaining</p>
+<table id="S0.Ex39" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex39.m1" class="ltx_Math" alttext="\int\frac{dx}{x^{2}\sqrt{9-x^{2}}}=-\frac{\sqrt{9-x^{2}}}{9x}+C" display="block"><mrow><mrow><mo>∫</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msqrt><mrow><mn>9</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><msqrt><mrow><mn>9</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mrow><mn>9</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li id="S0.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span> 
+<div id="S0.I1.i6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 6:</span> Evaluate <math id="S0.I1.i6.p1.m1" class="ltx_Math" alttext="\displaystyle\int\frac{dx}{\sqrt{4x^{2}+1}}" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><msqrt><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></mrow></mstyle></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> Notice that <math id="S0.I1.i6.p1.m2" class="ltx_Math" alttext="\sqrt{4x^{2}+1}=\sqrt{(2x)^{2}+1}" display="inline"><mrow><msqrt><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></mrow></math>. So we let <math id="S0.I1.i6.p1.m3" class="ltx_Math" alttext="2x=\tan z" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math>, <math id="S0.I1.i6.p1.m4" class="ltx_Math" alttext="2\,dx=\sec^{2}z\,dz" display="inline"><mrow><mrow><mn>2</mn><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></math> which means <math id="S0.I1.i6.p1.m5" class="ltx_Math" alttext="dx=\frac{1}{2}\sec^{2}\,dz" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></math>, and <math id="S0.I1.i6.p1.m6" class="ltx_Math" alttext="\arctan 2x=z" display="inline"><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mi>z</mi></mrow></math>.</p>
+</div>
+<div id="S0.I1.i6.p2" class="ltx_para">
+<img src="Slide28.jpg" id="S0.I1.i6.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="137" height="103" alt="[Uncaptioned image]">
+</div>
+<div id="S0.I1.i6.p3" class="ltx_para">
+<table id="S0.EGx5" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex43">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex40.m1" class="ltx_Math" alttext="\displaystyle\frac{dx}{\sqrt{(2x)^{2}+1}}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex40.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex40.m3" class="ltx_Math" alttext="\displaystyle\frac{1}{2}\frac{\sec^{2}z\,dz}{\sqrt{(\tan z)^{2}+1}}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex41.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex41.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{2}\frac{\sec^{2}z\,dz}{\sqrt{\sec^{2}z}}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><msqrt><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></msqrt></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex42.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex42.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{2}\frac{\sec^{2}z\,dz}{\sec z}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex43.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex43.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{2}\sec z\,dz" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+<table id="S0.Ex44" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex44.m1" class="ltx_Math" alttext="\frac{1}{2}\int\sec z\,dz=\frac{1}{2}\ln|\sec z+\tan z|+C" display="block"><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>∫</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>+</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Putting things back in terms of <math id="S0.I1.i6.p3.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> using the triangle,</p>
+<table id="S0.Ex45" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex45.m1" class="ltx_Math" alttext="\int\frac{dx}{\sqrt{4x^{2}+1}}=\frac{1}{2}\ln\left|\sqrt{4x^{2}+1}+2x\right|+C" display="block"><mrow><mrow><mo>∫</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><msqrt><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>|</mo><mrow><msqrt><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>|</mo></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li id="S0.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span> 
+<div id="S0.I1.i7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 7:</span> Evaluate <math id="S0.I1.i7.p1.m1" class="ltx_Math" alttext="\displaystyle\int\frac{\sqrt{x^{2}-3}}{x}\,dx" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mfrac><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></mrow></msqrt><mi>x</mi></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> Let <math id="S0.I1.i7.p1.m2" class="ltx_Math" alttext="x=\sqrt{3}\sec z" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><msqrt><mn>3</mn></msqrt><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>, <math id="S0.I1.i7.p1.m3" class="ltx_Math" alttext="dx=\sqrt{3}\sec z\tan z\,dz" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><msqrt><mn>3</mn></msqrt><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow></mrow></math>, <math id="S0.I1.i7.p1.m4" class="ltx_Math" alttext="x/\sqrt{3}=\sec z" display="inline"><mrow><mrow><mi>x</mi><mo>/</mo><msqrt><mn>3</mn></msqrt></mrow><mo>=</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></math> and <math id="S0.I1.i7.p1.m5" class="ltx_Math" alttext="\sec^{-1}(x/\sqrt{3})=z" display="inline"><mrow><mrow><msup><mi>sec</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>/</mo><msqrt><mn>3</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>z</mi></mrow></math>.</p>
+<img src="Slide29.jpg" id="S0.I1.i7.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="137" height="103" alt="[Uncaptioned image]">
+<table id="S0.EGx6" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex47">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex46.m1" class="ltx_Math" alttext="\displaystyle\frac{\sqrt{x^{2}-3}}{x}\,dx" display="inline"><mrow><mstyle displaystyle="true"><mfrac><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></mrow></msqrt><mi>x</mi></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex46.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex46.m3" class="ltx_Math" alttext="\displaystyle\frac{\sqrt{3}\sec z\tan z\sqrt{(\sqrt{3}\sec z)^{2}-3}\,dz}{%
+\sqrt{3}\sec z}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><msqrt><mn>3</mn></msqrt><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo>⁢</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msqrt><mn>3</mn></msqrt><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>3</mn></mrow></msqrt><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow><mrow><msqrt><mn>3</mn></msqrt><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex47.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex47.m2" class="ltx_Math" alttext="\displaystyle\sqrt{3}\tan^{2}z\,dz" display="inline"><mrow><msqrt><mn>3</mn></msqrt><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">Integrating,</p>
+<table id="S0.EGx7" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex50">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex48.m1" class="ltx_Math" alttext="\displaystyle\int\sqrt{3}\tan^{2}z\,dz" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msqrt><mn>3</mn></msqrt><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex48.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex48.m3" class="ltx_Math" alttext="\displaystyle\int\sqrt{3}(\sec^{2}z-1)\,dz" display="inline"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><msqrt><mn>3</mn></msqrt><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>z</mi></mrow></mrow></mrow></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex49.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex49.m2" class="ltx_Math" alttext="\displaystyle\sqrt{3}(\tan z-z)+C" display="inline"><mrow><mrow><msqrt><mn>3</mn></msqrt><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>−</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>C</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex50.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex50.m2" class="ltx_Math" alttext="\displaystyle\sqrt{3}(\sqrt{x^{2}-3}-\sec^{-1}(x/\sqrt{3}))+C" display="inline"><mrow><mrow><msqrt><mn>3</mn></msqrt><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></mrow></msqrt><mo>−</mo><mrow><msup><mi>sec</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>/</mo><msqrt><mn>3</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>C</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span> 
+<div id="S0.I1.i8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 8:</span> Evaluate</p>
+</div>
+<div id="S0.I1.i8.p2" class="ltx_para">
+<table id="S0.Ex51" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex51.m1" class="ltx_Math" alttext="\int_{0}^{1}\frac{dx}{1+x^{2}}." display="block"><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<div id="S0.I1.i8.p4" class="ltx_para">
+<p class="ltx_p">Since the integrand contains <math id="S0.I1.i8.p4.m1" class="ltx_Math" alttext="1+x^{2}" display="inline"><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math>, we use the substitution</p>
+</div>
+<div id="S0.I1.i8.p5" class="ltx_para">
+<table id="S0.Ex52" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex52.m1" class="ltx_Math" alttext="x=\tan\theta." display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p6" class="ltx_para">
+<p class="ltx_p">Then</p>
+</div>
+<div id="S0.I1.i8.p7" class="ltx_para">
+<table id="S0.Ex53" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex53.m1" class="ltx_Math" alttext="dx=\sec^{2}\theta\,d\theta" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>θ</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p8" class="ltx_para">
+<p class="ltx_p">and</p>
+</div>
+<div id="S0.I1.i8.p9" class="ltx_para">
+<table id="S0.Ex54" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex54.m1" class="ltx_Math" alttext="1+x^{2}=1+\tan^{2}\theta=\sec^{2}\theta." display="block"><mrow><mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>=</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p10" class="ltx_para">
+<p class="ltx_p">Rather than drawing a triangle, we convert the limits of integration.</p>
+</div>
+<div id="S0.I1.i8.p11" class="ltx_para">
+<p class="ltx_p">When <math id="S0.I1.i8.p11.m1" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>,</p>
+</div>
+<div id="S0.I1.i8.p12" class="ltx_para">
+<table id="S0.Ex55" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex55.m1" class="ltx_Math" alttext="\tan\theta=0\qquad\Longrightarrow\qquad\theta=0." display="block"><mrow><mrow><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo>=</mo><mrow><mn>0</mn><mspace width="2em"></mspace><mo stretchy="false">⟹</mo></mrow></mrow><mspace width="2em"></mspace><mrow><mi>θ</mi><mo>=</mo><mn>0</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p13" class="ltx_para">
+<p class="ltx_p">When <math id="S0.I1.i8.p13.m1" class="ltx_Math" alttext="x=1" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math>,</p>
+</div>
+<div id="S0.I1.i8.p14" class="ltx_para">
+<table id="S0.Ex56" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex56.m1" class="ltx_Math" alttext="\tan\theta=1\qquad\Longrightarrow\qquad\theta=\frac{\pi}{4}." display="block"><mrow><mrow><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo>=</mo><mrow><mn>1</mn><mspace width="2em"></mspace><mo stretchy="false">⟹</mo></mrow></mrow><mspace width="2em"></mspace><mrow><mi>θ</mi><mo>=</mo><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p15" class="ltx_para">
+<p class="ltx_p">Therefore,</p>
+</div>
+<div id="S0.I1.i8.p16" class="ltx_para">
+<table id="S0.Ex57" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex57.m1" class="ltx_Math" alttext="\int_{0}^{1}\frac{dx}{1+x^{2}}=\int_{0}^{\pi/4}\frac{\sec^{2}\theta}{\sec^{2}%
+\theta}\,d\theta=\int_{0}^{\pi/4}1\,d\theta." display="block"><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mrow><mi>π</mi><mo>/</mo><mn>4</mn></mrow></msubsup><mrow><mfrac><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>θ</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mrow><mi>π</mi><mo>/</mo><mn>4</mn></mrow></msubsup><mrow><mn>1</mn><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p17" class="ltx_para">
+<table id="S0.Ex58" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex58.m1" class="ltx_Math" alttext="=\left.\theta\right|_{0}^{\pi/4}=\frac{\pi}{4}." display="block"><mrow><mrow><mi></mi><mo>=</mo><msubsup><mrow><mi>θ</mi><mo>|</mo></mrow><mn>0</mn><mrow><mi>π</mi><mo>/</mo><mn>4</mn></mrow></msubsup><mo>=</mo><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+</ol>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Jun 26 15:17:34 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>
