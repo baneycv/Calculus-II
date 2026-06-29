@@ -614,4 +614,46 @@ cite                 { font-style: normal; }
 .ltx_theorem_tangentsecantstrategy .ltx_equation {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
+
+    /* ---------- Collapsible Solutions ---------- */
+
+details.solution {
+    margin: 1.25em 0;
+    border: 1px solid #b7c7d8;
+    border-radius: 8px;
+    background: #f8fbff;
+    overflow: hidden;
+}
+
+details.solution summary {
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.05em;
+    color: #0b4f94;
+    background: #e8f1fb;
+    list-style: none;
+    user-select: none;
+}
+
+details.solution summary::-webkit-details-marker {
+    display: none;
+}
+
+details.solution summary::before {
+    content: "▶ ";
+    font-size: 0.9em;
+}
+
+details.solution[open] summary::before {
+    content: "▼ ";
+}
+
+details.solution[open] summary {
+    border-bottom: 1px solid #b7c7d8;
+}
+
+.solution-body {
+    padding: 16px;
+    background: white;
 }

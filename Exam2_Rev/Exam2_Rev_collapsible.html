@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>Cross-Sectional Area</title>
+<!--Generated on Thu Jun  5 10:05:33 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<link href="../LaTeXML.css" rel="stylesheet" type="text/css"/>
+<link href="../ltx-article.css" rel="stylesheet" type="text/css"/>
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    background: #fff;
+    color: #000;
+  }
+
+  .ltx_text.ltx_font_bold,
+  .ltx_font_bold {
+    font-weight: 700 !important;
+  }
+
+  math {
+    font-size: 1em;
+  }
+
+  math[display="block"],
+  .ltx_equation math {
+    font-size: 1.05em;
+  }
+
+  .ltx_equation,
+  .displaymath,
+  div.displaymath {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1em 0 !important;
+  }
+
+  table.ltx_eqn_table,
+  .ltx_eqn_table {
+    border: none !important;
+    border-collapse: collapse !important;
+    box-shadow: none !important;
+    background: none !important;
+    width: 100%;
+  }
+
+  .ltx_eqn_table td {
+    border: none !important;
+  }
+
+  .ltx_tag_item {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  img.ltx_graphics {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 35%;
+    height: auto;
+}
+</style>
+<style>
+details.solution{margin:1em 0;border:1px solid #b7c7d8;border-radius:8px;background:#f8fbff}
+details.solution summary{cursor:pointer;padding:10px 14px;font-weight:bold;background:#e8f1fb;color:#1d4e89}
+.solution-body{padding:14px;background:white}
+</style></head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div class="ltx_para" id="p1">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252, Second Examination–Review 
+<br class="ltx_break"/></span></p>
+</div>
+<div class="ltx_para" id="p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Directions:</span> Respond to each question in the space provided, under each question. You may use the back of the page if necessary. All calculations and mathematical work must be shown and justified, including citation of well known Theorems or properties that have been used for solving the problem. Only a TI-30X (type) scientific calculator may be used on this exam. This is a closed note, closed book exam. No notes, laptops, smartwatches, mobile devices, or any other unapproved electronic device may be used while taking this exam.</p>
+<ol class="ltx_enumerate" id="S0.I1">
+<li class="ltx_item" id="S0.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i1.p1">
+<ol class="ltx_enumerate" id="S0.I1.i1.I1">
+<li class="ltx_item" id="S0.I1.i1.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i1.I1.i1.p1">
+<p class="ltx_p">Evaluate the integral: <math alttext="\displaystyle\int xe^{-3x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i1.p1.m1"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i1.I1.i1.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i1.I1.i1.p3">
+<p class="ltx_p">Use integration by parts with <math alttext="u=x" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i1.p3.m1"><mrow><mi>u</mi><mo>=</mo><mi>x</mi></mrow></math> and <math alttext="dv=e^{-3x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i1.p3.m2"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>v</mi></mrow><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math>. Then <math alttext="du=dx" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i1.p3.m3"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math> and <math alttext="v=-\frac{1}{3}e^{-3x}" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i1.p3.m4"><mrow><mi>v</mi><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow></mrow></mrow></math>.</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex1">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int xe^{-3x}\,dx=-\frac{x}{3}e^{-3x}+\frac{1}{3}\int e^{-3x}\,dx=-\frac{x}{3}%
+e^{-3x}-\frac{1}{9}e^{-3x}+C." class="ltx_Math" display="block" id="S0.Ex1.m1"><mrow><mrow><mrow><mo>∫</mo><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mrow><mo>∫</mo><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo>−</mo><mrow><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow></mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>9</mn></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex2">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int xe^{-3x}\,dx=-\frac{e^{-3x}(3x+1)}{9}+C.}" class="ltx_math_unparsed" display="block" id="S0.Ex2.m1"><menclose notation="box"><mrow><mo>∫</mo><mi>x</mi><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mi>d</mi><mi>x</mi><mo rspace="0em">=</mo><mo lspace="0em">−</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>9</mn></mfrac><mo>+</mo><mi>C</mi><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+<li class="ltx_item" id="S0.I1.i1.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i1.I1.i2.p1">
+<p class="ltx_p">Using your result from part (a), evaluate <math alttext="\displaystyle\int_{0}^{\infty}xe^{-3x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i2.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math> to determine whether it converges or diverges. 
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i1.I1.i2.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i1.I1.i2.p3">
+<p class="ltx_p">This is an improper integral, so</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex3">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{0}^{\infty}xe^{-3x}\,dx=\lim_{b\to\infty}\int_{0}^{b}xe^{-3x}\,dx." class="ltx_Math" display="block" id="S0.Ex3.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>b</mi></msubsup><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Using part (a),</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex4">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{0}^{b}xe^{-3x}\,dx=\left[-\frac{e^{-3x}(3x+1)}{9}\right]_{0}^{b}=-\frac{%
+e^{-3b}(3b+1)}{9}+\frac{1}{9}." class="ltx_Math" display="block" id="S0.Ex4.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>b</mi></msubsup><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><msubsup><mrow><mo>[</mo><mrow><mo>−</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>9</mn></mfrac></mrow><mo>]</mo></mrow><mn>0</mn><mi>b</mi></msubsup><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>b</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>9</mn></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mn>9</mn></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since <math alttext="\displaystyle\lim_{b\to\infty}e^{-3b}(3b+1)=0" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i2.p3.m1"><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>b</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, we get</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex5">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int_{0}^{\infty}xe^{-3x}\,dx=\frac{1}{9}.}" class="ltx_math_unparsed" display="block" id="S0.Ex5.m1"><menclose notation="box"><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mi>x</mi><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>9</mn></mfrac><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus the improper integral converges.</p>
+</div></div></details>
+
+</li>
+</ol>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i2.p1">
+<ol class="ltx_enumerate" id="S0.I1.i2.I1">
+<li class="ltx_item" id="S0.I1.i2.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i2.I1.i1.p1">
+<p class="ltx_p">Evaluate the integral: <math alttext="\displaystyle\int\frac{\ln x}{x^{3}}\,dx" class="ltx_Math" display="inline" id="S0.I1.i2.I1.i1.p1.m1"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i2.I1.i1.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i2.I1.i1.p3">
+<p class="ltx_p">Use integration by parts with <math alttext="u=\ln x" class="ltx_Math" display="inline" id="S0.I1.i2.I1.i1.p3.m1"><mrow><mi>u</mi><mo>=</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></math> and <math alttext="dv=x^{-3}\,dx" class="ltx_Math" display="inline" id="S0.I1.i2.I1.i1.p3.m2"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>v</mi></mrow><mo>=</mo><mrow><msup><mi>x</mi><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math>. Then <math alttext="du=\frac{1}{x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i2.I1.i1.p3.m3"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math> and <math alttext="v=-\frac{1}{2x^{2}}" class="ltx_Math" display="inline" id="S0.I1.i2.I1.i1.p3.m4"><mrow><mi>v</mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow></math>.</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex6">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int\frac{\ln x}{x^{3}}\,dx=-\frac{\ln x}{2x^{2}}-\int\left(-\frac{1}{2x^{2}}%
+\right)\frac{1}{x}\,dx." class="ltx_Math" display="block" id="S0.Ex6.m1"><mrow><mrow><mrow><mo>∫</mo><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo rspace="0.055em">−</mo><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">So</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex7">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int\frac{\ln x}{x^{3}}\,dx=-\frac{\ln x}{2x^{2}}+\frac{1}{2}\int x^{-3}\,dx=-%
+\frac{\ln x}{2x^{2}}-\frac{1}{4x^{2}}+C." class="ltx_Math" display="block" id="S0.Ex7.m1"><mrow><mrow><mrow><mo>∫</mo><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>∫</mo><mrow><msup><mi>x</mi><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo>−</mo><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mi>C</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex8">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int\frac{\ln x}{x^{3}}\,dx=-\frac{\ln x}{2x^{2}}-\frac{1}{4x^{2}}+C.}" class="ltx_math_unparsed" display="block" id="S0.Ex8.m1"><menclose notation="box"><mrow><mo>∫</mo><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mi>d</mi><mi>x</mi><mo rspace="0em">=</mo><mo lspace="0em">−</mo><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi>C</mi><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+<li class="ltx_item" id="S0.I1.i2.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i2.I1.i2.p1">
+<p class="ltx_p">Using your result from part (a), evaluate <math alttext="\displaystyle\int_{0}^{1}\frac{\ln x}{x^{3}}\,dx" class="ltx_Math" display="inline" id="S0.I1.i2.I1.i2.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math> to determine whether it converges or diverges. 
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i2.I1.i2.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i2.I1.i2.p3">
+<p class="ltx_p">This is improper because the integrand is undefined at <math alttext="x=0" class="ltx_Math" display="inline" id="S0.I1.i2.I1.i2.p3.m1"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>. Thus</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex9">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{0}^{1}\frac{\ln x}{x^{3}}\,dx=\lim_{a\to 0^{+}}\int_{a}^{1}\frac{\ln x}{%
+x^{3}}\,dx." class="ltx_Math" display="block" id="S0.Ex9.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>a</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><msubsup><mo>∫</mo><mi>a</mi><mn>1</mn></msubsup><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Using part (a),</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex10">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{a}^{1}\frac{\ln x}{x^{3}}\,dx=\left[-\frac{\ln x}{2x^{2}}-\frac{1}{4x^{2%
+}}\right]_{a}^{1}=-\frac{1}{4}+\frac{\ln a}{2a^{2}}+\frac{1}{4a^{2}}." class="ltx_Math" display="block" id="S0.Ex10.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mn>1</mn></msubsup><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><msubsup><mrow><mo>[</mo><mrow><mrow><mo>−</mo><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>]</mo></mrow><mi>a</mi><mn>1</mn></msubsup><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">As <math alttext="a\to 0^{+}" class="ltx_Math" display="inline" id="S0.I1.i2.I1.i2.p3.m2"><mrow><mi>a</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></math>,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex11">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\frac{\ln a}{2a^{2}}+\frac{1}{4a^{2}}=\frac{2\ln a+1}{4a^{2}}\to-\infty." class="ltx_Math" display="block" id="S0.Ex11.m1"><mrow><mrow><mrow><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>=</mo><mfrac><mrow><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>a</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex12">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int_{0}^{1}\frac{\ln x}{x^{3}}\,dx\text{ diverges}.}" class="ltx_math_unparsed" display="block" id="S0.Ex12.m1"><menclose notation="box"><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mi>d</mi><mi>x</mi><mtext> diverges</mtext><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+</ol>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i3.p1">
+<p class="ltx_p">Evaluate <math alttext="\displaystyle\int\sin^{3}x\cos^{3}x\,dx" class="ltx_Math" display="inline" id="S0.I1.i3.p1.m1"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i3.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i3.p3">
+<p class="ltx_p">Since the power of cosine is odd, save one factor of <math alttext="\cos x" class="ltx_Math" display="inline" id="S0.I1.i3.p3.m1"><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></math> and rewrite the remaining power of cosine.</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex13">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int\sin^{3}x\cos^{3}x\,dx=\int\sin^{3}x\cos^{2}x\cos x\,dx=\int\sin^{3}x(1-%
+\sin^{2}x)\cos x\,dx." class="ltx_Math" display="block" id="S0.Ex13.m1"><mrow><mrow><mrow><mo>∫</mo><mrow><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mrow><msup><mi>sin</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Let <math alttext="u=\sin x" class="ltx_Math" display="inline" id="S0.I1.i3.p3.m2"><mrow><mi>u</mi><mo>=</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></math>. Then <math alttext="du=\cos x\,dx" class="ltx_Math" display="inline" id="S0.I1.i3.p3.m3"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math>.</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex14">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int u^{3}(1-u^{2})\,du=\int(u^{3}-u^{5})\,du=\frac{u^{4}}{4}-\frac{u^{6}}{6}+C." class="ltx_Math" display="block" id="S0.Ex14.m1"><mrow><mrow><mrow><mo>∫</mo><mrow><msup><mi>u</mi><mn>3</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>u</mi><mn>3</mn></msup><mo>−</mo><msup><mi>u</mi><mn>5</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><msup><mi>u</mi><mn>4</mn></msup><mn>4</mn></mfrac><mo>−</mo><mfrac><msup><mi>u</mi><mn>6</mn></msup><mn>6</mn></mfrac></mrow><mo>+</mo><mi>C</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex15">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int\sin^{3}x\cos^{3}x\,dx=\frac{\sin^{4}x}{4}-\frac{\sin^{6}x}{6}+C.}" class="ltx_math_unparsed" display="block" id="S0.Ex15.m1"><menclose notation="box"><mrow><mo>∫</mo><msup><mi>sin</mi><mn>3</mn></msup><mi>x</mi><msup><mi>cos</mi><mn>3</mn></msup><mi>x</mi><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><mrow><msup><mi>sin</mi><mn>4</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>4</mn></mfrac><mo>−</mo><mfrac><mrow><msup><mi>sin</mi><mn>6</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>6</mn></mfrac><mo>+</mo><mi>C</mi><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+<li class="ltx_item" id="S0.I1.i4" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i4.p1">
+<p class="ltx_p">Evaluate <math alttext="\displaystyle\int\tan^{3}x\sec^{3}x\,dx" class="ltx_Math" display="inline" id="S0.I1.i4.p1.m1"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i4.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i4.p3">
+<p class="ltx_p">Save a factor of <math alttext="\sec x\tan x" class="ltx_Math" display="inline" id="S0.I1.i4.p3.m1"><mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></math> because <math alttext="\frac{d}{dx}(\sec x)=\sec x\tan x" class="ltx_Math" display="inline" id="S0.I1.i4.p3.m2"><mrow><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math>.</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex16">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int\tan^{3}x\sec^{3}x\,dx=\int\tan^{2}x\sec^{2}x(\sec x\tan x)\,dx." class="ltx_Math" display="block" id="S0.Ex16.m1"><mrow><mrow><mrow><mo>∫</mo><mrow><mrow><msup><mi>tan</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Let <math alttext="u=\sec x" class="ltx_Math" display="inline" id="S0.I1.i4.p3.m3"><mrow><mi>u</mi><mo>=</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></math>. Then <math alttext="du=\sec x\tan x\,dx" class="ltx_Math" display="inline" id="S0.I1.i4.p3.m4"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></math> and <math alttext="\tan^{2}x=\sec^{2}x-1=u^{2}-1" class="ltx_Math" display="inline" id="S0.I1.i4.p3.m5"><mrow><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></mrow></math>.</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex17">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int(u^{2}-1)u^{2}\,du=\int(u^{4}-u^{2})\,du=\frac{u^{5}}{5}-\frac{u^{3}}{3}+C." class="ltx_Math" display="block" id="S0.Ex17.m1"><mrow><mrow><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>u</mi><mn>4</mn></msup><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><msup><mi>u</mi><mn>5</mn></msup><mn>5</mn></mfrac><mo>−</mo><mfrac><msup><mi>u</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow><mo>+</mo><mi>C</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex18">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int\tan^{3}x\sec^{3}x\,dx=\frac{\sec^{5}x}{5}-\frac{\sec^{3}x}{3}+C.}" class="ltx_math_unparsed" display="block" id="S0.Ex18.m1"><menclose notation="box"><mrow><mo>∫</mo><msup><mi>tan</mi><mn>3</mn></msup><mi>x</mi><msup><mi>sec</mi><mn>3</mn></msup><mi>x</mi><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><mrow><msup><mi>sec</mi><mn>5</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>5</mn></mfrac><mo>−</mo><mfrac><mrow><msup><mi>sec</mi><mn>3</mn></msup><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mn>3</mn></mfrac><mo>+</mo><mi>C</mi><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+<li class="ltx_item" id="S0.I1.i5" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i5.p1">
+<p class="ltx_p">Evaluate <math alttext="\displaystyle\int\frac{dx}{x^{2}\sqrt{x^{2}+4}}\,dx" class="ltx_Math" display="inline" id="S0.I1.i5.p1.m1"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math>. 
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i5.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i5.p3">
+<p class="ltx_p">Use <math alttext="x=2\tan z" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m1"><mrow><mi>x</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math> which means <math alttext="\displaystyle z=\arctan\left(\frac{x}{2}\right)" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m2"><mrow><mi>z</mi><mo>=</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>x</mi><mn>2</mn></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></math>. Then <math alttext="dx=2\sec^{2}z\,dz" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m3"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></math> and <math alttext="\sqrt{x^{2}+4}=2\sec z" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m4"><mrow><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>.
+The associated right triangle is shown below:</p>
+<img alt="[Uncaptioned image]" class="ltx_graphics ltx_centering ltx_img_landscape" height="140" id="S0.I1.i5.p3.g1" src="ex2rev_im1.jpg" width="210"/>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex19">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int\frac{dx}{x^{2}\sqrt{x^{2}+4}}=\int\frac{2\sec^{2}z}{4\tan^{2}z\cdot 2\sec
+z%
+}\,dz=\frac{1}{4}\int\frac{\sec z}{\tan^{2}z}\,dz." class="ltx_Math" display="block" id="S0.Ex19.m1"><mrow><mrow><mrow><mo>∫</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></mrow></mfrac></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mfrac><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mrow><mn>4</mn><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>2</mn></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>z</mi></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><mo>∫</mo><mrow><mfrac><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since <math alttext="\displaystyle\frac{\sec z}{\tan^{2}z}=\frac{\cos z}{\sin^{2}z}=\cot z\csc z" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m5"><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mrow><mi>cot</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>csc</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex20">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\frac{1}{4}\int\cot z\csc z\,dz=-\frac{1}{4}\csc z+C." class="ltx_Math" display="block" id="S0.Ex20.m1"><mrow><mrow><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><mo>∫</mo><mrow><mrow><mi>cot</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>csc</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>csc</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">From the triangle, <math alttext="\displaystyle\sin z=\frac{x}{\sqrt{x^{2}+4}}" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m6"><mrow><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>x</mi><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></mfrac></mstyle></mrow></math>, so <math alttext="\displaystyle\csc z=\frac{\sqrt{x^{2}+4}}{x}" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m7"><mrow><mrow><mi>csc</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt><mi>x</mi></mfrac></mstyle></mrow></math>.</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex21">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int\frac{dx}{x^{2}\sqrt{x^{2}+4}}=-\frac{\sqrt{x^{2}+4}}{4x}+C.}" class="ltx_math_unparsed" display="block" id="S0.Ex21.m1"><menclose notation="box"><mrow><mo>∫</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt></mrow></mfrac><mo rspace="0em">=</mo><mo lspace="0em">−</mo><mfrac><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></msqrt><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>+</mo><mi>C</mi><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+<li class="ltx_item" id="S0.I1.i6" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i6.p1">
+<p class="ltx_p">Evaluate <math alttext="\displaystyle\int\frac{\sqrt{x^{2}-9}}{x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i6.p1.m1"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mfrac><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow></msqrt><mi>x</mi></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math>.
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i6.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i6.p3">
+<p class="ltx_p">Use <math alttext="x=3\sec z" class="ltx_Math" display="inline" id="S0.I1.i6.p3.m1"><mrow><mi>x</mi><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math> which means <math alttext="\displaystyle z=\operatorname{arcsec}\left(\frac{x}{3}\right)" class="ltx_Math" display="inline" id="S0.I1.i6.p3.m2"><mrow><mi>z</mi><mo>=</mo><mrow><mi>arcsec</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>x</mi><mn>3</mn></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></math>. Then <math alttext="dx=3\sec z\tan z\,dz" class="ltx_Math" display="inline" id="S0.I1.i6.p3.m3"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></math> and <math alttext="\sqrt{x^{2}-9}=3\tan z" class="ltx_Math" display="inline" id="S0.I1.i6.p3.m4"><mrow><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow></msqrt><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mrow></math>.
+The associated right triangle is shown below:</p>
+<img alt="[Uncaptioned image]" class="ltx_graphics ltx_centering ltx_img_landscape" height="157" id="S0.I1.i6.p3.g1" src="ex2rev_im2.jpg" width="210"/>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex22">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int\frac{\sqrt{x^{2}-9}}{x}\,dx=\int\frac{3\tan z}{3\sec z}\cdot 3\sec z\tan z%
+\,dz=3\int\tan^{2}z\,dz." class="ltx_Math" display="block" id="S0.Ex22.m1"><mrow><mrow><mrow><mo>∫</mo><mrow><mfrac><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow></msqrt><mi>x</mi></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mrow><mfrac><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>3</mn></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sec</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><mo>∫</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since <math alttext="\tan^{2}z=\sec^{2}z-1" class="ltx_Math" display="inline" id="S0.I1.i6.p3.m5"><mrow><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>=</mo><mrow><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex23">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="3\int\tan^{2}z\,dz=3\int(\sec^{2}z-1)\,dz=3\tan z-3z+C." class="ltx_Math" display="block" id="S0.Ex23.m1"><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mrow><mo>∫</mo><mrow><msup><mi>tan</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mrow><mi>z</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>sec</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>z</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Back-substitute: <math alttext="3\tan z=\sqrt{x^{2}-9}" class="ltx_Math" display="inline" id="S0.I1.i6.p3.m6"><mrow><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>z</mi></mrow></mrow><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow></msqrt></mrow></math> and <math alttext="z=\operatorname{arcsec}\left(\frac{|x|}{3}\right)" class="ltx_Math" display="inline" id="S0.I1.i6.p3.m7"><mrow><mi>z</mi><mo>=</mo><mrow><mi>arcsec</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mn>3</mn></mfrac><mo>)</mo></mrow></mrow></mrow></math>.</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex24">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int\frac{\sqrt{x^{2}-9}}{x}\,dx=\sqrt{x^{2}-9}-3\operatorname{arcsec}%
+\left(\frac{|x|}{3}\right)+C.}" class="ltx_math_unparsed" display="block" id="S0.Ex24.m1"><menclose notation="box"><mrow><mo>∫</mo><mfrac><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow></msqrt><mi>x</mi></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow></msqrt><mo>−</mo><mn>3</mn><mi>arcsec</mi><mrow><mo>(</mo><mfrac><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mn>3</mn></mfrac><mo>)</mo></mrow><mo>+</mo><mi>C</mi><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+<li class="ltx_item" id="S0.I1.i7" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i7.p1">
+<p class="ltx_p">Evaluate <math alttext="\displaystyle\int\frac{2x+6}{x^{2}+2x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i7.p1.m1"><mstyle displaystyle="true"><mrow><mo>∫</mo><mrow><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mstyle></math>. 
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i7.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i7.p3">
+<p class="ltx_p">First factor the denominator:</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex25">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\frac{2x+6}{x^{2}+2x}=\frac{2x+6}{x(x+2)}." class="ltx_Math" display="block" id="S0.Ex25.m1"><mrow><mrow><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Use partial fractions:</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex26">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\frac{2x+6}{x(x+2)}=\frac{A}{x}+\frac{B}{x+2}." class="ltx_Math" display="block" id="S0.Ex26.m1"><mrow><mrow><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mrow><mfrac><mi>A</mi><mi>x</mi></mfrac><mo>+</mo><mfrac><mi>B</mi><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Then</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex27">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="2x+6=A(x+2)+Bx=(A+B)x+2A." class="ltx_Math" display="block" id="S0.Ex27.m1"><mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>A</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">So <math alttext="2A=6" class="ltx_Math" display="inline" id="S0.I1.i7.p3.m1"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mn>6</mn></mrow></math>, giving <math alttext="A=3" class="ltx_Math" display="inline" id="S0.I1.i7.p3.m2"><mrow><mi>A</mi><mo>=</mo><mn>3</mn></mrow></math>, and <math alttext="A+B=2" class="ltx_Math" display="inline" id="S0.I1.i7.p3.m3"><mrow><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo>=</mo><mn>2</mn></mrow></math>, giving <math alttext="B=-1" class="ltx_Math" display="inline" id="S0.I1.i7.p3.m4"><mrow><mi>B</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>. Therefore,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex28">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int\frac{2x+6}{x^{2}+2x}\,dx=\int\left(\frac{3}{x}-\frac{1}{x+2}\right)\,dx." class="ltx_Math" display="block" id="S0.Ex28.m1"><mrow><mrow><mrow><mo>∫</mo><mrow><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo>(</mo><mrow><mfrac><mn>3</mn><mi>x</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex29">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int\frac{2x+6}{x^{2}+2x}\,dx=3\ln|x|-\ln|x+2|+C.}" class="ltx_math_unparsed" display="block" id="S0.Ex29.m1"><menclose notation="box"><mrow><mo>∫</mo><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><mn>3</mn><mi>ln</mi><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>x</mi><mo fence="false" stretchy="false">|</mo><mo lspace="0em">−</mo><mi>ln</mi><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo fence="false" stretchy="false">|</mo><mo lspace="0em">+</mo><mi>C</mi><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+<li class="ltx_item" id="S0.I1.i8" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i8.p1">
+<p class="ltx_p">Evaluate <math alttext="\displaystyle\int\frac{dx}{x(x-3)^{2}}" class="ltx_Math" display="inline" id="S0.I1.i8.p1.m1"><mstyle displaystyle="true"><mrow><mo>∫</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></mstyle></math>
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i8.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i8.p3">
+<p class="ltx_p">Use partial fractions:</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex30">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\frac{1}{x(x-3)^{2}}=\frac{A}{x}+\frac{B}{x-3}+\frac{C}{(x-3)^{2}}." class="ltx_Math" display="block" id="S0.Ex30.m1"><mrow><mrow><mfrac><mn>1</mn><mrow><mi>x</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mrow><mfrac><mi>A</mi><mi>x</mi></mfrac><mo>+</mo><mfrac><mi>B</mi><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow></mfrac><mo>+</mo><mfrac><mi>C</mi><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Multiplying by <math alttext="x(x-3)^{2}" class="ltx_Math" display="inline" id="S0.I1.i8.p3.m1"><mrow><mi>x</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math> gives</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex31">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="1=A(x-3)^{2}+Bx(x-3)+Cx." class="ltx_Math" display="block" id="S0.Ex31.m1"><mrow><mrow><mn>1</mn><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Let <math alttext="x=3" class="ltx_Math" display="inline" id="S0.I1.i8.p3.m2"><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></math>, we find that <math alttext="C=\frac{1}{3}" class="ltx_Math" display="inline" id="S0.I1.i8.p3.m3"><mrow><mi>C</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>. Similarly, letting <math alttext="x=0" class="ltx_Math" display="inline" id="S0.I1.i8.p3.m4"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>, we get that <math alttext="1=9A" class="ltx_Math" display="inline" id="S0.I1.i8.p3.m5"><mrow><mn>1</mn><mo>=</mo><mrow><mn>9</mn><mo>⁢</mo><mi>A</mi></mrow></mrow></math>, so that <math alttext="A=\frac{1}{9}." class="ltx_Math" display="inline" id="S0.I1.i8.p3.m6"><mrow><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>9</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math> We can see, that since there is no <math alttext="x^{2}" class="ltx_Math" display="inline" id="S0.I1.i8.p3.m7"><msup><mi>x</mi><mn>2</mn></msup></math> term, this when we expand, we get <math alttext="1=Ax^{2}+...+Bx^{2}+..." class="ltx_Math" display="inline" id="S0.I1.i8.p3.m8"><mrow><mn>1</mn><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>. Thus, <math alttext="A+B=0" class="ltx_Math" display="inline" id="S0.I1.i8.p3.m9"><mrow><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>, so <math alttext="B=-\frac{1}{9}" class="ltx_Math" display="inline" id="S0.I1.i8.p3.m10"><mrow><mi>B</mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>9</mn></mfrac></mrow></mrow></math>. Thus,</p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i8.p4">
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex32">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="A=\frac{1}{9},\qquad B=-\frac{1}{9},\qquad C=\frac{1}{3}." class="ltx_Math" display="block" id="S0.Ex32.m1"><mrow><mrow><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>9</mn></mfrac></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mi>B</mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>9</mn></mfrac></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mi>C</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex33">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int\frac{dx}{x(x-3)^{2}}=\int\left(\frac{1}{9x}-\frac{1}{9(x-3)}+\frac{1}{3(x%
+-3)^{2}}\right)\,dx." class="ltx_Math" display="block" id="S0.Ex33.m1"><mrow><mrow><mrow><mo>∫</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow><mo rspace="0.111em">=</mo><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo>(</mo><mrow><mrow><mfrac><mn>1</mn><mrow><mn>9</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mn>9</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">So</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex34">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\int\frac{dx}{x(x-3)^{2}}=\frac{1}{9}\ln|x|-\frac{1}{9}\ln|x-3|-\frac{1%
+}{3(x-3)}+C.}" class="ltx_math_unparsed" display="block" id="S0.Ex34.m1"><menclose notation="box"><mrow><mo>∫</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>9</mn></mfrac><mi>ln</mi><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>x</mi><mo fence="false" stretchy="false">|</mo><mo lspace="0em">−</mo><mfrac><mn>1</mn><mn>9</mn></mfrac><mi>ln</mi><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo fence="false" stretchy="false">|</mo><mo lspace="0em">−</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>+</mo><mi>C</mi><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+
+</li>
+<li class="ltx_item" id="S0.I1.i9" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i9.p1">
+<p class="ltx_p">Evaluate <math alttext="\displaystyle\lim_{x\rightarrow 0^{+}}x^{2x}" class="ltx_Math" display="inline" id="S0.I1.i9.p1.m1"><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></math>
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i9.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i9.p3">
+<p class="ltx_p">This has the indeterminate form <math alttext="0^{0}" class="ltx_Math" display="inline" id="S0.I1.i9.p3.m1"><msup><mn>0</mn><mn>0</mn></msup></math>. Let</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex35">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="y=x^{2x}." class="ltx_Math" display="block" id="S0.Ex35.m1"><mrow><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Then</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex36">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\ln y=\ln(x^{2x})=2x\ln x." class="ltx_Math" display="block" id="S0.Ex36.m1"><mrow><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow><mo>=</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Now evaluate</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex37">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\lim_{x\to 0^{+}}2x\ln x." class="ltx_Math" display="block" id="S0.Ex37.m1"><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Rewrite as a quotient:</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex38">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="2x\ln x=\frac{2\ln x}{1/x}." class="ltx_Math" display="block" id="S0.Ex38.m1"><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mfrac><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This is an <math alttext="\frac{-\infty}{\infty}" class="ltx_Math" display="inline" id="S0.I1.i9.p3.m2"><mfrac><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></mfrac></math> form, so by L’Hospital’s Rule,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex39">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\lim_{x\to 0^{+}}\frac{2\ln x}{1/x}=\lim_{x\to 0^{+}}\frac{2/x}{-1/x^{2}}=\lim%
+_{x\to 0^{+}}(-2x)=0." class="ltx_Math" display="block" id="S0.Ex39.m1"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mn>2</mn><mo>/</mo><mi>x</mi></mrow><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex40">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\lim_{x\to 0^{+}}\ln y=0," class="ltx_Math" display="block" id="S0.Ex40.m1"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">so</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex41">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\lim_{x\to 0^{+}}x^{2x}=e^{0}=1.}" class="ltx_math_unparsed" display="block" id="S0.Ex41.m1"><menclose notation="box"><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo>=</mo><msup><mi>e</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+<li class="ltx_item" id="S0.I1.i10" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span>
+<div class="ltx_para ltx_noindent" id="S0.I1.i10.p1">
+<p class="ltx_p">Evaluate <math alttext="\displaystyle\lim_{x\rightarrow 0^{+}}x\ln x" class="ltx_Math" display="inline" id="S0.I1.i10.p1.m1"><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></mrow></math>
+<br class="ltx_break"/></p>
+</div>
+<details class="solution"><summary><strong>Solution</strong></summary><div class="solution-body"><div class="ltx_para ltx_noindent" id="S0.I1.i10.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div><div class="ltx_para ltx_noindent" id="S0.I1.i10.p3">
+<p class="ltx_p">This has the indeterminate form <math alttext="0\cdot(-\infty)" class="ltx_Math" display="inline" id="S0.I1.i10.p3.m1"><mrow><mn>0</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math>. Rewrite it as a quotient:</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex42">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="x\ln x=\frac{\ln x}{1/x}." class="ltx_Math" display="block" id="S0.Ex42.m1"><mrow><mrow><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This is an <math alttext="\frac{-\infty}{\infty}" class="ltx_Math" display="inline" id="S0.I1.i10.p3.m2"><mfrac><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></mfrac></math> form, so by L’Hospital’s Rule,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex43">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\lim_{x\to 0^{+}}\frac{\ln x}{1/x}=\lim_{x\to 0^{+}}\frac{1/x}{-1/x^{2}}=\lim_%
+{x\to 0^{+}}(-x)=0." class="ltx_Math" display="block" id="S0.Ex43.m1"><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mfrac><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore,</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex44">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\boxed{\lim_{x\to 0^{+}}x\ln x=0.}" class="ltx_math_unparsed" display="block" id="S0.Ex44.m1"><menclose notation="box"><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mi>x</mi><mi>ln</mi><mi>x</mi><mo>=</mo><mn>0</mn><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div></div></details>
+
+</li>
+</ol>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Mon Jun 29 17:35:02 2026 by <a class="ltx_LaTeXML_logo" href="http://dlmf.nist.gov/LaTeXML/"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img alt="Mascot Sammy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="/></a>
+</div></footer>
+</div>
+</body>
+</html>
