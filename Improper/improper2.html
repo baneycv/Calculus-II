@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>Improper Integrals</title>
+<!--Generated on Thu Jun  5 10:05:33 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<link href="../LaTeXML.css" rel="stylesheet" type="text/css"/>
+<link href="../ltx-article.css" rel="stylesheet" type="text/css"/>
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    background: #fff;
+    color: #000;
+  }
+
+  .ltx_text.ltx_font_bold,
+  .ltx_font_bold {
+    font-weight: 700 !important;
+  }
+
+  math {
+    font-size: 1em;
+  }
+
+  math[display="block"],
+  .ltx_equation math {
+    font-size: 1.05em;
+  }
+
+  .ltx_equation,
+  .displaymath,
+  div.displaymath {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1em 0 !important;
+  }
+
+  table.ltx_eqn_table,
+  .ltx_eqn_table {
+    border: none !important;
+    border-collapse: collapse !important;
+    box-shadow: none !important;
+    background: none !important;
+    width: 100%;
+  }
+
+  .ltx_eqn_table td {
+    border: none !important;
+  }
+
+  .ltx_tag_item {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  img.ltx_graphics {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 35%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div class="ltx_para" id="p1">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252, 8.8 Improper Integrals</span></p>
+</div>
+<div class="ltx_para" id="p2">
+<ol class="ltx_enumerate" id="S0.I1">
+<li class="ltx_item" id="S0.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span>
+<div class="ltx_para" id="S0.I1.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">The First Fundamental Theorem of Calculus</span> There are essentially two parts of the Fundamental Theorem of Calculus. If a function <math alttext="f" class="ltx_Math" display="inline" id="S0.I1.i1.p1.m1"><mi>f</mi></math> is <span class="ltx_text ltx_font_italic">continuous</span> on the <span class="ltx_text ltx_font_italic">closed interval</span> <math alttext="[a,b]" class="ltx_Math" display="inline" id="S0.I1.i1.p1.m2"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math>, and <math alttext="F" class="ltx_Math" display="inline" id="S0.I1.i1.p1.m3"><mi>F</mi></math> is the antiderivative of <math alttext="f" class="ltx_Math" display="inline" id="S0.I1.i1.p1.m4"><mi>f</mi></math> on the interval <math alttext="[a,b]" class="ltx_Math" display="inline" id="S0.I1.i1.p1.m5"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math>, then</p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex1">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{a}^{b}f(x)\,dx=F(b)-F(a)." class="ltx_Math" display="block" id="S0.Ex1.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This theorem raises the question: what happens if the limits of integration are infinite, that is, the interval is of infinite length, or if <math alttext="f" class="ltx_Math" display="inline" id="S0.I1.i1.p1.m6"><mi>f</mi></math> has an infinite discontinuity, that is, a vertical asymptote, at one of the bounds of integration? If either situation occurs, the integral is called an <span class="ltx_text ltx_font_bold">improper integral</span>.</p>
+</div>
+<div class="ltx_para" id="S0.I1.i1.p2">
+<ol class="ltx_enumerate" id="S0.I1.i1.I1">
+<li class="ltx_item" id="S0.I1.i1.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span>
+<div class="ltx_para" id="S0.I1.i1.I1.i1.p1">
+<p class="ltx_p">Consider the integral <math alttext="\displaystyle\int_{1}^{\infty}\frac{1}{x^{2}}\,dx" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i1.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math>. This integral is improper because the interval is not bounded. In order to evaluate this integral, we create a finite boundary at the right and evaluate the integral using the Fundamental Theorem of Calculus. After that, we permit the bound to go to infinity.</p>
+</div>
+<figure class="ltx_figure" id="S0.F1">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1"><img alt="Graph of the function one over x squared. The curve decreases as x increases and approaches the x-axis. The shaded region under the curve extends from x equals one to x equals b and represents the area under the curve from one to b. The graph illustrates the improper integral with lower limit one and upper limit b of one over x squared with respect to x. Below the graph, b approaches infinity, indicating that the upper limit of integration increases without bound." class="ltx_graphics ltx_centering ltx_figure_panel ltx_img_landscape" height="135" id="S0.F1.g1" src="Slide63.jpg" width="180"/></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>The area under <math alttext="y=1/x^{2}" class="ltx_Math" display="inline" id="S0.F1.m3"><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></math> from <math alttext="x=1" class="ltx_Math" display="inline" id="S0.F1.m4"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math> to a moving upper bound.</figcaption>
+</figure>
+<div class="ltx_para" id="S0.I1.i1.I1.i1.p2">
+<p class="ltx_p">Hence, we have that</p>
+<table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx1">
+<tbody id="S0.Ex2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math alttext="\displaystyle\int_{1}^{\infty}\frac{1}{x^{2}}\,dx" class="ltx_Math" display="inline" id="S0.Ex2.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\int_{1}^{b}\frac{1}{x^{2}}\,dx" class="ltx_Math" display="inline" id="S0.Ex2.m2"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi>b</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\left.-\frac{1}{x}\right|_{1}^{b}" class="ltx_Math" display="inline" id="S0.Ex3.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo lspace="0em">−</mo><msubsup><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle><mo>|</mo></mrow><mn>1</mn><mi>b</mi></msubsup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\left(1-\frac{1}{b}\right)" class="ltx_Math" display="inline" id="S0.Ex4.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>b</mi></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=1." class="ltx_Math" display="inline" id="S0.Ex5.m1"><mrow><mrow><mi></mi><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i1.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span>
+<div class="ltx_para" id="S0.I1.i1.I1.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Definition of Improper Integral with Infinite Integration Limits</span></p>
+</div>
+<div class="ltx_theorem ltx_theorem_definition" id="Thmdefinitionx1">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Definition</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div class="ltx_para" id="Thmdefinitionx1.p1">
+<ul class="ltx_itemize" id="S0.I1.i1.I1.i2.I1">
+<li class="ltx_item" id="S0.I1.i1.I1.i2.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S0.I1.i1.I1.i2.I1.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="f" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i2.I1.i1.p1.m1"><mi>f</mi></math><span class="ltx_text ltx_font_italic"> is continuous on the interval </span><math alttext="[a,\infty)" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i2.I1.i1.p1.m2"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></math><span class="ltx_text ltx_font_italic">, then</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex6">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{a}^{\infty}f(x)\,dx=\lim_{b\to\infty}\int_{a}^{b}f(x)\,dx." class="ltx_Math" display="block" id="S0.Ex6.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i1.I1.i2.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S0.I1.i1.I1.i2.I1.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="f" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i2.I1.i2.p1.m1"><mi>f</mi></math><span class="ltx_text ltx_font_italic"> is continuous on the interval </span><math alttext="(-\infty,b]" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i2.I1.i2.p1.m2"><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math><span class="ltx_text ltx_font_italic">, then</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex7">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{-\infty}^{b}f(x)\,dx=\lim_{a\to-\infty}\int_{a}^{b}f(x)\,dx." class="ltx_Math" display="block" id="S0.Ex7.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>a</mi><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i1.I1.i2.I1.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S0.I1.i1.I1.i2.I1.i3.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="f" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i2.I1.i3.p1.m1"><mi>f</mi></math><span class="ltx_text ltx_font_italic"> is continuous on the interval </span><math alttext="(-\infty,\infty)" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i2.I1.i3.p1.m2"><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></math><span class="ltx_text ltx_font_italic">, then, for any real number </span><math alttext="c" class="ltx_Math" display="inline" id="S0.I1.i1.I1.i2.I1.i3.p1.m3"><mi>c</mi></math><span class="ltx_text ltx_font_italic">, we have that</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex8">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{-\infty}^{\infty}f(x)\,dx=\int_{-\infty}^{c}f(x)\,dx+\int_{c}^{\infty}f(%
+x)\,dx." class="ltx_Math" display="block" id="S0.Ex8.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi>c</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.055em">+</mo><mrow><msubsup><mo>∫</mo><mi>c</mi><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i1.I1.i2.I1.i4" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S0.I1.i1.I1.i2.I1.i4.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If the improper integral has a finite limit, the integral is said to </span><span class="ltx_text ltx_font_bold ltx_font_italic">converge</span><span class="ltx_text ltx_font_italic">. Otherwise, the integral is said to </span><span class="ltx_text ltx_font_bold ltx_font_italic">diverge</span><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li class="ltx_item" id="S0.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span>
+<div class="ltx_para" id="S0.I1.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 1:</span> Evaluate <math alttext="\displaystyle\int_{1}^{\infty}\frac{dx}{x}" class="ltx_Math" display="inline" id="S0.I1.i2.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mstyle></mrow></math>.</p>
+</div>
+<div class="ltx_para" id="S0.I1.i2.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<figure class="ltx_figure" id="S0.F2">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1"><img alt="Graph of the function one over x. The curve decreases as x increases and approaches both the x-axis and the y-axis without touching either axis. The shaded region under the curve begins at x equals one and extends indefinitely to the right, representing the improper integral of one over x from one to infinity. The graph is labeled " approaches="" area="" area,"="" class="ltx_graphics ltx_centering ltx_figure_panel ltx_img_landscape" curve="" diverges,="" even="" function="" height="135" id="S0.F2.g1" indicating="" infinite="" is="" src="Slide64.jpg" that="" the="" though="" total="" under="" width="180" zero."=""/></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>The area under <math alttext="y=1/x" class="ltx_Math" display="inline" id="S0.F2.m3"><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mrow></math> from <math alttext="x=1" class="ltx_Math" display="inline" id="S0.F2.m4"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math> to a moving upper bound.</figcaption>
+</figure>
+<div class="ltx_para" id="S0.I1.i2.p3">
+<table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx2">
+<tbody id="S0.Ex9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math alttext="\displaystyle\int_{1}^{\infty}\frac{1}{x}\,dx" class="ltx_Math" display="inline" id="S0.Ex9.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\int_{1}^{b}\frac{1}{x}\,dx" class="ltx_Math" display="inline" id="S0.Ex9.m2"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi>b</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\left.\ln x\right|_{1}^{b}" class="ltx_Math" display="inline" id="S0.Ex10.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><msubsup><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>|</mo></mrow><mn>1</mn><mi>b</mi></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}(\ln b-\ln 1)" class="ltx_Math" display="inline" id="S0.Ex11.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>b</mi></mrow><mo>−</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mn>1</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\ln b" class="ltx_Math" display="inline" id="S0.Ex12.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mi>b</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\infty." class="ltx_Math" display="inline" id="S0.Ex13.m1"><mrow><mrow><mi></mi><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Hence, this integral diverges because the limit is infinite.</p>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span>
+<div class="ltx_para" id="S0.I1.i3.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 2:</span> Evaluate <math alttext="\displaystyle\int_{1}^{\infty}e^{-x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i3.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math>.</p>
+</div>
+<div class="ltx_para" id="S0.I1.i3.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<figure class="ltx_figure" id="S0.F3">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1"><img alt="Graph of the function e to the negative x. The curve begins at the point where x equals zero and y equals one, then decreases continuously toward the x-axis as x increases. The shaded region under the curve extends from x equals zero to infinity, representing the improper integral of e to the negative x from zero to infinity. The graph illustrates that the total area under the curve is finite, so the improper integral converges." class="ltx_graphics ltx_centering ltx_figure_panel ltx_img_landscape" height="135" id="S0.F3.g1" src="Slide65.jpg" width="180"/></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3: </span>The area under <math alttext="y=e^{-x}" class="ltx_Math" display="inline" id="S0.F3.m2"><mrow><mi>y</mi><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></math> on an infinite interval.</figcaption>
+</figure>
+<div class="ltx_para" id="S0.I1.i3.p3">
+<table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx3">
+<tbody id="S0.Ex14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math alttext="\displaystyle\int_{0}^{\infty}e^{-x}\,dx" class="ltx_Math" display="inline" id="S0.Ex14.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\int_{0}^{b}e^{-x}\,dx" class="ltx_Math" display="inline" id="S0.Ex14.m2"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>b</mi></msubsup></mstyle><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\left.-e^{-x}\right|_{0}^{b}" class="ltx_Math" display="inline" id="S0.Ex15.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo lspace="0em">−</mo><msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>|</mo></mrow><mn>0</mn><mi>b</mi></msubsup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}(1-e^{-b})" class="ltx_Math" display="inline" id="S0.Ex16.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>b</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=1." class="ltx_Math" display="inline" id="S0.Ex17.m1"><mrow><mrow><mi></mi><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Hence the integral converges because the limit is finite.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li class="ltx_item" id="S0.I1.i4" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span>
+<div class="ltx_para" id="S0.I1.i4.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 3:</span> Evaluate <math alttext="\displaystyle\int_{1}^{\infty}\frac{1}{x^{2}+1}\,dx" class="ltx_Math" display="inline" id="S0.I1.i4.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math>.</p>
+</div>
+<div class="ltx_para" id="S0.I1.i4.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<figure class="ltx_figure" id="S0.F4">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1"><img alt="Graph of the function one over the quantity x squared plus one. The curve begins at the point where x equals zero and y equals one, then decreases continuously toward the x-axis as x increases. The shaded region under the curve extends from x equals zero to infinity, representing the improper integral of one over the quantity x squared plus one from zero to infinity. The graph illustrates that the total area under the curve is finite, so the improper integral converges." class="ltx_graphics ltx_centering ltx_figure_panel ltx_img_landscape" height="135" id="S0.F4.g1" src="Slide66.jpg" width="180"/></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 4: </span>The area under <math alttext="y=1/(x^{2}+1)" class="ltx_Math" display="inline" id="S0.F4.m2"><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> on an infinite interval.</figcaption>
+</figure>
+<div class="ltx_para" id="S0.I1.i4.p3">
+<table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx4">
+<tbody id="S0.Ex18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math alttext="\displaystyle\int_{0}^{\infty}\frac{1}{x^{2}+1}\,dx" class="ltx_Math" display="inline" id="S0.Ex18.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\int_{0}^{b}\frac{1}{x^{2}+1}\,dx" class="ltx_Math" display="inline" id="S0.Ex18.m2"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>b</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\left.\arctan x\right|_{0}^{b}" class="ltx_Math" display="inline" id="S0.Ex19.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><msubsup><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow><mo>|</mo></mrow><mn>0</mn><mi>b</mi></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex20"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}(\arctan b-\arctan 0)" class="ltx_Math" display="inline" id="S0.Ex20.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>b</mi></mrow><mo>−</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mn>0</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\frac{\pi}{2}." class="ltx_Math" display="inline" id="S0.Ex21.m1"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Hence the integral converges because the limit is finite.</p>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i5" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span>
+<div class="ltx_para" id="S0.I1.i5.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 4:</span> Evaluate <math alttext="\displaystyle\int_{1}^{\infty}(1-x)e^{-x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i5.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math>.</p>
+</div>
+<div class="ltx_para" id="S0.I1.i5.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<figure class="ltx_figure" id="S0.F5">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1"><img alt="Graph of the function open parenthesis one minus x close parenthesis times e to the negative x. The curve begins on the x-axis at x equals one, decreases to a minimum value below the x-axis, and then rises toward the x-axis from below as x increases. The shaded region between the curve and the x-axis extends from x equals one to infinity, representing the improper integral of open parenthesis one minus x close parenthesis times e to the negative x from one to infinity. The graph illustrates that the total signed area is finite, so the improper integral converges." class="ltx_graphics ltx_centering ltx_figure_panel ltx_img_landscape" height="135" id="S0.F5.g1" src="Slide67.jpg" width="180"/></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 5: </span>The graph of <math alttext="(1-x)e^{-x}" class="ltx_Math" display="inline" id="S0.F5.m2"><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></math> on an infinite interval.</figcaption>
+</figure>
+<div class="ltx_para" id="S0.I1.i5.p3">
+<p class="ltx_p">We use integration by parts. Let <math alttext="u=1-x" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m1"><mrow><mi>u</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mrow></math>, so <math alttext="du=-dx" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m2"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math>, and <math alttext="dv=e^{-x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m3"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>v</mi></mrow><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math>, so <math alttext="v=-e^{-x}" class="ltx_Math" display="inline" id="S0.I1.i5.p3.m4"><mrow><mi>v</mi><mo>=</mo><mrow><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></mrow></math>.</p>
+<table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx5">
+<tbody id="S0.Ex22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math alttext="\displaystyle\int_{1}^{\infty}(1-x)e^{-x}\,dx" class="ltx_Math" display="inline" id="S0.Ex22.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\int_{1}^{b}(1-x)e^{-x}\,dx" class="ltx_Math" display="inline" id="S0.Ex22.m2"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi>b</mi></msubsup></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\left[\left.-e^{-x}(1-x)\right|_{1}^{b}-\int_{1%
+}^{b}e^{-x}\,dx\right]" class="ltx_Math" display="inline" id="S0.Ex23.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo>[</mo><mrow><mrow><mo>−</mo><msubsup><mrow><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>|</mo></mrow><mn>1</mn><mi>b</mi></msubsup></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1</mn><mi>b</mi></msubsup></mstyle><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}\left.xe^{-x}\right|_{1}^{b}" class="ltx_Math" display="inline" id="S0.Ex24.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><msubsup><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></mrow><mo>|</mo></mrow><mn>1</mn><mi>b</mi></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{b\to\infty}(be^{-b}-e^{-1})" class="ltx_Math" display="inline" id="S0.Ex25.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>b</mi></mrow></msup></mrow><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex26"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=-\frac{1}{e}." class="ltx_Math" display="inline" id="S0.Ex26.m1"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>e</mi></mfrac></mstyle></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Hence the integral converges because the limit is finite.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li class="ltx_item" id="S0.I1.i6" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span>
+<div class="ltx_para" id="S0.I1.i6.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 5:</span> Evaluate <math alttext="\displaystyle\int_{-\infty}^{\infty}\frac{e^{x}}{1+e^{2x}}\,dx" class="ltx_Math" display="inline" id="S0.I1.i6.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi>e</mi><mi>x</mi></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math>.</p>
+</div>
+<div class="ltx_para" id="S0.I1.i6.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<figure class="ltx_figure" id="S0.F6">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1"><img alt="Graph of the function e to the x divided by the quantity one plus e to the two x. The curve is always above the x-axis, reaches its maximum value of one-half at x equals zero, and decreases toward the x-axis as x moves in either the positive or negative direction. The shaded region under the curve extends over all real numbers, representing the improper integral of e to the x divided by the quantity one plus e to the two x from negative infinity to positive infinity. The graph illustrates that the total area under the curve is finite, so the improper integral converges." class="ltx_graphics ltx_centering ltx_figure_panel ltx_img_landscape" height="135" id="S0.F6.g1" src="Slide68.jpg" width="180"/></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 6: </span>The graph of <math alttext="e^{x}/(1+e^{2x})" class="ltx_Math" display="inline" id="S0.F6.m2"><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></math> over the entire real line.</figcaption>
+</figure>
+<div class="ltx_para" id="S0.I1.i6.p3">
+<p class="ltx_p">We use integration by substitution, where <math alttext="u=e^{x}" class="ltx_Math" display="inline" id="S0.I1.i6.p3.m1"><mrow><mi>u</mi><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></math>, so <math alttext="du=e^{x}\,dx" class="ltx_Math" display="inline" id="S0.I1.i6.p3.m2"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math>.</p>
+<table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx6">
+<tbody id="S0.Ex27"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math alttext="\displaystyle\int_{-\infty}^{\infty}\frac{e^{x}}{e^{2x}+1}\,dx" class="ltx_Math" display="inline" id="S0.Ex27.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi>e</mi><mi>x</mi></msup><mrow><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\int_{-\infty}^{0}\frac{e^{x}}{e^{2x}+1}\,dx+\int_{0}^{\infty}%
+\frac{e^{x}}{e^{2x}+1}\,dx" class="ltx_Math" display="inline" id="S0.Ex27.m2"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mn>0</mn></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi>e</mi><mi>x</mi></msup><mrow><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi>e</mi><mi>x</mi></msup><mrow><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{a\to-\infty}\int_{a}^{0}\frac{e^{x}}{e^{2x}+1}\,dx+\lim_{b%
+\to\infty}\int_{0}^{b}\frac{e^{x}}{e^{2x}+1}\,dx" class="ltx_Math" display="inline" id="S0.Ex28.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>a</mi><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mn>0</mn></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi>e</mi><mi>x</mi></msup><mrow><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>+</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>b</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi>e</mi><mi>x</mi></msup><mrow><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{a\to-\infty}\left.\arctan e^{x}\right|_{a}^{0}+\lim_{b\to%
+\infty}\left.\arctan e^{x}\right|_{0}^{b}" class="ltx_Math" display="inline" id="S0.Ex29.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><msubsup><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>a</mi><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></mrow><mo>|</mo></mrow><mi>a</mi><mn>0</mn></msubsup><mo>+</mo><msubsup><mrow><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></mrow><mo>|</mo></mrow><mn>0</mn><mi>b</mi></msubsup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex30"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{a\to-\infty}\left(\arctan e^{0}-\arctan e^{a}\right)+\lim_%
+{b\to\infty}\left(\arctan e^{b}-\arctan e^{0}\right)" class="ltx_Math" display="inline" id="S0.Ex30.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>a</mi><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mrow><mo>(</mo><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><msup><mi>e</mi><mn>0</mn></msup></mrow><mo>−</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><msup><mi>e</mi><mi>a</mi></msup></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>b</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo>(</mo><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><msup><mi>e</mi><mi>b</mi></msup></mrow><mo>−</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><msup><mi>e</mi><mn>0</mn></msup></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex31"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=(\arctan 1-0)+\left(\frac{\pi}{2}-\arctan 1\right)" class="ltx_Math" display="inline" id="S0.Ex31.m1"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mn>1</mn></mrow><mo>−</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>−</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mn>1</mn></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex32"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\left(\frac{\pi}{4}-0\right)+\left(\frac{\pi}{2}-\frac{\pi}{4}\right)" class="ltx_Math" display="inline" id="S0.Ex32.m1"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>4</mn></mfrac></mstyle><mo>−</mo><mn>0</mn></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>4</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex33"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\frac{\pi}{2}." class="ltx_Math" display="inline" id="S0.Ex33.m1"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i7" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span>
+<div class="ltx_para" id="S0.I1.i7.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Definition of Improper Integrals with Infinite Discontinuities</span></p>
+</div>
+<div class="ltx_theorem ltx_theorem_definition" id="Thmdefinitionx2">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Definition</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div class="ltx_para" id="Thmdefinitionx2.p1">
+<ul class="ltx_itemize" id="S0.I1.i7.I1">
+<li class="ltx_item" id="S0.I1.i7.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S0.I1.i7.I1.i1.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="f" class="ltx_Math" display="inline" id="S0.I1.i7.I1.i1.p1.m1"><mi>f</mi></math><span class="ltx_text ltx_font_italic"> is continuous on the interval </span><math alttext="[a,b)" class="ltx_Math" display="inline" id="S0.I1.i7.I1.i1.p1.m2"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></math><span class="ltx_text ltx_font_italic">, then</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex34">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{a}^{b}f(x)\,dx=\lim_{c\to b^{-}}\int_{a}^{c}f(x)\,dx." class="ltx_Math" display="block" id="S0.Ex34.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>c</mi><mo stretchy="false">→</mo><msup><mi>b</mi><mo>−</mo></msup></mrow></munder><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>c</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i7.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S0.I1.i7.I1.i2.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="f" class="ltx_Math" display="inline" id="S0.I1.i7.I1.i2.p1.m1"><mi>f</mi></math><span class="ltx_text ltx_font_italic"> is continuous on the interval </span><math alttext="(a,b]" class="ltx_Math" display="inline" id="S0.I1.i7.I1.i2.p1.m2"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math><span class="ltx_text ltx_font_italic">, then</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex35">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{a}^{b}f(x)\,dx=\lim_{c\to a^{+}}\int_{c}^{b}f(x)\,dx." class="ltx_Math" display="block" id="S0.Ex35.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>c</mi><mo stretchy="false">→</mo><msup><mi>a</mi><mo>+</mo></msup></mrow></munder><mrow><msubsup><mo>∫</mo><mi>c</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i7.I1.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S0.I1.i7.I1.i3.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If </span><math alttext="f" class="ltx_Math" display="inline" id="S0.I1.i7.I1.i3.p1.m1"><mi>f</mi></math><span class="ltx_text ltx_font_italic"> is continuous on the interval </span><math alttext="[a,b]" class="ltx_Math" display="inline" id="S0.I1.i7.I1.i3.p1.m2"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math><span class="ltx_text ltx_font_italic">, except for some number </span><math alttext="c" class="ltx_Math" display="inline" id="S0.I1.i7.I1.i3.p1.m3"><mi>c</mi></math><span class="ltx_text ltx_font_italic">, we have that</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex36">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{a}^{b}f(x)\,dx=\int_{a}^{c}f(x)\,dx+\int_{c}^{b}f(x)\,dx." class="ltx_Math" display="block" id="S0.Ex36.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>c</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.055em">+</mo><mrow><msubsup><mo>∫</mo><mi>c</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i7.I1.i4" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S0.I1.i7.I1.i4.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If the improper integral has a finite limit, the integral is said to </span><span class="ltx_text ltx_font_bold ltx_font_italic">converge</span><span class="ltx_text ltx_font_italic">. Otherwise, the integral is said to </span><span class="ltx_text ltx_font_bold ltx_font_italic">diverge</span><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li class="ltx_item" id="S0.I1.i8" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span>
+<div class="ltx_para" id="S0.I1.i8.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 6:</span> Evaluate <math alttext="\displaystyle\int_{0}^{1}\frac{1}{\sqrt[3]{x}}\,dx" class="ltx_Math" display="inline" id="S0.I1.i8.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mroot><mi>x</mi><mn>3</mn></mroot></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math>.</p>
+</div>
+<figure class="ltx_figure" id="S0.F7">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1"><img alt="Graph of the function one divided by the cube root of x. The curve is defined for positive values of x, decreases as x increases, and rises without bound as x approaches zero from the right. The shaded region under the curve extends from x equals zero to x equals one, representing the improper integral of one divided by the cube root of x from zero to one. The point at x equals one and y equals one is marked on the curve. The graph illustrates that the area under the curve is finite even though the function has a vertical asymptote at x equals zero, so the improper integral converges." class="ltx_graphics ltx_centering ltx_figure_panel ltx_img_landscape" height="135" id="S0.F7.g1" src="Slide70.jpg" width="180"/></div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 7: </span>The graph of <math alttext="1/\sqrt[3]{x}" class="ltx_Math" display="inline" id="S0.F7.m3"><mrow><mn>1</mn><mo>/</mo><mroot><mi>x</mi><mn>3</mn></mroot></mrow></math> with an infinite discontinuity at <math alttext="x=0" class="ltx_Math" display="inline" id="S0.F7.m4"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>.</figcaption>
+</figure>
+<div class="ltx_para" id="S0.I1.i8.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+<table class="ltx_equationgroup ltx_eqn_align ltx_eqn_table" id="S0.EGx7">
+<tbody id="S0.Ex37"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math alttext="\displaystyle\int_{0}^{1}x^{-1/3}\,dx" class="ltx_Math" display="inline" id="S0.Ex37.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><msup><mi>x</mi><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{c\to 0^{+}}\int_{c}^{1}x^{-1/3}\,dx" class="ltx_Math" display="inline" id="S0.Ex37.m2"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>c</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>c</mi><mn>1</mn></msubsup></mstyle><mrow><msup><mi>x</mi><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex38"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{c\to 0^{+}}\left.\frac{3}{2}x^{2/3}\right|_{c}^{1}" class="ltx_Math" display="inline" id="S0.Ex38.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><msubsup><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>c</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></mrow><mo>|</mo></mrow><mi>c</mi><mn>1</mn></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex39"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\lim_{c\to 0^{+}}\left(\frac{3}{2}-\frac{3}{2}c^{2/3}\right)" class="ltx_Math" display="inline" id="S0.Ex39.m1"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>c</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>c</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex40"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math alttext="\displaystyle=\frac{3}{2}." class="ltx_Math" display="inline" id="S0.Ex40.m1"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Hence the integral converges.</p>
+</div>
+</li>
+<li class="ltx_item" id="S0.I1.i9" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span>
+<div class="ltx_para" id="S0.I1.i9.p1">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 7:</span> Evaluate <math alttext="\displaystyle\int_{-1}^{2}\frac{1}{x^{3}}\,dx" class="ltx_Math" display="inline" id="S0.I1.i9.p1.m1"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>x</mi><mn>3</mn></msup></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math>.</p>
+</div>
+<div class="ltx_para" id="S0.I1.i9.p2">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+<table class="ltx_equation ltx_eqn_table" id="S0.Ex41">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math alttext="\int_{-1}^{2}\frac{1}{x^{3}}\,dx=\lim_{c\to 0^{-}}\int_{-1}^{c}x^{-3}\,dx+\lim%
+_{d\to 0^{+}}\int_{d}^{2}x^{-3}\,dx." class="ltx_Math" display="block" id="S0.Ex41.m1"><mrow><mrow><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></msubsup><mrow><mfrac><mn>1</mn><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>c</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>−</mo></msup></mrow></munder><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mi>c</mi></msubsup><mrow><msup><mi>x</mi><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>+</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>d</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><msubsup><mo>∫</mo><mi>d</mi><mn>2</mn></msubsup><mrow><msup><mi>x</mi><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">If we evaluate the second integral, we find that it diverges. Therefore, the entire integral diverges.</p>
+</div>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Mon Jun 29 14:38:12 2026 by <a class="ltx_LaTeXML_logo" href="http://dlmf.nist.gov/LaTeXML/"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img alt="Mascot Sammy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="/></a>
+</div></footer>
+</div>
+</body>
+</html>
