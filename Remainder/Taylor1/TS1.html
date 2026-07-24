@@ -1,0 +1,1082 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Taylor Series Part 1</title>
+<!--Generated on Thu Jun  5 10:05:33 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../ltx-article.css" type="text/css">
+
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    background: #fff;
+    color: #000;
+  }
+
+  .ltx_text.ltx_font_bold,
+  .ltx_font_bold {
+    font-weight: 700 !important;
+  }
+
+  math {
+    font-size: 1em;
+  }
+
+  math[display="block"],
+  .ltx_equation math {
+    font-size: 1.05em;
+  }
+
+  .ltx_equation,
+  .displaymath,
+  div.displaymath {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1em 0 !important;
+  }
+
+  table.ltx_eqn_table,
+  .ltx_eqn_table {
+    border: none !important;
+    border-collapse: collapse !important;
+    box-shadow: none !important;
+    background: none !important;
+    width: 100%;
+  }
+
+  .ltx_eqn_table td {
+    border: none !important;
+  }
+
+  .ltx_tag_item {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  img.ltx_graphics {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 35%;
+    height: auto;
+}
+</style>
+</head>
+
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div id="p1" class="ltx_para">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252, 9.9 &amp; 9.10, Taylor Series, Part 1 (Using the Geometric Series)
+<br class="ltx_break"></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Recall.</span> Let <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> be a continuously differentiable function for an interval <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> centered at <math id="S0.I1.i1.p1.m3" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>. The <math id="S0.I1.i1.p1.m4" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-th degree Taylor polynomial, centered around <math id="S0.I1.i1.p1.m5" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>, was defined to be,</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="p_{n}(x)=f(0)+f^{\prime}(0)x+\frac{f^{\prime\prime}(0)}{2!}x^{2}+\frac{f^{%
+\prime\prime\prime}(0)}{3!}x^{3}+\dots+\frac{f^{(n)}(0)}{n!}x^{n}." display="block"><mrow><mrow><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mfrac><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mfrac><mrow><msup><mi>f</mi><mo>′′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Using the graph of the polynomial, we observed as <math id="S0.I1.i1.p1.m6" class="ltx_Math" alttext="n\to\infty" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math> that <math id="S0.I1.i1.p1.m7" class="ltx_Math" alttext="p_{n}(x)\to f(x)" display="inline"><mrow><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<figure id="S0.I1.i1.fig1" class="ltx_figure">
+<table class="ltx_tabular ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left"><img src="Slide096.jpg" id="S0.I1.i1.g1" class="ltx_graphics ltx_img_landscape" width="123" height="92" alt="Graph of the sine function and its first-degree Taylor polynomial. The sine curve is shown as a black wave, and the first-degree Taylor polynomial is shown as a straight gray line. Both graphs pass through the origin and have the same slope there, so the line closely matches the sine curve near the origin. Farther from the origin, the straight line moves away from the sine curve, illustrating that the linear Taylor polynomial is only a good approximation near the center point."></td>
+<td class="ltx_td ltx_align_left"><img src="Slide097.jpg" id="S0.I1.i1.g2" class="ltx_graphics ltx_img_landscape" width="123" height="92" alt="[Graph of the sine function and its third-degree Taylor polynomial. The sine curve is shown as a black wave, and the third-degree Taylor polynomial is shown as a gray curve. Both graphs pass through the origin and closely follow one another over a wider interval than the first-degree Taylor polynomial. Farther from the origin, the polynomial begins to deviate significantly from the sine function, illustrating that adding more terms improves the approximation near the center point but not over the entire real line."></td>
+<td class="ltx_td ltx_align_left"><img src="Slide098.jpg" id="S0.I1.i1.g3" class="ltx_graphics ltx_img_landscape" width="123" height="92" alt="Graph of the sine function and its fifth-degree Taylor polynomial. The sine curve is shown as a black wave, and the fifth-degree Taylor polynomial is shown as a gray curve. The polynomial closely matches the sine function over a larger interval around the origin than the lower-degree Taylor polynomials. As the distance from the origin increases, the polynomial eventually departs from the sine curve, demonstrating that including additional terms improves the accuracy of the approximation near the center point but does not produce an exact match over the entire graph."></td>
+<td class="ltx_td ltx_align_left"><img src="Slide099.jpg" id="S0.I1.i1.g4" class="ltx_graphics ltx_img_landscape" width="123" height="92" alt="[Graph of the sine function and its seventh-degree Taylor polynomial. The sine curve is shown as a black wave, and the seventh-degree Taylor polynomial is shown as a gray curve. The two graphs agree very closely over a broad interval centered at the origin, providing the best approximation of the four Taylor polynomials shown in this sequence. Farther from the origin, the polynomial eventually separates from the sine function, illustrating that increasing the degree improves the accuracy and extends the interval over which the polynomial provides a good approximation."></td>
+</tr>
+</tbody>
+</table>
+</figure>
+<div id="S0.I1.i1.p2" class="ltx_para">
+<p class="ltx_p">We now want to develop the machinery to prove this. In the language of series, <math id="S0.I1.i1.p2.m1" class="ltx_Math" alttext="p_{n}(x)" display="inline"><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> would represent the <math id="S0.I1.i1.p2.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-th partial sum of the series. From what we have learned thus far, this means that there will be a gap between the actual sum, and the truncated sum. We called this the remainder. For polynomials, this will be another function, <math id="S0.I1.i1.p2.m3" class="ltx_Math" alttext="R_{n}(x)" display="inline"><mrow><msub><mi>R</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> to be</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="R_{n}(x)=f(x)-p_{n}(x)." display="block"><mrow><mrow><mrow><msub><mi>R</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This leads us to the following theorem which will give us a formula for <math id="S0.I1.i1.p2.m4" class="ltx_Math" alttext="R_{n}(x)" display="inline"><mrow><msub><mi>R</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>. We will offer without proof.</p>
+</div>
+<div id="Thmtheo1" class="ltx_theorem ltx_theorem_theo">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Theorem 1</span></span><span class="ltx_text ltx_font_bold"> (Taylor’s Theorem)</span>
+</h6>
+<div id="Thmtheo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If a function <math id="Thmtheo1.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> has derivatives of all orders at <math id="Thmtheo1.p1.m2" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>, then for</span></p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="p_{n}=f(0)+f^{\prime}(0)x+\dots+\frac{f^{(n)}(0)}{n!}x^{n}" display="block"><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">and</span></p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="R_{n}(x)=\frac{f^{(n+1)}(z)}{(n+1)!}x^{n+1}" display="block"><mrow><mrow><msub><mi>R</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">it follows that <math id="Thmtheo1.p1.m3" class="ltx_Math" alttext="f(x)=p_{n}(x)+R_{n}(x)" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>R</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>. Furthermore, as <math id="Thmtheo1.p1.m4" class="ltx_Math" alttext="n\rightarrow\infty" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, <math id="Thmtheo1.p1.m5" class="ltx_Math" alttext="p_{n}(x)\rightarrow f(x)" display="inline"><mrow><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, and <math id="Thmtheo1.p1.m6" class="ltx_Math" alttext="R_{n}(x)\rightarrow 0" display="inline"><mrow><mrow><msub><mi>R</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math> for all <math id="Thmtheo1.p1.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> within the interval of convergence. Thus,</span></p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!}x^{n}" display="block"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="S0.I1.i1.p3" class="ltx_para">
+<p class="ltx_p">This theorem gives us two conclusions:</p>
+<ul id="S0.I1.i1.I1" class="ltx_itemize">
+<li id="S0.I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Firstly, continuously differentiable (analytic) functions can be expressed as Taylor series.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">We have equality between the two so long as the series is <span class="ltx_text ltx_font_italic">convergent</span> and the remainder goes to zero.
+<br class="ltx_break"></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">The next observation enables us to establish key properties of Taylor Series.</p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Taylor Series are Power Series.</span> Consider a power series which, for simplicity, we will center them at <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>,</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="f(x)=\displaystyle\sum_{n=0}^{\infty}a_{n}x^{n}." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We notice that,</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex7.m1" class="ltx_Math" alttext="\displaystyle f^{0}(x)" display="inline"><mrow><msup><mi>f</mi><mn>0</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex7.m2" class="ltx_Math" alttext="\displaystyle=a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+\dots" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>4</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex8.m1" class="ltx_Math" alttext="\displaystyle f^{1}(x)" display="inline"><mrow><msup><mi>f</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex8.m2" class="ltx_Math" alttext="\displaystyle=a_{1}+2a_{2}x+3a_{3}x^{2}+4a_{4}x^{3}+\dots" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msub><mi>a</mi><mn>3</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msub><mi>a</mi><mn>4</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex9.m1" class="ltx_Math" alttext="\displaystyle f^{2}(x)" display="inline"><mrow><msup><mi>f</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex9.m2" class="ltx_Math" alttext="\displaystyle=2a_{2}+3\cdot 2a_{3}x+4\cdot 3a_{4}x^{2}+\dots" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>a</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>2</mn></mrow><mo>⁢</mo><msub><mi>a</mi><mn>3</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mrow><mn>4</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>3</mn></mrow><mo>⁢</mo><msub><mi>a</mi><mn>4</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex10.m1" class="ltx_Math" alttext="\displaystyle f^{3}(x)" display="inline"><mrow><msup><mi>f</mi><mn>3</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex10.m2" class="ltx_Math" alttext="\displaystyle=3!a_{3}+4\cdot 3\cdot 2a_{4}x+\dots" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mn>3</mn><mo>!</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mn>3</mn></msub></mrow><mo>+</mo><mrow><mrow><mn>4</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>3</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>2</mn></mrow><mo>⁢</mo><msub><mi>a</mi><mn>4</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex11.m1" class="ltx_Math" alttext="\displaystyle\vdots" display="inline"><mi mathvariant="normal">⋮</mi></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex12.m1" class="ltx_Math" alttext="\displaystyle f^{n}(x)" display="inline"><mrow><msup><mi>f</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex12.m2" class="ltx_Math" alttext="\displaystyle=n!a_{n}+(n+1)!a_{n+1}x+\dots" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo>+</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Evaluating each of these derivatives, we find that</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex13.m1" class="ltx_Math" alttext="\displaystyle f^{0}(0)" display="inline"><mrow><msup><mi>f</mi><mn>0</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex13.m2" class="ltx_Math" alttext="\displaystyle=a_{0}" display="inline"><mrow><mi></mi><mo>=</mo><msub><mi>a</mi><mn>0</mn></msub></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex14.m1" class="ltx_Math" alttext="\displaystyle f^{1}(0)" display="inline"><mrow><msup><mi>f</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex14.m2" class="ltx_Math" alttext="\displaystyle=1!a_{1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>1</mn><mo>!</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mn>1</mn></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex15.m1" class="ltx_Math" alttext="\displaystyle f^{2}(0)" display="inline"><mrow><msup><mi>f</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex15.m2" class="ltx_Math" alttext="\displaystyle=2!a_{2}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>!</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mn>2</mn></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex16.m1" class="ltx_Math" alttext="\displaystyle f^{3}(0)" display="inline"><mrow><msup><mi>f</mi><mn>3</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex16.m2" class="ltx_Math" alttext="\displaystyle=3!a_{3}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>!</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mn>3</mn></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex17.m1" class="ltx_Math" alttext="\displaystyle\vdots" display="inline"><mi mathvariant="normal">⋮</mi></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex18.m1" class="ltx_Math" alttext="\displaystyle f^{(n)}(0)" display="inline"><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex18.m2" class="ltx_Math" alttext="\displaystyle=n!a_{n}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This shows us that the constants of a power series are <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle a_{n}=\frac{f^{(n)}(0)}{n!}" display="inline"><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mstyle></mrow></math>, which are precisely the constants that we had found when calculating the Taylor Polynomial. We therefore, can define what is called <span class="ltx_text ltx_font_bold">Taylor Series</span> for a function which is a power series as well. In this lecture, we will focus on deriving Taylor series for functions using the Taylor Series for</p>
+<table id="S0.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex19.m1" class="ltx_Math" alttext="f(x)=\frac{1}{1-x}" display="block"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">which we know to be the sum of a Geometric series.</p>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 1(Recall)</span>: Find a Taylor series centered around <math id="S0.I1.i3.p1.m1" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> for</p>
+<table id="S0.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex20.m1" class="ltx_Math" alttext="f(x)=\frac{1}{1-x}." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span> Without taking derivatives, we know that <math id="S0.I1.i3.p1.m2" class="ltx_Math" alttext="\frac{a}{1-r}=\sum_{n=0}^{\infty}ar^{n}" display="inline"><mrow><mfrac><mi>a</mi><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>a</mi><mo>⁢</mo><msup><mi>r</mi><mi>n</mi></msup></mrow></mrow></mrow></math>, provided <math id="S0.I1.i3.p1.m3" class="ltx_Math" alttext="|r|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>r</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>. Thus, we can let <math id="S0.I1.i3.p1.m4" class="ltx_Math" alttext="r=x" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>x</mi></mrow></math>, <math id="S0.I1.i3.p1.m5" class="ltx_Math" alttext="a=1" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow></math>, and we find that</p>
+<table id="S0.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex21.m1" class="ltx_Math" alttext="\frac{1}{1-x}=\sum_{n=0}^{\infty}x^{n},\quad|x|&lt;1." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow><mo rspace="1.167em">,</mo><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Note, this means the radius of convergence is <math id="S0.I1.i3.p1.m6" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math>, and the series only converges to the function for values <math id="S0.I1.i3.p1.m7" class="ltx_Math" alttext="-1&lt;x&lt;1" display="inline"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>1</mn></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Operations of Power Series</span> Let <math id="S0.I1.i4.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and <math id="S0.I1.i4.p1.m2" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math> be continuously differentiable functions on intervals around <math id="S0.I1.i4.p1.m3" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>. Furthermore, let <math id="S0.I1.i4.p1.m4" class="ltx_Math" alttext="a_{n}=\frac{f^{(n)}(0)}{n!}" display="inline"><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></math> and <math id="S0.I1.i4.p1.m5" class="ltx_Math" alttext="b_{n}=\frac{g^{(n)}(0)}{n!}" display="inline"><mrow><msub><mi>b</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msup><mi>g</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></math>. Then, for</p>
+<table id="S0.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex22.m1" class="ltx_Math" alttext="f(x)=\sum_{n=0}^{\infty}a_{n}x^{n}\quad\mbox{ and }g(x)=\sum_{n=0}^{\infty}b_{%
+n}x^{n}," display="block"><mrow><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mrow><mtext> and </mtext><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>b</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">we have that</p>
+<ol id="S0.I1.i4.I1" class="ltx_enumerate">
+<li id="S0.I1.i4.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i4.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">For some real constant <math id="S0.I1.i4.I1.i1.p1.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>, <math id="S0.I1.i4.I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle f(kx)=\sum_{n=0}^{\infty}a_{n}k^{n}x^{n}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>k</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow></math>
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i4.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i4.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">For any integer <math id="S0.I1.i4.I1.i2.p1.m1" class="ltx_Math" alttext="N&gt;0" display="inline"><mrow><mi>N</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, <math id="S0.I1.i4.I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle f(x^{N})=\sum_{n=0}^{\infty}a_{n}x^{nN}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>N</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>⁢</mo><mi>N</mi></mrow></msup></mrow></mrow></mrow></math>.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i4.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i4.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><math id="S0.I1.i4.I1.i3.p1.m1" class="ltx_Math" alttext="f(x)\pm g(x)=\displaystyle\sum_{n=0}^{\infty}\left(a_{n}\pm b_{n}\right)x^{n}" display="inline"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>±</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mrow><mo>(</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>±</mo><msub><mi>b</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow></math> where the radius of convergence is the smaller of the two radii.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S0.I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 2:</span> Find a Taylor Series around <math id="S0.I1.i5.p1.m1" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>, for <math id="S0.I1.i5.p1.m2" class="ltx_Math" alttext="\displaystyle f(x)=\frac{4}{x+2}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>4</mn><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mstyle></mrow></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> We first do a little manipulation on the series in order to make it resemble the sum of a geometric series,</p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex25">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex23.m1" class="ltx_Math" alttext="\displaystyle f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex23.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex23.m3" class="ltx_Math" alttext="\displaystyle\frac{4}{x+2}" display="inline"><mstyle displaystyle="true"><mfrac><mn>4</mn><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex24.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex24.m2" class="ltx_Math" alttext="\displaystyle\frac{4}{2(1+(x/2))}" display="inline"><mstyle displaystyle="true"><mfrac><mn>4</mn><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex25.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex25.m2" class="ltx_Math" alttext="\displaystyle\frac{2}{1-(-x/2)}" display="inline"><mstyle displaystyle="true"><mfrac><mn>2</mn><mrow><mn>1</mn><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mrow><mi>x</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">Thus, we now have the form of the sum of a geometric series, so we let <math id="S0.I1.i5.p1.m3" class="ltx_Math" alttext="r=(-x/2)" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mrow><mi>x</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, and <math id="S0.I1.i5.p1.m4" class="ltx_Math" alttext="a=2" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow></math>. Giving us the following</p>
+<table id="S0.EGx4" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex29">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex26.m1" class="ltx_Math" alttext="\displaystyle f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex26.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex26.m3" class="ltx_Math" alttext="\displaystyle\frac{2}{1-(-x/2)}" display="inline"><mstyle displaystyle="true"><mfrac><mn>2</mn><mrow><mn>1</mn><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mrow><mi>x</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex27.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex27.m2" class="ltx_Math" alttext="\displaystyle\sum_{n=0}^{\infty}2\cdot\left(-\frac{x}{2}\right)^{n}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mrow><mo>(</mo><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><mi>x</mi><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mi>n</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex28.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex28.m2" class="ltx_Math" alttext="\displaystyle\sum_{n=0}^{\infty}2\cdot(-1)^{n}\left(\frac{x^{n}}{2^{n}}\right)" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mi>n</mi></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex29.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex29.m2" class="ltx_Math" alttext="\displaystyle\sum_{n=0}^{\infty}(-1)^{n}2^{1-n}x^{n}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mn>2</mn><mrow><mn>1</mn><mo>−</mo><mi>n</mi></mrow></msup><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">Note this series will converge to <math id="S0.I1.i5.p1.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> so long as</p>
+<table id="S0.Ex30" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex30.m1" class="ltx_Math" alttext="\left|\frac{x}{2}\right|&lt;1" display="block"><mrow><mrow><mo>|</mo><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">which means</p>
+<table id="S0.Ex31" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex31.m1" class="ltx_Math" alttext="|x|&lt;2\quad\mbox{ or that }-2&lt;x&lt;2," display="block"><mrow><mrow><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>2</mn></mrow><mspace width="1em"></mspace><mrow><mrow><mtext> or that </mtext><mo>−</mo><mn>2</mn></mrow><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>2</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">is the domain of the series.</p>
+</div>
+</li>
+<li id="S0.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span> 
+<div id="S0.I1.i6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Using Integration and Differentiation.</span> The properties of Integration and differentiation are also conferred on Taylor Series. We can use it to determine the Taylor Series for other functions.</p>
+</div>
+</li>
+<li id="S0.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span> 
+<div id="S0.I1.i7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 3:</span> Let <math id="S0.I1.i7.p1.m1" class="ltx_Math" alttext="\displaystyle f(x)=\frac{1}{(1-x)^{2}}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle></mrow></math>. Use the fact that</p>
+<table id="S0.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex32.m1" class="ltx_Math" alttext="\frac{d}{dx}\left(\frac{1}{1-x}\right)=\frac{1}{(1-x)^{2}}" display="block"><mrow><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">to find a Taylor series for <math id="S0.I1.i7.p1.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> around <math id="S0.I1.i7.p1.m3" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> We know that</p>
+<table id="S0.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex33.m1" class="ltx_Math" alttext="\frac{1}{1-x}=\sum_{n=0}^{\infty}x^{n}\quad\mbox{ for }|x|&lt;1." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow><mspace width="1em"></mspace><mrow><mrow><mtext> for </mtext><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus, we have that</p>
+<table id="S0.EGx5" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="S0.Ex37">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex34.m1" class="ltx_Math" alttext="\displaystyle\frac{d}{dx}\left(\frac{1}{1-x}\right)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex34.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex34.m3" class="ltx_Math" alttext="\displaystyle\frac{d}{dx}\left(\sum_{n=0}^{\infty}x^{n}\right)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><msup><mi>x</mi><mi>n</mi></msup></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex35.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex35.m2" class="ltx_Math" alttext="\displaystyle\sum_{n=1}^{\infty}\frac{d}{dx}\left(x^{n}\right)" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><msup><mi>x</mi><mi>n</mi></msup><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex36.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex36.m2" class="ltx_Math" alttext="\displaystyle\sum_{n=1}^{\infty}nx^{n-1}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>n</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex37.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex37.m2" class="ltx_Math" alttext="\displaystyle\sum_{n=0}^{\infty}(n+1)x^{n}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">Thus,</p>
+<table id="S0.Ex38" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex38.m1" class="ltx_Math" alttext="\frac{1}{(1-x)^{2}}=\sum_{n=0}^{\infty}(n+1)x^{n}\quad\mbox{ for }|x|&lt;1." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mrow><mtext> for </mtext><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Remark.</span> In general, you will have to check that the series converges at the endpoints once you’ve either integrated or differentiated. However, in this case, we can see immediately that we won’t have convergence for either <math id="S0.I1.i7.p1.m4" class="ltx_Math" alttext="x=1" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math> or <math id="S0.I1.i7.p1.m5" class="ltx_Math" alttext="x=-1" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span> 
+<div id="S0.I1.i8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 4:</span> Use the fact that</p>
+<table id="S0.Ex39" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex39.m1" class="ltx_Math" alttext="\arctan x=\int_{0}^{x}\frac{1}{1+t^{2}}\,dt" display="block"><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">to find the Taylor series for <math id="S0.I1.i8.p1.m1" class="ltx_Math" alttext="f(x)=\arctan x" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></math> around <math id="S0.I1.i8.p1.m2" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<div id="S0.I1.i8.p2" class="ltx_para">
+<p class="ltx_p">We begin with the geometric-series formula</p>
+<table id="S0.Ex40" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex40.m1" class="ltx_Math" alttext="\frac{1}{1-x}=\sum_{n=0}^{\infty}x^{n},\qquad|x|&lt;1." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p3" class="ltx_para">
+<p class="ltx_p">Let <math id="S0.I1.i8.p3.m1" class="ltx_Math" alttext="x=-t^{2}" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow></math>. Then</p>
+<table id="S0.Ex41" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex41.m1" class="ltx_Math" alttext="\frac{1}{1+t^{2}}=\frac{1}{1-(-t^{2})}=\sum_{n=0}^{\infty}(-t^{2})^{n}=\sum_{n%
+=0}^{\infty}(-1)^{n}t^{2n},\qquad|t|&lt;1." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>t</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mo stretchy="false">|</mo><mi>t</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p4" class="ltx_para">
+<p class="ltx_p">Using the given identity,</p>
+<table id="S0.Ex42" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex42.m1" class="ltx_Math" alttext="\arctan x=\int_{0}^{x}\frac{1}{1+t^{2}}\,dt," display="block"><mrow><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">we integrate the power series term by term:</p>
+<table id="S0.Ex43" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="S0.Ex43X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex43X.m2" class="ltx_Math" alttext="\displaystyle\arctan x" display="inline"><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex43X.m3" class="ltx_Math" alttext="\displaystyle=\int_{0}^{x}\sum_{n=0}^{\infty}(-1)^{n}t^{2n}\,dt" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>x</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>t</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex43Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex43Xa.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}(-1)^{n}\int_{0}^{x}t^{2n}\,dt" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>x</mi></msubsup></mstyle><mrow><msup><mi>t</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex43Xb"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex43Xb.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}(-1)^{n}\left[\frac{t^{2n+1}}{2n+1}\right]_{0%
+}^{x}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msubsup><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><msup><mi>t</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo>]</mo></mrow><mn>0</mn><mi>x</mi></msubsup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex43Xc"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex43Xc.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}(-1)^{n}\frac{x^{2n+1}}{2n+1}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p5" class="ltx_para">
+<p class="ltx_p">Therefore, the Taylor series for <math id="S0.I1.i8.p5.m1" class="ltx_Math" alttext="f(x)=\arctan x" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow></mrow></math>
+centered at <math id="S0.I1.i8.p5.m2" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> is</p>
+<table id="S0.Ex44" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex44.m1" class="ltx_Math" alttext="\boxed{\arctan x=x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\frac{x^{7}}{7}+\cdots=\sum%
+_{n=0}^{\infty}(-1)^{n}\frac{x^{2n+1}}{2n+1}}." display="block"><mrow><menclose notation="box"><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mi>x</mi><mo>−</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow><mo>+</mo><mfrac><msup><mi>x</mi><mn>5</mn></msup><mn>5</mn></mfrac></mrow><mo>−</mo><mfrac><msup><mi>x</mi><mn>7</mn></msup><mn>7</mn></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mfrac><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></mrow></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p6" class="ltx_para">
+<p class="ltx_p">The radius of convergence is <math id="S0.I1.i8.p6.m1" class="ltx_Math" alttext="R=1" display="inline"><mrow><mi>R</mi><mo>=</mo><mn>1</mn></mrow></math>. At <math id="S0.I1.i8.p6.m2" class="ltx_Math" alttext="x=1" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math> and
+<math id="S0.I1.i8.p6.m3" class="ltx_Math" alttext="x=-1" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>, the resulting alternating series also converge.
+Thus, the interval of convergence is</p>
+<table id="S0.Ex45" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex45.m1" class="ltx_Math" alttext="\boxed{[-1,1]}." display="block"><mrow><menclose notation="box"><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span> 
+<div id="S0.I1.i9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">From Exact Series to Approximations.</span></p>
+</div>
+<div id="S0.I1.i9.p2" class="ltx_para">
+<p class="ltx_p">Thus far, we have used known power series to produce new power
+series representations. For example,</p>
+<table id="S0.Ex46" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex46.m1" class="ltx_Math" alttext="\arctan x=x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\frac{x^{7}}{7}+\cdots." display="block"><mrow><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mi>x</mi><mo>−</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow><mo>+</mo><mfrac><msup><mi>x</mi><mn>5</mn></msup><mn>5</mn></mfrac></mrow><mo>−</mo><mfrac><msup><mi>x</mi><mn>7</mn></msup><mn>7</mn></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i9.p3" class="ltx_para">
+<p class="ltx_p">This equality involves infinitely many terms. In practice, however,
+we usually use only a finite number of terms:</p>
+<table id="S0.Ex47" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex47.m1" class="ltx_Math" alttext="\arctan x\approx x-\frac{x^{3}}{3}+\frac{x^{5}}{5}." display="block"><mrow><mrow><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>x</mi></mrow><mo>≈</mo><mrow><mrow><mi>x</mi><mo>−</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow><mo>+</mo><mfrac><msup><mi>x</mi><mn>5</mn></msup><mn>5</mn></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i9.p4" class="ltx_para">
+<p class="ltx_p">The polynomial on the right is a partial sum of the Taylor series.
+The difference between the exact value and the partial sum is the
+remainder:</p>
+<table id="S0.Ex48" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex48.m1" class="ltx_Math" alttext="R_{N}=f(x)-S_{N}." display="block"><mrow><mrow><msub><mi>R</mi><mi>N</mi></msub><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><msub><mi>S</mi><mi>N</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i9.p5" class="ltx_para">
+<p class="ltx_p">Consequently, using a Taylor series for approximation requires us
+to answer two questions:</p>
+<ol id="S0.I1.i9.I1" class="ltx_enumerate">
+<li id="S0.I1.i9.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i9.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">How many terms should we use?</p>
+</div>
+</li>
+<li id="S0.I1.i9.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i9.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">How large can the resulting error be?</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="S0.I1.i9.p6" class="ltx_para">
+<p class="ltx_p">Many of the series obtained in this lecture are alternating series.
+For such series, the Alternating Series Estimation Theorem gives a
+particularly simple error bound.</p>
+</div>
+<div id="Thmerrorbox1" class="ltx_theorem ltx_theorem_errorbox">
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Alternating Series Error 1</span></span></h6>
+<div id="Thmerrorbox1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose</span></p>
+<table id="S0.Ex49" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex49.m1" class="ltx_Math" alttext="\sum_{n=0}^{\infty}(-1)^{n}a_{n}" display="block"><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">is an alternating series whose positive terms <math id="Thmerrorbox1.p1.m1" class="ltx_Math" alttext="a_{n}" display="inline"><msub><mi>a</mi><mi>n</mi></msub></math> decrease to
+<math id="Thmerrorbox1.p1.m2" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>. If</span></p>
+<table id="S0.Ex50" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex50.m1" class="ltx_Math" alttext="S_{N}=\sum_{n=0}^{N}(-1)^{n}a_{n}," display="block"><mrow><mrow><msub><mi>S</mi><mi>N</mi></msub><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi>N</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">then</span></p>
+<table id="S0.Ex51" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex51.m1" class="ltx_Math" alttext="\left|S-S_{N}\right|\leq a_{N+1}." display="block"><mrow><mrow><mrow><mo>|</mo><mrow><mi>S</mi><mo>−</mo><msub><mi>S</mi><mi>N</mi></msub></mrow><mo>|</mo></mrow><mo>≤</mo><msub><mi>a</mi><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">In words, the error is no greater than the magnitude of the first
+omitted term.</span></p>
+</div>
+</div>
+<div id="S0.I1.i9.p7" class="ltx_para">
+<p class="ltx_p">Therefore, to approximate a value with error less than a prescribed
+tolerance, we choose enough terms so that</p>
+<table id="S0.Ex52" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex52.m1" class="ltx_math_unparsed" alttext="\boxed{\text{first omitted term}&lt;\text{desired error}.}" display="block"><menclose notation="box"><mrow><mtext>first omitted term</mtext><mo>&lt;</mo><mtext>desired error</mtext><mo lspace="0em">.</mo></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span> 
+<div id="S0.I1.i10.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 5:</span> Use a Taylor series to approximate
+<math id="S0.I1.i10.p1.m1" class="ltx_Math" alttext="\ln(1.2)" display="inline"><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1.2</mn><mo stretchy="false">)</mo></mrow></mrow></math> with error less than <math id="S0.I1.i10.p1.m2" class="ltx_Math" alttext="0.001" display="inline"><mn>0.001</mn></math>.</p>
+</div>
+<div id="S0.I1.i10.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span>
+We begin with</p>
+<table id="S0.Ex53" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex53.m1" class="ltx_Math" alttext="\frac{1}{1+t}=\frac{1}{1-(-t)}=\sum_{n=0}^{\infty}(-1)^{n}t^{n},\qquad|t|&lt;1." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>t</mi><mi>n</mi></msup></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mo stretchy="false">|</mo><mi>t</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i10.p3" class="ltx_para">
+<p class="ltx_p">Since</p>
+<table id="S0.Ex54" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex54.m1" class="ltx_Math" alttext="\ln(1+x)=\int_{0}^{x}\frac{1}{1+t}\,dt," display="block"><mrow><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">we integrate term by term:</p>
+<table id="S0.Ex55" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="S0.Ex55X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex55X.m2" class="ltx_Math" alttext="\displaystyle\ln(1+x)" display="inline"><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex55X.m3" class="ltx_Math" alttext="\displaystyle=\int_{0}^{x}\sum_{n=0}^{\infty}(-1)^{n}t^{n}\,dt" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>x</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>t</mi><mi>n</mi></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex55Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex55Xa.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}(-1)^{n}\int_{0}^{x}t^{n}\,dt" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>x</mi></msubsup></mstyle><mrow><msup><mi>t</mi><mi>n</mi></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex55Xb"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex55Xb.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}(-1)^{n}\frac{x^{n+1}}{n+1}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i10.p4" class="ltx_para">
+<p class="ltx_p">Therefore,</p>
+<table id="S0.Ex56" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex56.m1" class="ltx_Math" alttext="\ln(1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots." display="block"><mrow><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mi>x</mi><mo>−</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow><mo>−</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>4</mn></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i10.p5" class="ltx_para">
+<p class="ltx_p">To approximate <math id="S0.I1.i10.p5.m1" class="ltx_Math" alttext="\ln(1.2)" display="inline"><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1.2</mn><mo stretchy="false">)</mo></mrow></mrow></math>, let <math id="S0.I1.i10.p5.m2" class="ltx_Math" alttext="x=0.2" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0.2</mn></mrow></math>:</p>
+<table id="S0.Ex57" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex57.m1" class="ltx_Math" alttext="\ln(1.2)=0.2-\frac{(0.2)^{2}}{2}+\frac{(0.2)^{3}}{3}-\frac{(0.2)^{4}}{4}+\cdots." display="block"><mrow><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1.2</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mn>0.2</mn><mo>−</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mn>2</mn></mfrac></mrow><mo>+</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mn>3</mn></mfrac></mrow><mo>−</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow><mn>4</mn></msup><mn>4</mn></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i10.p6" class="ltx_para">
+<p class="ltx_p">If we stop after the <math id="S0.I1.i10.p6.m1" class="ltx_Math" alttext="x^{4}" display="inline"><msup><mi>x</mi><mn>4</mn></msup></math>-term, the first omitted term has
+magnitude</p>
+<table id="S0.Ex58" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex58.m1" class="ltx_Math" alttext="\frac{(0.2)^{5}}{5}=0.000064&lt;0.001." display="block"><mrow><mrow><mfrac><msup><mrow><mo stretchy="false">(</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow><mn>5</mn></msup><mn>5</mn></mfrac><mo>=</mo><mn>0.000064</mn><mo>&lt;</mo><mn>0.001</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i10.p7" class="ltx_para">
+<p class="ltx_p">Thus,</p>
+<table id="S0.Ex59" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="S0.Ex59X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex59X.m2" class="ltx_Math" alttext="\displaystyle\ln(1.2)" display="inline"><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1.2</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex59X.m3" class="ltx_Math" alttext="\displaystyle\approx 0.2-\frac{(0.2)^{2}}{2}+\frac{(0.2)^{3}}{3}-\frac{(0.2)^{%
+4}}{4}" display="inline"><mrow><mi></mi><mo>≈</mo><mrow><mrow><mrow><mn>0.2</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mn>2</mn></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mn>3</mn></mfrac></mstyle></mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow><mn>4</mn></msup><mn>4</mn></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex59Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex59Xa.m2" class="ltx_Math" alttext="\displaystyle\approx 0.18227." display="inline"><mrow><mrow><mi></mi><mo>≈</mo><mn>0.18227</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i10.p8" class="ltx_para">
+<p class="ltx_p">Therefore,</p>
+<table id="S0.Ex60" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex60.m1" class="ltx_Math" alttext="\boxed{\ln(1.2)\approx 0.18227}" display="block"><menclose notation="box"><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1.2</mn><mo stretchy="false">)</mo></mrow></mrow><mo>≈</mo><mn>0.18227</mn></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">with error less than <math id="S0.I1.i10.p8.m1" class="ltx_Math" alttext="0.001" display="inline"><mn>0.001</mn></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span> 
+<div id="S0.I1.i11.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 6:</span> Use a power series to approximate</p>
+<table id="S0.Ex61" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex61.m1" class="ltx_Math" alttext="\int_{0}^{1/2}\frac{1}{1+x^{4}}\,dx" display="block"><mrow><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">with error less than <math id="S0.I1.i11.p1.m1" class="ltx_Math" alttext="0.001" display="inline"><mn>0.001</mn></math>.</p>
+</div>
+<div id="S0.I1.i11.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span>
+Using the geometric series,</p>
+<table id="S0.Ex62" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex62.m1" class="ltx_Math" alttext="\frac{1}{1+x^{4}}=\frac{1}{1-(-x^{4})}=\sum_{n=0}^{\infty}(-1)^{n}x^{4n},%
+\qquad|x|&lt;1." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow></msup></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i11.p3" class="ltx_para">
+<p class="ltx_p">Integrating term by term,</p>
+<table id="S0.Ex63" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="S0.Ex63X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex63X.m2" class="ltx_Math" alttext="\displaystyle\int_{0}^{1/2}\frac{1}{1+x^{4}}\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex63X.m3" class="ltx_Math" alttext="\displaystyle=\int_{0}^{1/2}\sum_{n=0}^{\infty}(-1)^{n}x^{4n}\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup></mstyle><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex63Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex63Xa.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}(-1)^{n}\int_{0}^{1/2}x^{4n}\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup></mstyle><mrow><msup><mi>x</mi><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex63Xb"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex63Xb.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}(-1)^{n}\frac{(1/2)^{4n+1}}{4n+1}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i11.p4" class="ltx_para">
+<p class="ltx_p">The series begins</p>
+<table id="S0.Ex64" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex64.m1" class="ltx_Math" alttext="\frac{1}{2}-\frac{1}{5\cdot 2^{5}}+\frac{1}{9\cdot 2^{9}}-\cdots." display="block"><mrow><mrow><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mn>5</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>2</mn><mn>5</mn></msup></mrow></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mn>9</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>2</mn><mn>9</mn></msup></mrow></mfrac></mrow><mo>−</mo><mi mathvariant="normal">⋯</mi></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i11.p5" class="ltx_para">
+<p class="ltx_p">After the first two terms, the first omitted term is</p>
+<table id="S0.Ex65" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex65.m1" class="ltx_Math" alttext="\frac{1}{9\cdot 2^{9}}=\frac{1}{4608}&lt;0.001." display="block"><mrow><mrow><mfrac><mn>1</mn><mrow><mn>9</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>2</mn><mn>9</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4608</mn></mfrac><mo>&lt;</mo><mn>0.001</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i11.p6" class="ltx_para">
+<p class="ltx_p">Therefore,</p>
+<table id="S0.Ex66" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="S0.Ex66X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex66X.m2" class="ltx_Math" alttext="\displaystyle\int_{0}^{1/2}\frac{1}{1+x^{4}}\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex66X.m3" class="ltx_Math" alttext="\displaystyle\approx\frac{1}{2}-\frac{1}{5\cdot 2^{5}}" display="inline"><mrow><mi></mi><mo>≈</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>5</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>2</mn><mn>5</mn></msup></mrow></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex66Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex66Xa.m2" class="ltx_Math" alttext="\displaystyle=\frac{1}{2}-\frac{1}{160}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>160</mn></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex66Xb"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex66Xb.m2" class="ltx_Math" alttext="\displaystyle=0.49375." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0.49375</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i11.p7" class="ltx_para">
+<p class="ltx_p">Thus,</p>
+<table id="S0.Ex67" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex67.m1" class="ltx_Math" alttext="\boxed{\int_{0}^{1/2}\frac{1}{1+x^{4}}\,dx\approx 0.49375}" display="block"><menclose notation="box"><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>≈</mo><mn>0.49375</mn></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">with error less than <math id="S0.I1.i11.p7.m1" class="ltx_Math" alttext="0.001" display="inline"><mn>0.001</mn></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i12" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">12.</span> 
+<div id="S0.I1.i12.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 7:</span> Use a power series to approximate</p>
+<table id="S0.Ex68" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex68.m1" class="ltx_Math" alttext="\int_{0}^{1/2}\frac{x^{2}}{1+x^{2}}\,dx" display="block"><mrow><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">with error less than <math id="S0.I1.i12.p1.m1" class="ltx_Math" alttext="0.001" display="inline"><mn>0.001</mn></math>.</p>
+</div>
+<div id="S0.I1.i12.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span>
+We know that</p>
+<table id="S0.Ex69" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex69.m1" class="ltx_Math" alttext="\frac{1}{1+x^{2}}=\sum_{n=0}^{\infty}(-1)^{n}x^{2n},\qquad|x|&lt;1." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i12.p3" class="ltx_para">
+<p class="ltx_p">Multiplying by <math id="S0.I1.i12.p3.m1" class="ltx_Math" alttext="x^{2}" display="inline"><msup><mi>x</mi><mn>2</mn></msup></math>, we obtain</p>
+<table id="S0.Ex70" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex70.m1" class="ltx_Math" alttext="\frac{x^{2}}{1+x^{2}}=\sum_{n=0}^{\infty}(-1)^{n}x^{2n+2}." display="block"><mrow><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i12.p4" class="ltx_para">
+<p class="ltx_p">Therefore,</p>
+<table id="S0.Ex71" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="S0.Ex71X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex71X.m2" class="ltx_Math" alttext="\displaystyle\int_{0}^{1/2}\frac{x^{2}}{1+x^{2}}\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex71X.m3" class="ltx_Math" alttext="\displaystyle=\int_{0}^{1/2}\sum_{n=0}^{\infty}(-1)^{n}x^{2n+2}\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup></mstyle><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex71Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex71Xa.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}(-1)^{n}\int_{0}^{1/2}x^{2n+2}\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup></mstyle><mrow><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex71Xb"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex71Xb.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}(-1)^{n}\frac{(1/2)^{2n+3}}{2n+3}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>3</mn></mrow></msup><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>3</mn></mrow></mfrac></mstyle></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i12.p5" class="ltx_para">
+<p class="ltx_p">The series begins</p>
+<table id="S0.Ex72" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex72.m1" class="ltx_Math" alttext="\frac{1}{24}-\frac{1}{160}+\frac{1}{896}-\cdots." display="block"><mrow><mrow><mrow><mrow><mfrac><mn>1</mn><mn>24</mn></mfrac><mo>−</mo><mfrac><mn>1</mn><mn>160</mn></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mn>896</mn></mfrac></mrow><mo>−</mo><mi mathvariant="normal">⋯</mi></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i12.p6" class="ltx_para">
+<p class="ltx_p">If we use the first two terms, the first omitted term is</p>
+<table id="S0.Ex73" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex73.m1" class="ltx_Math" alttext="\frac{1}{896}\approx 0.001116," display="block"><mrow><mrow><mfrac><mn>1</mn><mn>896</mn></mfrac><mo>≈</mo><mn>0.001116</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">which is not less than <math id="S0.I1.i12.p6.m1" class="ltx_Math" alttext="0.001" display="inline"><mn>0.001</mn></math>. We must therefore include the
+third term. The next omitted term is</p>
+<table id="S0.Ex74" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex74.m1" class="ltx_Math" alttext="\frac{(1/2)^{9}}{9}=\frac{1}{4608}&lt;0.001." display="block"><mrow><mrow><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>9</mn></msup><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4608</mn></mfrac><mo>&lt;</mo><mn>0.001</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i12.p7" class="ltx_para">
+<p class="ltx_p">Hence,</p>
+<table id="S0.Ex75" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="S0.Ex75X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex75X.m2" class="ltx_Math" alttext="\displaystyle\int_{0}^{1/2}\frac{x^{2}}{1+x^{2}}\,dx" display="inline"><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex75X.m3" class="ltx_Math" alttext="\displaystyle\approx\frac{1}{24}-\frac{1}{160}+\frac{1}{896}" display="inline"><mrow><mi></mi><mo>≈</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>24</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>160</mn></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>896</mn></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex75Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex75Xa.m2" class="ltx_Math" alttext="\displaystyle\approx 0.03653." display="inline"><mrow><mrow><mi></mi><mo>≈</mo><mn>0.03653</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i12.p8" class="ltx_para">
+<p class="ltx_p">Thus,</p>
+<table id="S0.Ex76" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex76.m1" class="ltx_Math" alttext="\boxed{\int_{0}^{1/2}\frac{x^{2}}{1+x^{2}}\,dx\approx 0.03653}" display="block"><menclose notation="box"><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>≈</mo><mn>0.03653</mn></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">with error less than <math id="S0.I1.i12.p8.m1" class="ltx_Math" alttext="0.001" display="inline"><mn>0.001</mn></math>.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Thu Jul 23 20:13:16 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>
