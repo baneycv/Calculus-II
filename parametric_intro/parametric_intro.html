@@ -1,0 +1,901 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Cross-Sectional Area</title>
+<!--Generated on Thu Jun  5 10:05:33 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../ltx-article.css" type="text/css">
+
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    background: #fff;
+    color: #000;
+  }
+
+  .ltx_text.ltx_font_bold,
+  .ltx_font_bold {
+    font-weight: 700 !important;
+  }
+
+  math {
+    font-size: 1em;
+  }
+
+  math[display="block"],
+  .ltx_equation math {
+    font-size: 1.05em;
+  }
+
+  .ltx_equation,
+  .displaymath,
+  div.displaymath {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1em 0 !important;
+  }
+
+  table.ltx_eqn_table,
+  .ltx_eqn_table {
+    border: none !important;
+    border-collapse: collapse !important;
+    box-shadow: none !important;
+    background: none !important;
+    width: 100%;
+  }
+
+  .ltx_eqn_table td {
+    border: none !important;
+  }
+
+  .ltx_tag_item {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  img.ltx_graphics {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 35%;
+    height: auto;
+}
+</style>
+</head>
+
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div id="p1" class="ltx_para">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252: Section 10.2 — Parametric Equations
+<br class="ltx_break"><span class="ltx_text" style="font-size:83%;">Instructor Version</span></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Motivation.</span>
+Suppose a ball is thrown so that its path is described by</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="y=-\frac{x^{2}}{72}+x," display="block"><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>72</mn></mfrac></mrow><mo>+</mo><mi>x</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> is the horizontal distance traveled and <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> is the height of the ball.</p>
+</div>
+<div id="S0.I1.i1.p2" class="ltx_para">
+<ol id="S0.I1.i1.I1" class="ltx_enumerate">
+<li id="S0.I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">What information does this Cartesian equation tell us?</p>
+</div>
+<div id="S0.I1.i1.I1.i1.p2" class="ltx_para">
+<img src="10_2_mot.jpg" id="S0.I1.i1.I1.i1.g1" class="ltx_graphics ltx_centering ltx_img_square" width="200" height="200" alt="[Uncaptioned image]">
+</div>
+<div id="S0.I1.i1.I1.i1.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i1.I1.i1.p4" class="ltx_para">
+<p class="ltx_p">The equation gives the geometric path of the ball. It is a downward-opening parabola.</p>
+</div>
+<div id="S0.I1.i1.I1.i1.p5" class="ltx_para">
+<p class="ltx_p">Factoring,</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="y=x\left(1-\frac{x}{72}\right)," display="block"><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mi>x</mi><mn>72</mn></mfrac></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">shows that the <math id="S0.I1.i1.I1.i1.p5.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-intercepts are <math id="S0.I1.i1.I1.i1.p5.m2" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S0.I1.i1.I1.i1.p5.m3" class="ltx_Math" alttext="x=72" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>72</mn></mrow></math>. Thus, if the ball begins and ends at ground level, its horizontal range is <math id="S0.I1.i1.I1.i1.p5.m4" class="ltx_Math" alttext="72" display="inline"><mn>72</mn></math> feet.</p>
+</div>
+<div id="S0.I1.i1.I1.i1.p6" class="ltx_para">
+<p class="ltx_p">The vertex occurs at</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="x=-\frac{b}{2a}=-\frac{1}{2(-1/72)}=36." display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mo>−</mo><mfrac><mi>b</mi><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>72</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mn>36</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Then</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="y(36)=-\frac{36^{2}}{72}+36=18." display="block"><mrow><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>36</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><msup><mn>36</mn><mn>2</mn></msup><mn>72</mn></mfrac></mrow><mo>+</mo><mn>36</mn></mrow><mo>=</mo><mn>18</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus the maximum height is <math id="S0.I1.i1.I1.i1.p6.m1" class="ltx_Math" alttext="18" display="inline"><mn>18</mn></math> feet, attained after <math id="S0.I1.i1.I1.i1.p6.m2" class="ltx_Math" alttext="36" display="inline"><mn>36</mn></math> horizontal feet.</p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">What important information does this equation not tell us?</p>
+</div>
+<div id="S0.I1.i1.I1.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i1.I1.i2.p3" class="ltx_para">
+<p class="ltx_p">It does not tell us how time is related to the motion. In particular, it does not specify the direction of travel, the position at a particular time, or how quickly the ball moves along the curve.</p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i1.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Suppose instead that</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="x=24\sqrt{2}\,t,\qquad y=-16t^{2}+24\sqrt{2}\,t," display="block"><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt><mo lspace="0.170em">⁢</mo><mi>t</mi></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mn>16</mn><mo>⁢</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt><mo lspace="0.170em">⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S0.I1.i1.I1.i3.p1.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> is measured in seconds. Why is this description more informative?</p>
+</div>
+<div id="S0.I1.i1.I1.i3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i1.I1.i3.p3" class="ltx_para">
+<p class="ltx_p">The parameter <math id="S0.I1.i1.I1.i3.p3.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> gives the ball’s position at each time. It also determines the direction of motion: as <math id="S0.I1.i1.I1.i3.p3.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> increases, <math id="S0.I1.i1.I1.i3.p3.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> increases, so the ball moves from left to right.</p>
+</div>
+<div id="S0.I1.i1.I1.i3.p4" class="ltx_para">
+<p class="ltx_p">The ball returns to ground level when</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="-16t^{2}+24\sqrt{2}\,t=0," display="block"><mrow><mrow><mrow><mrow><mo>−</mo><mrow><mn>16</mn><mo>⁢</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt><mo lspace="0.170em">⁢</mo><mi>t</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">so</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="t(-16t+24\sqrt{2})=0." display="block"><mrow><mrow><mrow><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo>−</mo><mrow><mn>16</mn><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>+</mo><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Hence</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="t=0\quad\text{or}\quad t=\frac{3\sqrt{2}}{2}." display="block"><mrow><mrow><mrow><mi>t</mi><mo>=</mo><mrow><mn>0</mn><mspace width="1em"></mspace><mtext>or</mtext></mrow></mrow><mspace width="1em"></mspace><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus the flight lasts <math id="S0.I1.i1.I1.i3.p4.m1" class="ltx_Math" alttext="\frac{3\sqrt{2}}{2}" display="inline"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></math> seconds.</p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i1.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Verify that eliminating <math id="S0.I1.i1.I1.i4.p1.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> produces the original Cartesian equation.</p>
+</div>
+<div id="S0.I1.i1.I1.i4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i1.I1.i4.p3" class="ltx_para">
+<p class="ltx_p">From</p>
+<table id="S0.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex9.m1" class="ltx_Math" alttext="x=24\sqrt{2}\,t," display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt><mo lspace="0.170em">⁢</mo><mi>t</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">we obtain</p>
+<table id="S0.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex10.m1" class="ltx_Math" alttext="t=\frac{x}{24\sqrt{2}}." display="block"><mrow><mrow><mi>t</mi><mo>=</mo><mfrac><mi>x</mi><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Substitute this into <math id="S0.I1.i1.I1.i4.p3.m1" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>:</p>
+<table id="S0.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex11.m1" class="ltx_Math" alttext="y=-16\left(\frac{x}{24\sqrt{2}}\right)^{2}+24\sqrt{2}\left(\frac{x}{24\sqrt{2}%
+}\right)." display="block"><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mn>16</mn><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi>x</mi><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt><mo>⁢</mo><mrow><mo>(</mo><mfrac><mi>x</mi><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since</p>
+<table id="S0.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex12.m1" class="ltx_Math" alttext="\left(24\sqrt{2}\right)^{2}=1152," display="block"><mrow><mrow><msup><mrow><mo>(</mo><mrow><mn>24</mn><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>1152</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">we get</p>
+<table id="S0.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex13.m1" class="ltx_Math" alttext="y=-\frac{16x^{2}}{1152}+x=-\frac{x^{2}}{72}+x." display="block"><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><mrow><mn>16</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>1152</mn></mfrac></mrow><mo>+</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>72</mn></mfrac></mrow><mo>+</mo><mi>x</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Definition.</span>
+Let <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math> be continuous on an interval <math id="S0.I1.i2.p1.m3" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>. The equations</p>
+<table id="S0.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex14.m1" class="ltx_Math" alttext="x=f(t),\qquad y=g(t)" display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mi>y</mi><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">are called <span class="ltx_text ltx_font_bold">parametric equations</span>, and <math id="S0.I1.i2.p1.m4" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> is called the <span class="ltx_text ltx_font_bold">parameter</span>.
+As <math id="S0.I1.i2.p1.m5" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> varies through <math id="S0.I1.i2.p1.m6" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>, the point</p>
+<table id="S0.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex15.m1" class="ltx_Math" alttext="(x,y)=\bigl{(}f(t),g(t)\bigr{)}" display="block"><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">traces a <span class="ltx_text ltx_font_bold">plane curve</span> <math id="S0.I1.i2.p1.m7" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>.</p>
+</div>
+<div id="S0.I1.i2.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Remark.</span> A Cartesian equation describes only the <em class="ltx_emph ltx_font_italic">shape</em> of a curve. A parametrization also specifies how the curve is traced, including its initial and terminal points, direction of motion, whether the curve is traced more than once, and the position of the particle for each value of the parameter.</p>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Sketching Parametric Curves.</span></p>
+</div>
+<div id="S0.I1.i3.p2" class="ltx_para">
+<p class="ltx_p">When sketching a parametric curve it is often helpful to</p>
+<ol id="S0.I1.i3.I1" class="ltx_enumerate">
+<li id="S0.I1.i3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i3.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">determine the interval for the parameter,</p>
+</div>
+</li>
+<li id="S0.I1.i3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i3.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">eliminate the parameter whenever possible,</p>
+</div>
+</li>
+<li id="S0.I1.i3.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i3.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">determine the appropriate Cartesian domain,</p>
+</div>
+</li>
+<li id="S0.I1.i3.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i3.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">identify the initial and terminal points,</p>
+</div>
+</li>
+<li id="S0.I1.i3.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I1.i3.I1.i5.p1" class="ltx_para">
+<p class="ltx_p">determine the direction in which the curve is traced.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 1.</span>
+Sketch</p>
+<table id="S0.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex16.m1" class="ltx_Math" alttext="x=t^{2}-4,\qquad y=\frac{t}{2},\qquad-2\leq t\leq 3." display="block"><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mi>y</mi><mo>=</mo><mfrac><mi>t</mi><mn>2</mn></mfrac></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>3</mn></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i4.p3" class="ltx_para">
+<p class="ltx_p">A useful table is</p>
+<table id="S0.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex17.m1" class="ltx_Math" alttext="\begin{array}[]{c|ccccc}t&amp;-2&amp;-1&amp;0&amp;1&amp;3\\
+\hline\cr x=t^{2}-4&amp;0&amp;-3&amp;-4&amp;-3&amp;5\\
+y=t/2&amp;-1&amp;-\frac{1}{2}&amp;0&amp;\frac{1}{2}&amp;\frac{3}{2}\end{array}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r"><mi>t</mi></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd class="ltx_border_r"><mrow><mi>x</mi><mo>=</mo><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn></mrow></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mrow><mo>−</mo><mn>3</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>4</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>3</mn></mrow></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd class="ltx_border_r"><mrow><mi>y</mi><mo>=</mo><mrow><mi>t</mi><mo>/</mo><mn>2</mn></mrow></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mtd><mtd><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i4.p4" class="ltx_para">
+<p class="ltx_p">Since <math id="S0.I1.i4.p4.m1" class="ltx_Math" alttext="y=t/2" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mi>t</mi><mo>/</mo><mn>2</mn></mrow></mrow></math>, we have</p>
+<table id="S0.Ex18" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex18.m1" class="ltx_Math" alttext="t=2y." display="block"><mrow><mrow><mi>t</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Substituting into <math id="S0.I1.i4.p4.m2" class="ltx_Math" alttext="x=t^{2}-4" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn></mrow></mrow></math> gives</p>
+<table id="S0.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex19.m1" class="ltx_Math" alttext="x=(2y)^{2}-4=4y^{2}-4." display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>4</mn></mrow><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>−</mo><mn>4</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus the Cartesian equation is</p>
+<table id="S0.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex20.m1" class="ltx_Math" alttext="\boxed{x=4y^{2}-4}." display="block"><mrow><menclose notation="box"><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>−</mo><mn>4</mn></mrow></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i4.p5" class="ltx_para">
+<p class="ltx_p">Because</p>
+<table id="S0.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex21.m1" class="ltx_Math" alttext="-2\leq t\leq 3," display="block"><mrow><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>3</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">we have</p>
+<table id="S0.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex22.m1" class="ltx_Math" alttext="-1\leq y\leq\frac{3}{2}." display="block"><mrow><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore only the portion of the right-opening parabola satisfying</p>
+<table id="S0.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex23.m1" class="ltx_Math" alttext="\boxed{-1\leq y\leq\frac{3}{2}}" display="block"><menclose notation="box"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></menclose></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">is traced.</p>
+</div>
+<div id="S0.I1.i4.p6" class="ltx_para">
+<p class="ltx_p">At <math id="S0.I1.i4.p6.m1" class="ltx_Math" alttext="t=-2" display="inline"><mrow><mi>t</mi><mo>=</mo><mrow><mo>−</mo><mn>2</mn></mrow></mrow></math>, the curve begins at</p>
+<table id="S0.Ex24" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex24.m1" class="ltx_Math" alttext="(0,-1)." display="block"><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">As <math id="S0.I1.i4.p6.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> increases to <math id="S0.I1.i4.p6.m3" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>, it moves left and upward to the vertex</p>
+<table id="S0.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex25.m1" class="ltx_Math" alttext="(-4,0)." display="block"><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>4</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">It then moves right and upward, ending at</p>
+<table id="S0.Ex26" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex26.m1" class="ltx_Math" alttext="\left(5,\frac{3}{2}\right)." display="block"><mrow><mrow><mo>(</mo><mn>5</mn><mo>,</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i4.p7" class="ltx_para">
+<img src="10_2_Ex1.jpg" id="S0.I1.i4.g1" class="ltx_graphics ltx_centering ltx_img_square" width="240" height="240" alt="[Uncaptioned image]">
+</div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S0.I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 2.</span>
+Sketch</p>
+<table id="S0.Ex27" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex27.m1" class="ltx_Math" alttext="x=4t^{2}-4,\qquad y=t,\qquad-1\leq t\leq\frac{3}{2}." display="block"><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mo>−</mo><mn>4</mn></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mi>y</mi><mo>=</mo><mi>t</mi></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>≤</mo><mi>t</mi><mo>≤</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i5.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i5.p3" class="ltx_para">
+<p class="ltx_p">Since <math id="S0.I1.i5.p3.m1" class="ltx_Math" alttext="y=t" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>t</mi></mrow></math>, substitution gives</p>
+<table id="S0.Ex28" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex28.m1" class="ltx_Math" alttext="x=4y^{2}-4." display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>−</mo><mn>4</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus the curve lies on</p>
+<table id="S0.Ex29" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex29.m1" class="ltx_Math" alttext="\boxed{x=4y^{2}-4}." display="block"><mrow><menclose notation="box"><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>−</mo><mn>4</mn></mrow></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i5.p4" class="ltx_para">
+<p class="ltx_p">The parameter interval gives</p>
+<table id="S0.Ex30" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex30.m1" class="ltx_Math" alttext="\boxed{-1\leq y\leq\frac{3}{2}}." display="block"><mrow><menclose notation="box"><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i5.p5" class="ltx_para">
+<p class="ltx_p">The initial point is</p>
+<table id="S0.Ex31" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex31.m1" class="ltx_math_unparsed" alttext="t=-1:\qquad(x,y)=(0,-1)," display="block"><mrow><mi>t</mi><mo rspace="0em">=</mo><mo lspace="0em">−</mo><mn>1</mn><mo lspace="0.278em">:</mo><mspace width="2.278em"></mspace><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo rspace="0em">,</mo><mo lspace="0em">−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and the terminal point is</p>
+<table id="S0.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex32.m1" class="ltx_math_unparsed" alttext="t=\frac{3}{2}:\qquad(x,y)=\left(4\left(\frac{3}{2}\right)^{2}-4,\frac{3}{2}%
+\right)=\left(5,\frac{3}{2}\right)." display="block"><mrow><mi>t</mi><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo lspace="0.278em">:</mo><mspace width="2.278em"></mspace><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mn>4</mn><msup><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>4</mn><mo>,</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mn>5</mn><mo>,</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i5.p6" class="ltx_para">
+<p class="ltx_p">The curve moves from <math id="S0.I1.i5.p6.m1" class="ltx_Math" alttext="(0,-1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></math> left and upward to the vertex <math id="S0.I1.i5.p6.m2" class="ltx_Math" alttext="(-4,0)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>4</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>, then right and upward to <math id="S0.I1.i5.p6.m3" class="ltx_Math" alttext="\left(5,\frac{3}{2}\right)" display="inline"><mrow><mo>(</mo><mn>5</mn><mo>,</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow></math>.
+This is the same oriented curve as Example 1, even though the parametrizations are different.</p>
+</div>
+<div class="ltx_logical-block">
+          
+<div id="S0.I1.i5.p7" class="ltx_para">
+<img src="10_2_Ex1.jpg" id="S0.I1.i5.g1" class="ltx_graphics ltx_centering ltx_img_square" width="240" height="240" alt="[Uncaptioned image]">
+</div>
+        
+</div>
+</li>
+<li id="S0.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span> 
+<div id="S0.I1.i6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 3.</span>
+Sketch the curve by eliminating the parameter and finding the correct domain:</p>
+<table id="S0.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex33.m1" class="ltx_Math" alttext="x=\frac{1}{\sqrt{t+1}},\qquad y=\frac{t}{t+1},\qquad t&gt;-1." display="block"><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mi>y</mi><mo>=</mo><mfrac><mi>t</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo rspace="2.167em">,</mo><mrow><mi>t</mi><mo>&gt;</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i6.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i6.p3" class="ltx_para">
+<p class="ltx_p">Rewrite <math id="S0.I1.i6.p3.m1" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>:</p>
+<table id="S0.Ex34" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex34.m1" class="ltx_Math" alttext="y=\frac{t}{t+1}=\frac{(t+1)-1}{t+1}=1-\frac{1}{t+1}." display="block"><mrow><mrow><mi>y</mi><mo>=</mo><mfrac><mi>t</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mn>1</mn></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">From</p>
+<table id="S0.Ex35" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex35.m1" class="ltx_Math" alttext="x=\frac{1}{\sqrt{t+1}}," display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">we have</p>
+<table id="S0.Ex36" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex36.m1" class="ltx_Math" alttext="x^{2}=\frac{1}{t+1}." display="block"><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore</p>
+<table id="S0.Ex37" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex37.m1" class="ltx_Math" alttext="\boxed{y=1-x^{2}}." display="block"><mrow><menclose notation="box"><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i6.p4" class="ltx_para">
+<p class="ltx_p">The original parametrization imposes an important restriction. Since <math id="S0.I1.i6.p4.m1" class="ltx_Math" alttext="t&gt;-1" display="inline"><mrow><mi>t</mi><mo>&gt;</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>,</p>
+<table id="S0.Ex38" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex38.m1" class="ltx_Math" alttext="t+1&gt;0," display="block"><mrow><mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and</p>
+<table id="S0.Ex39" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex39.m1" class="ltx_Math" alttext="x=\frac{1}{\sqrt{t+1}}&gt;0." display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Hence the correct Cartesian domain is</p>
+<table id="S0.Ex40" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex40.m1" class="ltx_Math" alttext="\boxed{x&gt;0}." display="block"><mrow><menclose notation="box"><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i6.p5" class="ltx_para">
+<p class="ltx_p">Thus the curve is the right-hand portion of the parabola</p>
+<table id="S0.Ex41" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex41.m1" class="ltx_Math" alttext="y=1-x^{2}." display="block"><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i6.p6" class="ltx_para">
+<p class="ltx_p">For direction, as <math id="S0.I1.i6.p6.m1" class="ltx_Math" alttext="t\to-1^{+}" display="inline"><mrow><mi>t</mi><mo stretchy="false">→</mo><mrow><mo>−</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></mrow></math>,</p>
+<table id="S0.Ex42" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex42.m1" class="ltx_Math" alttext="x\to\infty,\qquad y=1-x^{2}\to-\infty." display="block"><mrow><mrow><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><mo rspace="2.167em">,</mo><mrow><mi>y</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">→</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">As <math id="S0.I1.i6.p6.m2" class="ltx_Math" alttext="t\to\infty" display="inline"><mrow><mi>t</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>,</p>
+<table id="S0.Ex43" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex43.m1" class="ltx_Math" alttext="x\to 0^{+},\qquad y\to 1^{-}." display="block"><mrow><mrow><mrow><mi>x</mi><mo stretchy="false">→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow><mo rspace="2.167em">,</mo><mrow><mi>y</mi><mo stretchy="false">→</mo><msup><mn>1</mn><mo>−</mo></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore the curve is traced from the lower right upward and to the left, approaching <math id="S0.I1.i6.p6.m3" class="ltx_Math" alttext="(0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> without reaching it.</p>
+</div>
+<div id="S0.I1.i6.p7" class="ltx_para">
+<img src="10_2_Ex3.jpg" id="S0.I1.i6.g1" class="ltx_graphics ltx_centering ltx_img_square" width="240" height="240" alt="[Uncaptioned image]">
+</div>
+</li>
+<li id="S0.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span> 
+<div id="S0.I1.i7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 4.</span>
+Sketch</p>
+<table id="S0.Ex44" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex44.m1" class="ltx_Math" alttext="x=3\cos t,\qquad y=4\sin t,\qquad 0\leq t\leq 2\pi." display="block"><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mn>4</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mn>0</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i7.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i7.p3" class="ltx_para">
+<p class="ltx_p">Solve for the trigonometric expressions:</p>
+<table id="S0.Ex45" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex45.m1" class="ltx_Math" alttext="\cos t=\frac{x}{3},\qquad\sin t=\frac{y}{4}." display="block"><mrow><mrow><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow><mo>=</mo><mfrac><mi>x</mi><mn>3</mn></mfrac></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow><mo>=</mo><mfrac><mi>y</mi><mn>4</mn></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Using</p>
+<table id="S0.Ex46" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex46.m1" class="ltx_Math" alttext="\cos^{2}t+\sin^{2}t=1," display="block"><mrow><mrow><mrow><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow><mo>+</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">we obtain</p>
+<table id="S0.Ex47" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex47.m1" class="ltx_Math" alttext="\boxed{\frac{x^{2}}{9}+\frac{y^{2}}{16}=1}." display="block"><mrow><menclose notation="box"><mrow><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>9</mn></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><mn>16</mn></mfrac></mrow><mo>=</mo><mn>1</mn></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This is an ellipse centered at the origin with horizontal semiaxis <math id="S0.I1.i7.p3.m1" class="ltx_Math" alttext="3" display="inline"><mn>3</mn></math> and vertical semiaxis <math id="S0.I1.i7.p3.m2" class="ltx_Math" alttext="4" display="inline"><mn>4</mn></math>.</p>
+</div>
+<div id="S0.I1.i7.p4" class="ltx_para">
+<p class="ltx_p">Key points are</p>
+<table id="S0.Ex48" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex48.m1" class="ltx_Math" alttext="\begin{array}[]{c|ccccc}t&amp;0&amp;\frac{\pi}{2}&amp;\pi&amp;\frac{3\pi}{2}&amp;2\pi\\
+\hline\cr(x,y)&amp;(3,0)&amp;(0,4)&amp;(-3,0)&amp;(0,-4)&amp;(3,0)\end{array}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r"><mi>t</mi></mtd><mtd><mn>0</mn></mtd><mtd><mstyle displaystyle="false"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mtd><mtd><mi>π</mi></mtd><mtd><mstyle displaystyle="false"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></mtd><mtd><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd class="ltx_border_r"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mtd><mtd><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mtd><mtd><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mtd><mtd><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>3</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mtd><mtd><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mrow><mo>−</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i7.p5" class="ltx_para">
+<p class="ltx_p">The curve begins at <math id="S0.I1.i7.p5.m1" class="ltx_Math" alttext="(3,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> and moves upward, so it is traced once in the counterclockwise direction.</p>
+</div>
+<div id="S0.I1.i7.p6" class="ltx_para">
+<img src="10_2_Ex4.jpg" id="S0.I1.i7.g1" class="ltx_graphics ltx_centering ltx_img_square" width="240" height="240" alt="[Uncaptioned image]">
+</div>
+</li>
+<li id="S0.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span> 
+<div id="S0.I1.i8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 5.</span>
+Sketch</p>
+<table id="S0.Ex49" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex49.m1" class="ltx_Math" alttext="x=2\sin 2t,\qquad y=2\cos 2t,\qquad 0\leq t\leq 2\pi." display="block"><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mn>0</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i8.p3" class="ltx_para">
+<p class="ltx_p">We have</p>
+<table id="S0.Ex50" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex50.m1" class="ltx_Math" alttext="\frac{x}{2}=\sin 2t,\qquad\frac{y}{2}=\cos 2t." display="block"><mrow><mrow><mrow><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>=</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mfrac><mi>y</mi><mn>2</mn></mfrac><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore</p>
+<table id="S0.Ex51" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex51.m1" class="ltx_Math" alttext="\left(\frac{x}{2}\right)^{2}+\left(\frac{y}{2}\right)^{2}=1," display="block"><mrow><mrow><mrow><msup><mrow><mo>(</mo><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mfrac><mi>y</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">so</p>
+<table id="S0.Ex52" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex52.m1" class="ltx_Math" alttext="\boxed{x^{2}+y^{2}=4}." display="block"><mrow><menclose notation="box"><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>4</mn></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This is a circle centered at the origin with radius <math id="S0.I1.i8.p3.m1" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math>.</p>
+</div>
+<div id="S0.I1.i8.p4" class="ltx_para">
+<p class="ltx_p">At <math id="S0.I1.i8.p4.m1" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>,</p>
+<table id="S0.Ex53" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex53.m1" class="ltx_Math" alttext="(x,y)=(0,2)." display="block"><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">For small positive <math id="S0.I1.i8.p4.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>, <math id="S0.I1.i8.p4.m3" class="ltx_Math" alttext="x=2\sin 2t&gt;0" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>, while <math id="S0.I1.i8.p4.m4" class="ltx_Math" alttext="y=2\cos 2t" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow></math> begins to decrease. Thus the point moves from the top of the circle toward the right, which is clockwise.</p>
+</div>
+<div id="S0.I1.i8.p5" class="ltx_para">
+<p class="ltx_p">As <math id="S0.I1.i8.p5.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> runs from <math id="S0.I1.i8.p5.m2" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> to <math id="S0.I1.i8.p5.m3" class="ltx_Math" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></math>, the angle <math id="S0.I1.i8.p5.m4" class="ltx_Math" alttext="2t" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></math> runs from <math id="S0.I1.i8.p5.m5" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> to <math id="S0.I1.i8.p5.m6" class="ltx_Math" alttext="4\pi" display="inline"><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow></math>. Therefore the circle is traced twice, clockwise.</p>
+</div>
+<div id="S0.I1.i8.p6" class="ltx_para">
+<img src="10_2_Ex5.jpg" id="S0.I1.i8.g1" class="ltx_graphics ltx_centering ltx_img_square" width="240" height="240" alt="[Uncaptioned image]">
+</div>
+</li>
+<li id="S0.I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span> 
+<div id="S0.I1.i9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Definition of a Smooth Curve.</span>
+A curve <math id="S0.I1.i9.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>, represented by</p>
+<table id="S0.Ex54" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex54.m1" class="ltx_Math" alttext="x=f(t),\qquad y=g(t)" display="block"><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mi>y</mi><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">on an interval <math id="S0.I1.i9.p1.m2" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>, is called <span class="ltx_text ltx_font_bold">smooth</span> if <math id="S0.I1.i9.p1.m3" class="ltx_Math" alttext="f^{\prime}" display="inline"><msup><mi>f</mi><mo>′</mo></msup></math> and <math id="S0.I1.i9.p1.m4" class="ltx_Math" alttext="g^{\prime}" display="inline"><msup><mi>g</mi><mo>′</mo></msup></math> are continuous on <math id="S0.I1.i9.p1.m5" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> and are not simultaneously zero, except possibly at the endpoints.</p>
+</div>
+<div id="S0.I1.i9.p2" class="ltx_para">
+<p class="ltx_p">The curve is called <span class="ltx_text ltx_font_bold">piecewise smooth</span> if the interval can be divided into finitely many subintervals on each of which the curve is smooth.</p>
+</div>
+<div id="S0.I1.i9.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Key Idea.</span></p>
+</div>
+<div id="S0.I1.i9.p4" class="ltx_para">
+<p class="ltx_p">The vector</p>
+<table id="S0.Ex55" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex55.m1" class="ltx_Math" alttext="\mathbf{r}^{\prime}(t)=\bigl{(}f^{\prime}(t),g^{\prime}(t)\bigr{)}" display="block"><mrow><mrow><msup><mi>𝐫</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">is the velocity vector of the parametrization. The condition</p>
+<table id="S0.Ex56" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex56.m1" class="ltx_Math" alttext="\mathbf{r}^{\prime}(t)\neq(0,0)" display="block"><mrow><mrow><msup><mi>𝐫</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">ensures that the parametrization does not come to a complete stop at an interior point.</p>
+</div>
+</li>
+<li id="S0.I1.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span> 
+<div id="S0.I1.i10.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example. Determining Whether a Curve is Smooth</span></p>
+</div>
+<div id="S0.I1.i10.p2" class="ltx_para">
+<p class="ltx_p">Decide whether each parametric curve is smooth.</p>
+</div>
+<div id="S0.I1.i10.p3" class="ltx_para">
+<ol id="S0.I1.i10.I1" class="ltx_enumerate">
+<li id="S0.I1.i10.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i10.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="S0.I1.i10.I1.i1.p1.m1" class="ltx_Math" alttext="x=t,\;y=t^{2}." display="inline"><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mi>t</mi></mrow><mo rspace="0.447em">,</mo><mrow><mi>y</mi><mo>=</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></p>
+</div>
+<div id="S0.I1.i10.I1.i1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i10.I1.i1.p3" class="ltx_para">
+<table id="S0.Ex57" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex57.m1" class="ltx_Math" alttext="x^{\prime}(t)=1,\qquad y^{\prime}(t)=2t." display="block"><mrow><mrow><mrow><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo rspace="2.167em">,</mo><mrow><mrow><msup><mi>y</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since <math id="S0.I1.i10.I1.i1.p3.m1" class="ltx_Math" alttext="x^{\prime}(t)\neq 0" display="inline"><mrow><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math> for every <math id="S0.I1.i10.I1.i1.p3.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>, the derivatives are never simultaneously zero. Therefore the curve is smooth.</p>
+</div>
+</li>
+<li id="S0.I1.i10.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i10.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="S0.I1.i10.I1.i2.p1.m1" class="ltx_Math" alttext="x=t^{3},\;y=t^{2}." display="inline"><mrow><mrow><mrow><mi>x</mi><mo>=</mo><msup><mi>t</mi><mn>3</mn></msup></mrow><mo rspace="0.447em">,</mo><mrow><mi>y</mi><mo>=</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></p>
+</div>
+<div id="S0.I1.i10.I1.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span></p>
+</div>
+<div id="S0.I1.i10.I1.i2.p3" class="ltx_para">
+<table id="S0.Ex58" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex58.m1" class="ltx_Math" alttext="x^{\prime}(t)=3t^{2},\qquad y^{\prime}(t)=2t." display="block"><mrow><mrow><mrow><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mrow><msup><mi>y</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Both derivatives are zero at <math id="S0.I1.i10.I1.i2.p3.m1" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>. Hence the curve is <em class="ltx_emph ltx_font_italic">not</em> smooth. This parametrization produces a cusp because the velocity vector is <math id="S0.I1.i10.I1.i2.p3.m2" class="ltx_Math" alttext="(0,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> at <math id="S0.I1.i10.I1.i2.p3.m3" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sun Aug  2 17:01:00 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>
