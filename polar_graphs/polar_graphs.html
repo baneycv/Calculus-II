@@ -1,0 +1,1238 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Polar Graphs</title>
+<!--Generated on Thu Jun  5 10:05:33 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../ltx-article.css" type="text/css">
+
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    background: #fff;
+    color: #000;
+  }
+
+  .ltx_text.ltx_font_bold,
+  .ltx_font_bold {
+    font-weight: 700 !important;
+  }
+
+  math {
+    font-size: 1em;
+  }
+
+  math[display="block"],
+  .ltx_equation math {
+    font-size: 1.05em;
+  }
+
+  .ltx_equation,
+  .displaymath,
+  div.displaymath {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1em 0 !important;
+  }
+
+  table.ltx_eqn_table,
+  .ltx_eqn_table {
+    border: none !important;
+    border-collapse: collapse !important;
+    box-shadow: none !important;
+    background: none !important;
+    width: 100%;
+  }
+
+  .ltx_eqn_table td {
+    border: none !important;
+  }
+
+  .ltx_tag_item {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  img.ltx_graphics {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 35%;
+    height: auto;
+}
+</style>
+</head>
+
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div id="p1" class="ltx_para">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252, 10.4: Polar Graphs
+<br class="ltx_break"></span></p>
+</div>
+<div id="p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The purpose of this section is to review polar coordinates and develop an efficient method for sketching several important polar curves. These graphs will be used in the next section when we find the areas of polar regions.</p>
+</div>
+<div id="p3" class="ltx_para ltx_noindent">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Polar Coordinates and Definitions</span></p>
+</div>
+<div id="S0.I1.i1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">In rectangular coordinates, a point is described by an ordered pair <math id="S0.I1.i1.p2.m1" class="ltx_Math" alttext="(x,y)" display="inline"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></math>. In polar coordinates, the same point is described by an ordered pair</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="(r,\theta)," display="block"><mrow><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S0.I1.i1.p2.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> gives a directed distance from the origin and <math id="S0.I1.i1.p2.m3" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> gives a direction.</p>
+</div>
+<div id="S0.I1.i1.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">The origin is called the <span class="ltx_text ltx_font_bold">pole</span>, and the positive <math id="S0.I1.i1.p3.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis is called the <span class="ltx_text ltx_font_bold">polar axis</span>.</p>
+</div>
+<div id="S0.I1.i1.p4" class="ltx_para ltx_noindent">
+<ol id="S0.I1.i1.I1" class="ltx_enumerate">
+<li id="S0.I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i1.I1.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">The radial coordinate <math id="S0.I1.i1.I1.i1.p1.m1" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>.</span></p>
+</div>
+<div id="S0.I1.i1.I1.i1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The value <math id="S0.I1.i1.I1.i1.p2.m1" class="ltx_Math" alttext="|r|" display="inline"><mrow><mo stretchy="false">|</mo><mi>r</mi><mo stretchy="false">|</mo></mrow></math> is the distance from the pole to the point.</p>
+<ul id="S0.I1.i1.I1.i1.I1" class="ltx_itemize">
+<li id="S0.I1.i1.I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">If <math id="S0.I1.i1.I1.i1.I1.i1.p1.m1" class="ltx_Math" alttext="r&gt;0" display="inline"><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, move <math id="S0.I1.i1.I1.i1.I1.i1.p1.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> units in the direction determined by <math id="S0.I1.i1.I1.i1.I1.i1.p1.m3" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">If <math id="S0.I1.i1.I1.i1.I1.i2.p1.m1" class="ltx_Math" alttext="r&lt;0" display="inline"><mrow><mi>r</mi><mo>&lt;</mo><mn>0</mn></mrow></math>, move <math id="S0.I1.i1.I1.i1.I1.i2.p1.m2" class="ltx_Math" alttext="|r|" display="inline"><mrow><mo stretchy="false">|</mo><mi>r</mi><mo stretchy="false">|</mo></mrow></math> units in the direction opposite the terminal side of <math id="S0.I1.i1.I1.i1.I1.i2.p1.m3" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i1.I1.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">If <math id="S0.I1.i1.I1.i1.I1.i3.p1.m1" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math>, the point is the pole, regardless of the value of <math id="S0.I1.i1.I1.i1.I1.i3.p1.m2" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i1.I1.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">The angular coordinate <math id="S0.I1.i1.I1.i2.p1.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>.</span></p>
+</div>
+<div id="S0.I1.i1.I1.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The angle <math id="S0.I1.i1.I1.i2.p2.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> is measured from the positive <math id="S0.I1.i1.I1.i2.p2.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis.</p>
+<ul id="S0.I1.i1.I1.i2.I1" class="ltx_itemize">
+<li id="S0.I1.i1.I1.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Positive angles are measured counterclockwise.</p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.I1.i2.I1.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Negative angles are measured clockwise.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i1.I1.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Relationship with rectangular coordinates.</span></p>
+</div>
+<div id="S0.I1.i1.I1.i3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The conversion formulas follow from right-triangle trigonometry:</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\boxed{x=r\cos\theta}\qquad\text{and}\qquad\boxed{y=r\sin\theta}." display="block"><mrow><mrow><menclose notation="box"><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></menclose><mspace width="2em"></mspace><mtext>and</mtext><mspace width="2em"></mspace><menclose notation="box"><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></menclose></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Also,</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\boxed{r^{2}=x^{2}+y^{2}}." display="block"><mrow><menclose notation="box"><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">When converting from rectangular to polar coordinates, the equation</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\tan\theta=\frac{y}{x}" display="block"><mrow><mrow><mi>tan</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo>=</mo><mfrac><mi>y</mi><mi>x</mi></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">may help determine an angle, but the quadrant of <math id="S0.I1.i1.I1.i3.p2.m1" class="ltx_Math" alttext="(x,y)" display="inline"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></math> must also be considered.</p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i1.I1.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Polar representations are not unique.</span></p>
+</div>
+<div id="S0.I1.i1.I1.i4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Adding a complete revolution does not change the point:</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="(r,\theta)=(r,\theta+2\pi k),\qquad k\in\mathbb{Z}." display="block"><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mi>θ</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="2.167em">,</mo><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">A negative radius reverses the direction by <math id="S0.I1.i1.I1.i4.p2.m1" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> radians:</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="(r,\theta)=(-r,\theta+\pi)." display="block"><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>r</mi></mrow><mo>,</mo><mrow><mi>θ</mi><mo>+</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">For example,</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="\left(2,\frac{\pi}{3}\right)=\left(2,\frac{7\pi}{3}\right)=\left(-2,\frac{4\pi%
+}{3}\right)." display="block"><mrow><mrow><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mfrac><mi>π</mi><mn>3</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mfrac><mrow><mn>7</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac><mo>)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">All three ordered pairs represent the same point.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="S0.I1.i1.p5" class="ltx_para">
+<p class="ltx_p ltx_minipage ltx_align_center ltx_align_middle" style="width:407.6pt;"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span>
+<span class="ltx_text ltx_font_bold">Important:</span> A polar ordered pair is written <math id="S0.I1.i1.m1" class="ltx_Math" alttext="(r,\theta)" display="inline"><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></math>. First determine the angle <math id="S0.I1.i1.m2" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>; then use the directed radius <math id="S0.I1.i1.m3" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> to locate the point.
+<span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span></p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Plotting Points in Polar Coordinates</span></p>
+</div>
+<div id="S0.I1.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">To plot a polar point <math id="S0.I1.i2.p2.m1" class="ltx_Math" alttext="(r,\theta)" display="inline"><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></math>:</p>
+<ol id="S0.I1.i2.I1" class="ltx_enumerate">
+<li id="S0.I1.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Locate the angle <math id="S0.I1.i2.I1.i1.p1.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">If <math id="S0.I1.i2.I1.i2.p1.m1" class="ltx_Math" alttext="r&gt;0" display="inline"><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, move <math id="S0.I1.i2.I1.i2.p1.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> units along the terminal side of the angle.</p>
+</div>
+</li>
+<li id="S0.I1.i2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i2.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">If <math id="S0.I1.i2.I1.i3.p1.m1" class="ltx_Math" alttext="r&lt;0" display="inline"><mrow><mi>r</mi><mo>&lt;</mo><mn>0</mn></mrow></math>, move <math id="S0.I1.i2.I1.i3.p1.m2" class="ltx_Math" alttext="|r|" display="inline"><mrow><mo stretchy="false">|</mo><mi>r</mi><mo stretchy="false">|</mo></mrow></math> units in the opposite direction.</p>
+</div>
+</li>
+<li id="S0.I1.i2.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i2.I1.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Plot the point.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S0.I1.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 1.</span> Plot the point</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="\left(2,\frac{2\pi}{3}\right)" display="block"><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac><mo>)</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and convert it to rectangular coordinates.</p>
+</div>
+<div id="S0.I1.i3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span> The angle <math id="S0.I1.i3.p2.m1" class="ltx_Math" alttext="2\pi/3" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mn>3</mn></mrow></math> is measured counterclockwise from the positive <math id="S0.I1.i3.p2.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis. Since <math id="S0.I1.i3.p2.m3" class="ltx_Math" alttext="r=2&gt;0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>2</mn><mo>&gt;</mo><mn>0</mn></mrow></math>, move two units from the pole along the terminal side of <math id="S0.I1.i3.p2.m4" class="ltx_Math" alttext="2\pi/3" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mn>3</mn></mrow></math>.</p>
+</div>
+<div id="S0.I1.i3.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">To convert to rectangular coordinates, use <math id="S0.I1.i3.p3.m1" class="ltx_Math" alttext="x=r\cos\theta" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math> and <math id="S0.I1.i3.p3.m2" class="ltx_Math" alttext="y=r\sin\theta" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math>:</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex9.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><mi>x</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex9.m2" class="ltx_Math" alttext="\displaystyle=2\cos\left(\frac{2\pi}{3}\right)=2\left(-\frac{1}{2}\right)=-1," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo>(</mo><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex10.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex10.m2" class="ltx_Math" alttext="\displaystyle=2\sin\left(\frac{2\pi}{3}\right)=2\left(\frac{\sqrt{3}}{2}\right%
+)=\sqrt{3}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore,</p>
+<table id="S0.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex11.m1" class="ltx_Math" alttext="\boxed{(x,y)=(-1,\sqrt{3})}." display="block"><mrow><menclose notation="box"><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><msqrt><mn>3</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i3.p4" class="ltx_para">
+<img src="10_4_Ex1.jpg" id="S0.I1.i3.g1" class="ltx_graphics ltx_centering ltx_img_square" width="252" height="252" alt="A polar coordinate grid with concentric circles and radial lines labeled in radians. A single red point is plotted at a radius of 2 and an angle of two thirds pi in the second quadrant. The point lies on the circle corresponding to radius 2 and is labeled two thirds pi.">
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S0.I1.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 2.</span> Plot the point</p>
+<table id="S0.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex12.m1" class="ltx_Math" alttext="\left(-3,-\frac{\pi}{2}\right)" display="block"><mrow><mo>(</mo><mrow><mo>−</mo><mn>3</mn></mrow><mo>,</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and convert it to rectangular coordinates.</p>
+</div>
+<div id="S0.I1.i4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span> The angle <math id="S0.I1.i4.p2.m1" class="ltx_Math" alttext="-\pi/2" display="inline"><mrow><mo>−</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow></math> points downward. Because <math id="S0.I1.i4.p2.m2" class="ltx_Math" alttext="r=-3" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mo>−</mo><mn>3</mn></mrow></mrow></math> is negative, move three units in the direction opposite the terminal side of <math id="S0.I1.i4.p2.m3" class="ltx_Math" alttext="-\pi/2" display="inline"><mrow><mo>−</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow></math>. Therefore, the point lies three units above the pole on the positive <math id="S0.I1.i4.p2.m4" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis.</p>
+</div>
+<div id="S0.I1.i4.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Using the conversion formulas,</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex13.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><mi>x</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex13.m2" class="ltx_Math" alttext="\displaystyle=-3\cos\left(-\frac{\pi}{2}\right)=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex14.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex14.m2" class="ltx_Math" alttext="\displaystyle=-3\sin\left(-\frac{\pi}{2}\right)=-3(-1)=3." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>3</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus,</p>
+<table id="S0.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex15.m1" class="ltx_Math" alttext="\boxed{(x,y)=(0,3)}." display="block"><mrow><menclose notation="box"><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></menclose><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i4.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">An equivalent polar representation with a positive radius is</p>
+<table id="S0.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex16.m1" class="ltx_Math" alttext="\left(3,\frac{\pi}{2}\right)." display="block"><mrow><mrow><mo>(</mo><mn>3</mn><mo>,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i4.p5" class="ltx_para">
+<img src="10_4_Ex2.jpg" id="S0.I1.i4.g1" class="ltx_graphics ltx_centering ltx_img_square" width="252" height="252" alt="A polar coordinate grid with concentric circles and radial lines labeled in radians. A single red point represents the polar coordinate with radius negative 3 and angle negative pi over 2. Because the radius is negative, the point is plotted on the positive vertical axis, three units from the origin, at the same location as the point with polar coordinates 3 and pi over 2.">
+</div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S0.I1.i5.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Polar Functions and Graphs</span></p>
+</div>
+<div id="S0.I1.i5.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">A polar function has the form</p>
+<table id="S0.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex17.m1" class="ltx_Math" alttext="r=f(\theta)," display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S0.I1.i5.p2.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> is the independent variable and <math id="S0.I1.i5.p2.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> is the dependent variable. Each chosen value of <math id="S0.I1.i5.p2.m3" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> produces a polar point</p>
+<table id="S0.Ex18" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex18.m1" class="ltx_Math" alttext="\bigl{(}f(\theta),\theta\bigr{)}." display="block"><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi>θ</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">As <math id="S0.I1.i5.p2.m4" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> changes, the point moves and traces a curve.</p>
+</div>
+<div id="S0.I1.i5.p3" class="ltx_para">
+<div class="ltx_block ltx_minipage ltx_align_center ltx_align_middle" style="width:407.6pt;">
+<p class="ltx_p"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span>
+<span class="ltx_text ltx_font_bold">How to sketch a polar curve</span></p>
+<ol id="S0.I1.i5.I1" class="ltx_enumerate">
+<li id="S0.I1.i5.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i5.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Choose values of <math id="S0.I1.i5.I1.i1.p1.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> that reveal the important behavior of the function.</p>
+</div>
+</li>
+<li id="S0.I1.i5.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i5.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Calculate the corresponding values of <math id="S0.I1.i5.I1.i2.p1.m1" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i5.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i5.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Plot each polar point <math id="S0.I1.i5.I1.i3.p1.m1" class="ltx_Math" alttext="(r,\theta)" display="inline"><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i5.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i5.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Connect the points <span class="ltx_text ltx_font_bold">in order of increasing <math id="S0.I1.i5.I1.i4.p1.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math></span>.</p>
+</div>
+</li>
+<li id="S0.I1.i5.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I1.i5.I1.i5.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Continue until the complete curve has been traced and the graph closes.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span></p>
+</div>
+</div>
+<div id="S0.I1.i5.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">A negative value of <math id="S0.I1.i5.p4.m1" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> is not discarded. It means that the point is plotted on the ray opposite the terminal side of <math id="S0.I1.i5.p4.m2" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>. Negative values of <math id="S0.I1.i5.p4.m3" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> are responsible for many of the loops and petals seen in polar graphs.</p>
+</div>
+<div id="S0.I1.i5.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">The order in which the graph is traced matters. Later, when we find polar area, the limits of integration will describe the interval of <math id="S0.I1.i5.p5.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> that traces the desired region.</p>
+</div>
+</li>
+<li id="S0.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span> 
+<div id="S0.I1.i6.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 3: A Circle.</span> Sketch the graph of</p>
+<table id="S0.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex19.m1" class="ltx_Math" alttext="r=2\cos\theta." display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i6.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span> We first calculate several values of <math id="S0.I1.i6.p2.m1" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> as <math id="S0.I1.i6.p2.m2" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> increases from <math id="S0.I1.i6.p2.m3" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> to <math id="S0.I1.i6.p2.m4" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>.</p>
+</div>
+<div id="S0.I1.i6.p3" class="ltx_para">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m2" class="ltx_Math" alttext="r=2\cos\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">Polar point</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m3" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m4" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m5" class="ltx_Math" alttext="(2,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m6" class="ltx_Math" alttext="\dfrac{\pi}{4}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>4</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m7" class="ltx_Math" alttext="\sqrt{2}" display="inline"><msqrt><mn>2</mn></msqrt></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m8" class="ltx_Math" alttext="\left(\sqrt{2},\dfrac{\pi}{4}\right)" display="inline"><mrow><mo>(</mo><msqrt><mn>2</mn></msqrt><mo>,</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>4</mn></mfrac></mstyle><mo>)</mo></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m9" class="ltx_Math" alttext="\dfrac{\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m10" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">pole</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m11" class="ltx_Math" alttext="\dfrac{3\pi}{4}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>4</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m12" class="ltx_Math" alttext="-\sqrt{2}" display="inline"><mrow><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m13" class="ltx_Math" alttext="\left(-\sqrt{2},\dfrac{3\pi}{4}\right)" display="inline"><mrow><mo>(</mo><mrow><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow><mo>,</mo><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>4</mn></mfrac></mstyle><mo>)</mo></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m14" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m15" class="ltx_Math" alttext="-2" display="inline"><mrow><mo>−</mo><mn>2</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i6.m16" class="ltx_Math" alttext="(-2,\pi)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mi>π</mi><mo stretchy="false">)</mo></mrow></math></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i6.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">At <math id="S0.I1.i6.p4.m1" class="ltx_Math" alttext="\theta=0" display="inline"><mrow><mi>θ</mi><mo>=</mo><mn>0</mn></mrow></math>, the graph begins at <math id="S0.I1.i6.p4.m2" class="ltx_Math" alttext="(2,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>. As <math id="S0.I1.i6.p4.m3" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> increases to <math id="S0.I1.i6.p4.m4" class="ltx_Math" alttext="\pi/2" display="inline"><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></math>, the radius decreases to <math id="S0.I1.i6.p4.m5" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>, so the upper half of the circle is traced toward the pole. For <math id="S0.I1.i6.p4.m6" class="ltx_Math" alttext="\pi/2&lt;\theta\leq\pi" display="inline"><mrow><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow><mo>&lt;</mo><mi>θ</mi><mo>≤</mo><mi>π</mi></mrow></math>, the radius is negative. These points are plotted opposite their stated angles, tracing the lower half of the circle and returning to <math id="S0.I1.i6.p4.m7" class="ltx_Math" alttext="(2,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>.</p>
+</div>
+<div id="S0.I1.i6.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">The interval <math id="S0.I1.i6.p5.m1" class="ltx_Math" alttext="0\leq\theta\leq\pi" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>θ</mi><mo>≤</mo><mi>π</mi></mrow></math> traces the complete circle once.</p>
+</div>
+<div id="S0.I1.i6.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">We can identify the circle algebraically. Since <math id="S0.I1.i6.p6.m1" class="ltx_Math" alttext="r=2\cos\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math>,</p>
+<table id="S0.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex20.m1" class="ltx_Math" alttext="r^{2}=2r\cos\theta." display="block"><mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>r</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Using <math id="S0.I1.i6.p6.m2" class="ltx_Math" alttext="r^{2}=x^{2}+y^{2}" display="inline"><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow></math> and <math id="S0.I1.i6.p6.m3" class="ltx_Math" alttext="r\cos\theta=x" display="inline"><mrow><mrow><mi>r</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>=</mo><mi>x</mi></mrow></math> gives</p>
+<table id="S0.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex21.m1" class="ltx_Math" alttext="x^{2}+y^{2}=2x." display="block"><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Completing the square,</p>
+<table id="S0.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex22.m1" class="ltx_Math" alttext="(x-1)^{2}+y^{2}=1." display="block"><mrow><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore, the graph is a circle centered at <math id="S0.I1.i6.p6.m4" class="ltx_Math" alttext="(1,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> with radius <math id="S0.I1.i6.p6.m5" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math>.</p>
+</div>
+<div id="S0.I1.i6.p7" class="ltx_para">
+<img src="10_4_Ex3.jpg" id="S0.I1.i6.g1" class="ltx_graphics ltx_centering ltx_img_square" width="252" height="252" alt="A polar coordinate grid with concentric circles and radial lines labeled in radians. A red curve forms a circle centered at the point with polar coordinates 1 and 0 on the positive horizontal axis. The circle has radius 1, passes through the origin and the point with polar coordinates 2 and 0, and is symmetric about the horizontal axis.">
+</div>
+<iframe src="https://www.desmos.com/calculator/qwhtpsttit?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<div id="S0.I1.i6.p8" class="ltx_para">
+<div class="ltx_block ltx_minipage ltx_align_center ltx_align_middle" style="width:407.6pt;">
+<p class="ltx_p"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span>
+<span class="ltx_text ltx_font_bold">Circles through the pole:</span></p>
+<table id="S0.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex23.m1" class="ltx_Math" alttext="r=a\cos\theta" display="block"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">is a circle centered on the <math id="S0.I1.i6.m17" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis, while</p>
+<table id="S0.Ex24" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex24.m1" class="ltx_Math" alttext="r=a\sin\theta" display="block"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">is a circle centered on the <math id="S0.I1.i6.m18" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis. In each case, the circle passes through the pole.
+<span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span></p>
+</div>
+</div>
+</li>
+<li id="S0.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span> 
+<div id="S0.I1.i7.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 4: A Rose with an Odd Number of Petals.</span> Sketch the graph of</p>
+<table id="S0.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex25.m1" class="ltx_Math" alttext="r=2\cos(3\theta)." display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i7.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span> This equation has the form</p>
+<table id="S0.Ex26" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex26.m1" class="ltx_Math" alttext="r=a\cos(n\theta)," display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">with <math id="S0.I1.i7.p2.m1" class="ltx_Math" alttext="a=2" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow></math> and <math id="S0.I1.i7.p2.m2" class="ltx_Math" alttext="n=3" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow></math>. Because <math id="S0.I1.i7.p2.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is odd, the graph has <math id="S0.I1.i7.p2.m4" class="ltx_Math" alttext="3" display="inline"><mn>3</mn></math> petals. The maximum distance from the pole is <math id="S0.I1.i7.p2.m5" class="ltx_Math" alttext="|a|=2" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>a</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>2</mn></mrow></math>, so each petal has length <math id="S0.I1.i7.p2.m6" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math>.</p>
+</div>
+<div id="S0.I1.i7.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">We use angles that make <math id="S0.I1.i7.p3.m1" class="ltx_Math" alttext="3\theta" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>θ</mi></mrow></math> a multiple of <math id="S0.I1.i7.p3.m2" class="ltx_Math" alttext="\pi/2" display="inline"><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></math>.</p>
+</div>
+<div id="S0.I1.i7.p4" class="ltx_para">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m2" class="ltx_Math" alttext="3\theta" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>θ</mi></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m3" class="ltx_Math" alttext="r=2\cos(3\theta)" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m4" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m5" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m6" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m7" class="ltx_Math" alttext="\dfrac{\pi}{6}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>6</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m8" class="ltx_Math" alttext="\dfrac{\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m9" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m10" class="ltx_Math" alttext="\dfrac{\pi}{3}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>3</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m11" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m12" class="ltx_Math" alttext="-2" display="inline"><mrow><mo>−</mo><mn>2</mn></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m13" class="ltx_Math" alttext="\dfrac{\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m14" class="ltx_Math" alttext="\dfrac{3\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m15" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m16" class="ltx_Math" alttext="\dfrac{2\pi}{3}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mn>3</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m17" class="ltx_Math" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m18" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m19" class="ltx_Math" alttext="\dfrac{5\pi}{6}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>6</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m20" class="ltx_Math" alttext="\dfrac{5\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m21" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m22" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m23" class="ltx_Math" alttext="3\pi" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i7.m24" class="ltx_Math" alttext="-2" display="inline"><mrow><mo>−</mo><mn>2</mn></mrow></math></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i7.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">At <math id="S0.I1.i7.p5.m1" class="ltx_Math" alttext="\theta=0" display="inline"><mrow><mi>θ</mi><mo>=</mo><mn>0</mn></mrow></math>, <math id="S0.I1.i7.p5.m2" class="ltx_Math" alttext="r=2" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>2</mn></mrow></math>, so the graph begins at the tip of the petal on the positive <math id="S0.I1.i7.p5.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis. At <math id="S0.I1.i7.p5.m4" class="ltx_Math" alttext="\theta=\pi/6" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mi>π</mi><mo>/</mo><mn>6</mn></mrow></mrow></math>, <math id="S0.I1.i7.p5.m5" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math>, so the curve reaches the pole. When <math id="S0.I1.i7.p5.m6" class="ltx_Math" alttext="\theta=\pi/3" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mi>π</mi><mo>/</mo><mn>3</mn></mrow></mrow></math>, <math id="S0.I1.i7.p5.m7" class="ltx_Math" alttext="r=-2" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mo>−</mo><mn>2</mn></mrow></mrow></math>; this point is plotted two units opposite the angle <math id="S0.I1.i7.p5.m8" class="ltx_Math" alttext="\pi/3" display="inline"><mrow><mi>π</mi><mo>/</mo><mn>3</mn></mrow></math>, placing the tip of another petal in the direction <math id="S0.I1.i7.p5.m9" class="ltx_Math" alttext="4\pi/3" display="inline"><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mn>3</mn></mrow></math>. Continuing in order of increasing <math id="S0.I1.i7.p5.m10" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> produces the remaining petals.</p>
+</div>
+<div id="S0.I1.i7.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">The complete three-petal rose is traced once on</p>
+<table id="S0.Ex27" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex27.m1" class="ltx_Math" alttext="0\leq\theta\leq\pi." display="block"><mrow><mrow><mn>0</mn><mo>≤</mo><mi>θ</mi><mo>≤</mo><mi>π</mi></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i7.p7" class="ltx_para">
+<img src="10_4_Ex4.jpg" id="S0.I1.i7.g1" class="ltx_graphics ltx_centering ltx_img_square" width="252" height="252" alt="A polar coordinate grid with concentric circles and radial lines labeled in radians. A red three-petaled rose curve is centered at the origin. One petal extends along the positive horizontal axis to a maximum radius of 2. The other two petals are centered at angles of two thirds pi and four thirds pi, each reaching a maximum radius of 2. The curve is symmetric under rotations of two thirds pi.">
+</div>
+<iframe src="https://www.desmos.com/calculator/cpckj9n2ps?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<div id="S0.I1.i7.p8" class="ltx_para">
+<div class="ltx_block ltx_minipage ltx_align_center ltx_align_middle" style="width:407.6pt;">
+<p class="ltx_p"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span>
+<span class="ltx_text ltx_font_bold">Rose curves:</span> For</p>
+<table id="S0.Ex28" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex28.m1" class="ltx_Math" alttext="r=a\cos(n\theta)\qquad\text{or}\qquad r=a\sin(n\theta)," display="block"><mrow><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="2em"></mspace><mtext>or</mtext></mrow></mrow><mspace width="2em"></mspace><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<ul id="S0.I1.i7.I1" class="ltx_itemize">
+<li id="S0.I1.i7.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i7.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">if <math id="S0.I1.i7.I1.i1.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is odd, the graph has <math id="S0.I1.i7.I1.i1.p1.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> petals;</p>
+</div>
+</li>
+<li id="S0.I1.i7.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i7.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">if <math id="S0.I1.i7.I1.i2.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is even, the graph has <math id="S0.I1.i7.I1.i2.p1.m2" class="ltx_Math" alttext="2n" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></math> petals;</p>
+</div>
+</li>
+<li id="S0.I1.i7.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i7.I1.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">the length of each petal is <math id="S0.I1.i7.I1.i3.p1.m1" class="ltx_Math" alttext="|a|" display="inline"><mrow><mo stretchy="false">|</mo><mi>a</mi><mo stretchy="false">|</mo></mrow></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span></p>
+</div>
+</div>
+</li>
+<li id="S0.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span> 
+<div id="S0.I1.i8.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 5: A Rose with an Even Number of Petals.</span> Sketch the graph of</p>
+<table id="S0.Ex29" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex29.m1" class="ltx_Math" alttext="r=3\sin(4\theta)." display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span> Here <math id="S0.I1.i8.p2.m1" class="ltx_Math" alttext="a=3" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>3</mn></mrow></math> and <math id="S0.I1.i8.p2.m2" class="ltx_Math" alttext="n=4" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math>. Since <math id="S0.I1.i8.p2.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is even, the graph has</p>
+<table id="S0.Ex30" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex30.m1" class="ltx_Math" alttext="2n=2(4)=8" display="block"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>8</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">petals. Each petal has length <math id="S0.I1.i8.p2.m4" class="ltx_Math" alttext="3" display="inline"><mn>3</mn></math>.</p>
+</div>
+<div id="S0.I1.i8.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">We choose values of <math id="S0.I1.i8.p3.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> for which <math id="S0.I1.i8.p3.m2" class="ltx_Math" alttext="4\theta" display="inline"><mrow><mn>4</mn><mo>⁢</mo><mi>θ</mi></mrow></math> is a multiple of <math id="S0.I1.i8.p3.m3" class="ltx_Math" alttext="\pi/2" display="inline"><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></math>.</p>
+</div>
+<div id="S0.I1.i8.p4" class="ltx_para">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m2" class="ltx_Math" alttext="4\theta" display="inline"><mrow><mn>4</mn><mo>⁢</mo><mi>θ</mi></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m3" class="ltx_Math" alttext="r=3\sin(4\theta)" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m4" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m5" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m6" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m7" class="ltx_Math" alttext="\dfrac{\pi}{8}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>8</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m8" class="ltx_Math" alttext="\dfrac{\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m9" class="ltx_Math" alttext="3" display="inline"><mn>3</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m10" class="ltx_Math" alttext="\dfrac{\pi}{4}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>4</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m11" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m12" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m13" class="ltx_Math" alttext="\dfrac{3\pi}{8}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>8</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m14" class="ltx_Math" alttext="\dfrac{3\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m15" class="ltx_Math" alttext="-3" display="inline"><mrow><mo>−</mo><mn>3</mn></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m16" class="ltx_Math" alttext="\dfrac{\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m17" class="ltx_Math" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m18" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m19" class="ltx_Math" alttext="\dfrac{5\pi}{8}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>8</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m20" class="ltx_Math" alttext="\dfrac{5\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m21" class="ltx_Math" alttext="3" display="inline"><mn>3</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m22" class="ltx_Math" alttext="\dfrac{3\pi}{4}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>4</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m23" class="ltx_Math" alttext="3\pi" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m24" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m25" class="ltx_Math" alttext="\dfrac{7\pi}{8}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>7</mn><mo>⁢</mo><mi>π</mi></mrow><mn>8</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m26" class="ltx_Math" alttext="\dfrac{7\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>7</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m27" class="ltx_Math" alttext="-3" display="inline"><mrow><mo>−</mo><mn>3</mn></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m28" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m29" class="ltx_Math" alttext="4\pi" display="inline"><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i8.m30" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i8.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">The table above traces four petals as <math id="S0.I1.i8.p5.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> increases from <math id="S0.I1.i8.p5.m2" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> to <math id="S0.I1.i8.p5.m3" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>. The remaining four petals are traced as <math id="S0.I1.i8.p5.m4" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> continues from <math id="S0.I1.i8.p5.m5" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> to <math id="S0.I1.i8.p5.m6" class="ltx_Math" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></math>. At values where <math id="S0.I1.i8.p5.m7" class="ltx_Math" alttext="r=-3" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mo>−</mo><mn>3</mn></mrow></mrow></math>, the point is plotted in the direction opposite <math id="S0.I1.i8.p5.m8" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>, producing petals between those obtained from positive values of <math id="S0.I1.i8.p5.m9" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>.</p>
+</div>
+<div id="S0.I1.i8.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">The full eight-petal rose is traced once on</p>
+<table id="S0.Ex31" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex31.m1" class="ltx_Math" alttext="0\leq\theta\leq 2\pi." display="block"><mrow><mrow><mn>0</mn><mo>≤</mo><mi>θ</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Because this is a sine rose, the first petal is centered at <math id="S0.I1.i8.p6.m1" class="ltx_Math" alttext="\theta=\pi/8" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mi>π</mi><mo>/</mo><mn>8</mn></mrow></mrow></math>, rather than on the positive <math id="S0.I1.i8.p6.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis.</p>
+</div>
+<div id="S0.I1.i8.p7" class="ltx_para">
+<img src="10_4_Ex5.jpg" id="S0.I1.i8.g1" class="ltx_graphics ltx_centering ltx_img_square" width="252" height="252" alt="A polar coordinate grid with concentric circles and radial lines labeled in radians. A red eight-petaled rose curve is centered at the origin. The eight identical petals are evenly spaced every pi over 4 radians around the origin, with one petal centered at angles of pi over 8, three pi over 8, five pi over 8, seven pi over 8, nine pi over 8, eleven pi over 8, thirteen pi over 8, and fifteen pi over 8. Each petal extends to a maximum radius of approximately 3, and the curve is symmetric about the origin and under rotations of pi over 4.">
+</div>
+<iframe src="https://www.desmos.com/calculator/d2sqj4qwgn?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+</li>
+<li id="S0.I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span> 
+<div id="S0.I1.i9.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 6: A Cardioid.</span> Sketch the graph of</p>
+<table id="S0.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex32.m1" class="ltx_Math" alttext="r=2-2\cos\theta." display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i9.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span> This equation has the form</p>
+<table id="S0.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex33.m1" class="ltx_Math" alttext="r=a-a\cos\theta," display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo>−</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">so it is a cardioid. A cardioid is a special limaçon in which the two coefficients have equal magnitude.</p>
+</div>
+<div id="S0.I1.i9.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">The radius is always nonnegative because</p>
+<table id="S0.Ex34" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex34.m1" class="ltx_Math" alttext="0\leq 2-2\cos\theta\leq 4." display="block"><mrow><mrow><mn>0</mn><mo>≤</mo><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>≤</mo><mn>4</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We calculate values over one complete revolution.</p>
+</div>
+<div id="S0.I1.i9.p4" class="ltx_para">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m2" class="ltx_Math" alttext="r=2-2\cos\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m3" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m4" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m5" class="ltx_Math" alttext="\dfrac{\pi}{4}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>4</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m6" class="ltx_Math" alttext="2-\sqrt{2}" display="inline"><mrow><mn>2</mn><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m7" class="ltx_Math" alttext="\dfrac{\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m8" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m9" class="ltx_Math" alttext="\dfrac{3\pi}{4}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>4</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m10" class="ltx_Math" alttext="2+\sqrt{2}" display="inline"><mrow><mn>2</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m11" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m12" class="ltx_Math" alttext="4" display="inline"><mn>4</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m13" class="ltx_Math" alttext="\dfrac{5\pi}{4}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>4</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m14" class="ltx_Math" alttext="2+\sqrt{2}" display="inline"><mrow><mn>2</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m15" class="ltx_Math" alttext="\dfrac{3\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m16" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m17" class="ltx_Math" alttext="\dfrac{7\pi}{4}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>7</mn><mo>⁢</mo><mi>π</mi></mrow><mn>4</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m18" class="ltx_Math" alttext="2-\sqrt{2}" display="inline"><mrow><mn>2</mn><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m19" class="ltx_Math" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i9.m20" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i9.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">At <math id="S0.I1.i9.p5.m1" class="ltx_Math" alttext="\theta=0" display="inline"><mrow><mi>θ</mi><mo>=</mo><mn>0</mn></mrow></math>, <math id="S0.I1.i9.p5.m2" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math>, so the graph begins at the pole. As <math id="S0.I1.i9.p5.m3" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> increases, the radius increases and the upper half of the curve is traced. The greatest radius occurs when <math id="S0.I1.i9.p5.m4" class="ltx_Math" alttext="\theta=\pi" display="inline"><mrow><mi>θ</mi><mo>=</mo><mi>π</mi></mrow></math>:</p>
+<table id="S0.Ex35" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex35.m1" class="ltx_Math" alttext="r=2-2\cos\pi=4." display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>π</mi></mrow></mrow></mrow><mo>=</mo><mn>4</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus, the cardioid extends four units to the left. The lower half is traced as <math id="S0.I1.i9.p5.m5" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> increases from <math id="S0.I1.i9.p5.m6" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> to <math id="S0.I1.i9.p5.m7" class="ltx_Math" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></math>, and the curve returns to the pole.</p>
+</div>
+<div id="S0.I1.i9.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">The graph is symmetric about the polar axis because</p>
+<table id="S0.Ex36" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex36.m1" class="ltx_Math" alttext="r(-\theta)=2-2\cos(-\theta)=2-2\cos\theta=r(\theta)." display="block"><mrow><mrow><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The complete cardioid is traced once on</p>
+<table id="S0.Ex37" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex37.m1" class="ltx_Math" alttext="0\leq\theta\leq 2\pi." display="block"><mrow><mrow><mn>0</mn><mo>≤</mo><mi>θ</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i9.p7" class="ltx_para">
+<img src="10_4_Ex6.jpg" id="S0.I1.i9.g1" class="ltx_graphics ltx_centering ltx_img_square" width="252" height="252" alt="A polar coordinate grid with concentric circles and radial lines labeled in radians. A red cardioid is centered on the horizontal axis and opens to the left. The curve has a cusp at the origin, reaches its maximum radius of 4 at an angle of pi, and is symmetric about the horizontal axis.">
+</div>
+<iframe src="https://www.desmos.com/calculator/c6zk7q0rlm?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<div id="S0.I1.i9.p8" class="ltx_para">
+<div class="ltx_block ltx_minipage ltx_align_center ltx_align_middle" style="width:407.6pt;">
+<p class="ltx_p"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span>
+<span class="ltx_text ltx_font_bold">Cardioids:</span> Equations of the forms</p>
+<table id="S0.Ex38" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex38.m1" class="ltx_Math" alttext="r=a\pm a\cos\theta\qquad\text{and}\qquad r=a\pm a\sin\theta" display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>±</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mspace width="2em"></mspace><mtext>and</mtext></mrow></mrow><mspace width="2em"></mspace><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo>±</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">produce cardioids. The curve reaches the pole where <math id="S0.I1.i9.m21" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math> and has one cusp there.
+<span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span></p>
+</div>
+</div>
+</li>
+<li id="S0.I1.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span> 
+<div id="S0.I1.i10.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 7: A Limaçon with an Inner Loop.</span> Sketch the graph of</p>
+<table id="S0.Ex39" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex39.m1" class="ltx_Math" alttext="r=1-2\sin\theta." display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i10.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution.</span> This equation has the form</p>
+<table id="S0.Ex40" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex40.m1" class="ltx_Math" alttext="r=a-b\sin\theta," display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo>−</mo><mrow><mi>b</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S0.I1.i10.p2.m1" class="ltx_Math" alttext="a=1" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow></math> and <math id="S0.I1.i10.p2.m2" class="ltx_Math" alttext="b=2" display="inline"><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></math>. Since</p>
+<table id="S0.Ex41" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex41.m1" class="ltx_Math" alttext="0&lt;a&lt;b," display="block"><mrow><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">the graph is a limaçon with an inner loop.</p>
+</div>
+<div id="S0.I1.i10.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">The curve passes through the pole whenever <math id="S0.I1.i10.p3.m1" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math>:</p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex42"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex42.m1" class="ltx_Math" alttext="\displaystyle 1-2\sin\theta" display="inline"><mrow><mn>1</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex42.m2" class="ltx_Math" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex43"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex43.m1" class="ltx_Math" alttext="\displaystyle\sin\theta" display="inline"><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex43.m2" class="ltx_Math" alttext="\displaystyle=\frac{1}{2}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus,</p>
+<table id="S0.Ex44" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex44.m1" class="ltx_Math" alttext="\theta=\frac{\pi}{6}\qquad\text{or}\qquad\theta=\frac{5\pi}{6}." display="block"><mrow><mrow><mrow><mi>θ</mi><mo>=</mo><mrow><mfrac><mi>π</mi><mn>6</mn></mfrac><mspace width="2em"></mspace><mtext>or</mtext></mrow></mrow><mspace width="2em"></mspace><mrow><mi>θ</mi><mo>=</mo><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>6</mn></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Between these two angles, <math id="S0.I1.i10.p3.m2" class="ltx_Math" alttext="\sin\theta&gt;1/2" display="inline"><mrow><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo>&gt;</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></math>, so <math id="S0.I1.i10.p3.m3" class="ltx_Math" alttext="r&lt;0" display="inline"><mrow><mi>r</mi><mo>&lt;</mo><mn>0</mn></mrow></math>. This interval traces the inner loop.</p>
+</div>
+<div id="S0.I1.i10.p4" class="ltx_para">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m2" class="ltx_Math" alttext="r=1-2\sin\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">Description</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m3" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m4" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">point on positive polar axis</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m5" class="ltx_Math" alttext="\dfrac{\pi}{6}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>6</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m6" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">pole</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m7" class="ltx_Math" alttext="\dfrac{\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m8" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">tip of inner loop</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m9" class="ltx_Math" alttext="\dfrac{5\pi}{6}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>6</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m10" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">pole</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m11" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m12" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">point on negative polar axis</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m13" class="ltx_Math" alttext="\dfrac{3\pi}{2}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m14" class="ltx_Math" alttext="3" display="inline"><mn>3</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">farthest point on outer loop</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m15" class="ltx_Math" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;"><math id="S0.I1.i10.m16" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" style="padding:3.75pt 13.0pt;">returns to starting point</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i10.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Starting at <math id="S0.I1.i10.p5.m1" class="ltx_Math" alttext="\theta=0" display="inline"><mrow><mi>θ</mi><mo>=</mo><mn>0</mn></mrow></math>, the graph moves from <math id="S0.I1.i10.p5.m2" class="ltx_Math" alttext="(1,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> to the pole at <math id="S0.I1.i10.p5.m3" class="ltx_Math" alttext="\theta=\pi/6" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mi>π</mi><mo>/</mo><mn>6</mn></mrow></mrow></math>. For</p>
+<table id="S0.Ex45" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex45.m1" class="ltx_Math" alttext="\frac{\pi}{6}&lt;\theta&lt;\frac{5\pi}{6}," display="block"><mrow><mrow><mfrac><mi>π</mi><mn>6</mn></mfrac><mo>&lt;</mo><mi>θ</mi><mo>&lt;</mo><mfrac><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mn>6</mn></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">the radius is negative, so the plotted points lie opposite their stated angles. These points create the inner loop. The curve returns to the pole at <math id="S0.I1.i10.p5.m4" class="ltx_Math" alttext="\theta=5\pi/6" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mn>6</mn></mrow></mrow></math>.</p>
+</div>
+<div id="S0.I1.i10.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">For the remaining values of <math id="S0.I1.i10.p6.m1" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>, the radius is positive and the outer loop is traced. The largest radius occurs at <math id="S0.I1.i10.p6.m2" class="ltx_Math" alttext="\theta=3\pi/2" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></math>:</p>
+<table id="S0.Ex46" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex46.m1" class="ltx_Math" alttext="r=1-2\sin\left(\frac{3\pi}{2}\right)=1-2(-1)=3." display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mn>2</mn><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac><mo>)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>3</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Therefore, the outer loop extends three units downward.</p>
+</div>
+<div id="S0.I1.i10.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">The graph is symmetric about the vertical axis. The complete limaçon is traced once on</p>
+<table id="S0.Ex47" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex47.m1" class="ltx_Math" alttext="0\leq\theta\leq 2\pi." display="block"><mrow><mrow><mn>0</mn><mo>≤</mo><mi>θ</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S0.I1.i10.p8" class="ltx_para">
+<img src="10_4_Ex7.jpg" id="S0.I1.i10.g1" class="ltx_graphics ltx_centering ltx_img_square" width="252" height="252" alt="A polar coordinate grid with concentric circles and radial lines labeled in radians. A red limacon with an inner loop is centered on the vertical axis and opens downward. The curve has a small inner loop below the origin and a larger outer loop extending to a maximum radius of 3 at an angle of three pi over 2. The curve passes through the origin and is symmetric about the vertical axis.">
+</div>
+<iframe src="https://www.desmos.com/calculator/4agt5izuur?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<div id="S0.I1.i10.p9" class="ltx_para">
+<div class="ltx_block ltx_minipage ltx_align_center ltx_align_middle" style="width:407.6pt;">
+<p class="ltx_p"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span>
+<span class="ltx_text ltx_font_bold">Limaçons with inner loops:</span> An equation of the form</p>
+<table id="S0.Ex48" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex48.m1" class="ltx_Math" alttext="r=a\pm b\cos\theta\qquad\text{or}\qquad r=a\pm b\sin\theta" display="block"><mrow><mrow><mi>r</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>±</mo><mrow><mi>b</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mspace width="2em"></mspace><mtext>or</mtext></mrow></mrow><mspace width="2em"></mspace><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo>±</mo><mrow><mi>b</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">has an inner loop when</p>
+<table id="S0.Ex49" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex49.m1" class="ltx_Math" alttext="0&lt;|a|&lt;|b|." display="block"><mrow><mrow><mn>0</mn><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mi>a</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mi>b</mi><mo stretchy="false">|</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The inner loop occurs over the interval of <math id="S0.I1.i10.m17" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> for which <math id="S0.I1.i10.m18" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> has the opposite sign from its value on the outer loop. The endpoints of that interval are found by solving <math id="S0.I1.i10.m19" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math>.
+<span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span></p>
+</div>
+</div>
+</li>
+<li id="S0.I1.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span> 
+<div id="S0.I1.i11.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Summary of Polar Curves</span></p>
+</div>
+<div id="S0.I1.i11.p2" class="ltx_para">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:83.1pt;"><span class="ltx_text ltx_font_bold">Curve</span></span>
+</span>
+</th>
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;"><span class="ltx_text ltx_font_bold">Typical Form</span></span>
+</span>
+</th>
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;"><span class="ltx_text ltx_font_bold">Features</span></span>
+</span>
+</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_l ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:83.1pt;">Circle</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;"><math id="S0.I1.i11.m1" class="ltx_Math" alttext="r=a\cos\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math> or <math id="S0.I1.i11.m2" class="ltx_centering" alttext="r=a\sin\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;">Circle passing through the pole. The cosine form is centered on the <math id="S0.I1.i11.m3" class="ltx_align_left" alttext="x" display="inline"><mi>x</mi></math>-axis; the sine form is centered on the <math id="S0.I1.i11.m4" class="ltx_align_left" alttext="y" display="inline"><mi>y</mi></math>-axis.</span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_l ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:83.1pt;">Rose</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;"><math id="S0.I1.i11.m5" class="ltx_Math" alttext="r=a\cos(n\theta)" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> or <math id="S0.I1.i11.m6" class="ltx_centering" alttext="r=a\sin(n\theta)" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;">If <math id="S0.I1.i11.m7" class="ltx_align_left" alttext="n" display="inline"><mi>n</mi></math> is odd, there are <math id="S0.I1.i11.m8" class="ltx_align_left" alttext="n" display="inline"><mi>n</mi></math> petals. If <math id="S0.I1.i11.m9" class="ltx_align_left" alttext="n" display="inline"><mi>n</mi></math> is even, there are <math id="S0.I1.i11.m10" class="ltx_align_left" alttext="2n" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></math> petals. Each petal has length <math id="S0.I1.i11.m11" class="ltx_align_left" alttext="|a|" display="inline"><mrow><mo stretchy="false">|</mo><mi>a</mi><mo stretchy="false">|</mo></mrow></math>.</span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_l ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:83.1pt;">Cardioid</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;"><math id="S0.I1.i11.m12" class="ltx_Math" alttext="r=a\pm a\cos\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo>±</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math> or <math id="S0.I1.i11.m13" class="ltx_centering" alttext="r=a\pm a\sin\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo>±</mo><mrow><mi>a</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;">A special limaçon with one cusp at the pole.</span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_b ltx_border_l ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:83.1pt;">Limaçon with inner loop</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_b ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;"><math id="S0.I1.i11.m14" class="ltx_Math" alttext="r=a\pm b\cos\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo>±</mo><mrow><mi>b</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math> or <math id="S0.I1.i11.m15" class="ltx_centering" alttext="r=a\pm b\sin\theta" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mi>a</mi><mo>±</mo><mrow><mi>b</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math>, <math id="S0.I1.i11.m16" class="ltx_centering" alttext="0&lt;|a|&lt;|b|" display="inline"><mrow><mn>0</mn><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mi>a</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mi>b</mi><mo stretchy="false">|</mo></mrow></mrow></math></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_b ltx_border_r ltx_border_t" style="padding-top:2.25pt;padding-bottom:2.25pt;">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:198.7pt;">The graph crosses the pole twice. Solve <math id="S0.I1.i11.m17" class="ltx_align_left" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math> to find the angles that bound the inner loop.</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i11.p3" class="ltx_para">
+<p class="ltx_p ltx_minipage ltx_align_center ltx_align_middle" style="width:407.6pt;"><span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span>
+<span class="ltx_text ltx_font_bold">Connection to polar area:</span> When we find the area of a polar region, we must know which interval of <math id="S0.I1.i11.m18" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> traces the desired boundary. For this reason, always plot and connect points in order of increasing <math id="S0.I1.i11.m19" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>, and identify the values of <math id="S0.I1.i11.m20" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> at which the curve reaches the pole or completes a petal or loop.
+<span class="ltx_rule" style="width:100%;height:1px;background:black;display:inline-block;"> </span></p>
+</div>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Mon Aug  3 08:41:26 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>

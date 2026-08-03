@@ -1,0 +1,535 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=.55in,right=.55in,top=.5in,bottom=.55in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{array}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{graphicx}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+% Simple list spacing is used instead of enumitem so that LaTeXML can
+% translate the document without package-specific list options.
+\setlength{\leftmargini}{0.30in}
+\setlength{\leftmarginii}{0.28in}
+
+% LaTeXML-friendly note box.  This uses only standard LaTeX constructs.
+\newenvironment{notebox}{%
+  \begin{center}%
+  \begin{minipage}{0.94\textwidth}%
+  \hrule\smallskip
+}{%
+  \smallskip\hrule
+  \end{minipage}%
+  \end{center}%
+}
+
+% Include a graph when its file is present; otherwise display a labeled
+% placeholder.  This lets both pdfLaTeX and LaTeXML process the source even
+% when the external graph files have not yet been copied into the folder.
+\newcommand{\coursegraph}[2]{%
+  \begin{center}%
+  \IfFileExists{#1.pdf}{\includegraphics[width=.42\textwidth]{#1}}{%
+    \IfFileExists{#1.png}{\includegraphics[width=.42\textwidth]{#1}}{%
+      \IfFileExists{#1.jpg}{\includegraphics[width=.42\textwidth]{#1}}{%
+        \fbox{\parbox[c][1.55in][c]{.53\textwidth}{\centering
+        \textbf{Graph supplied separately}\\[4pt]#2}}%
+      }%
+    }%
+  }%
+  \end{center}%
+}
+
+\newcommand{\graphplaceholder}[1]{%
+\begin{center}
+\fbox{\parbox[c][2.15in][c]{.60\textwidth}{\centering\textbf{Graph supplied separately}\\[4pt]#1}}
+\end{center}}
+
+\newcommand{\smallgraphplaceholder}[1]{%
+\begin{center}
+\fbox{\parbox[c][1.55in][c]{.53\textwidth}{\centering\textbf{Graph supplied separately}\\[4pt]#1}}
+\end{center}}
+
+\begin{document}
+
+\begin{center}
+\Large Math 252, 10.4: Polar Graphs\\ \normalsize
+\end{center}
+
+The purpose of this section is to review polar coordinates and develop an efficient method for sketching several important polar curves. These graphs will be used in the next section when we find the areas of polar regions.
+
+\begin{enumerate}
+
+%-------------------------------------------------
+\item \textbf{Polar Coordinates and Definitions}
+
+In rectangular coordinates, a point is described by an ordered pair $(x,y)$. In polar coordinates, the same point is described by an ordered pair
+\[
+(r,\theta),
+\]
+where $r$ gives a directed distance from the origin and $\theta$ gives a direction.
+
+The origin is called the \textbf{pole}, and the positive $x$-axis is called the \textbf{polar axis}.
+
+\begin{enumerate}
+\item \textbf{The radial coordinate $r$.}
+
+The value $|r|$ is the distance from the pole to the point.
+\begin{itemize}
+\item If $r>0$, move $r$ units in the direction determined by $\theta$.
+\item If $r<0$, move $|r|$ units in the direction opposite the terminal side of $\theta$.
+\item If $r=0$, the point is the pole, regardless of the value of $\theta$.
+\end{itemize}
+
+\item \textbf{The angular coordinate $\theta$.}
+
+The angle $\theta$ is measured from the positive $x$-axis.
+\begin{itemize}
+\item Positive angles are measured counterclockwise.
+\item Negative angles are measured clockwise.
+\end{itemize}
+
+\item \textbf{Relationship with rectangular coordinates.}
+
+The conversion formulas follow from right-triangle trigonometry:
+\[
+\boxed{x=r\cos\theta}
+\qquad\text{and}\qquad
+\boxed{y=r\sin\theta}.
+\]
+Also,
+\[
+\boxed{r^2=x^2+y^2}.
+\]
+When converting from rectangular to polar coordinates, the equation
+\[
+\tan\theta=\frac{y}{x}
+\]
+may help determine an angle, but the quadrant of $(x,y)$ must also be considered.
+
+\item \textbf{Polar representations are not unique.}
+
+Adding a complete revolution does not change the point:
+\[
+(r,\theta)=(r,\theta+2\pi k),\qquad k\in\mathbb Z.
+\]
+A negative radius reverses the direction by $\pi$ radians:
+\[
+(r,\theta)=(-r,\theta+\pi).
+\]
+For example,
+\[
+\left(2,\frac{\pi}{3}\right)
+=\left(2,\frac{7\pi}{3}\right)
+=\left(-2,\frac{4\pi}{3}\right).
+\]
+All three ordered pairs represent the same point.
+\end{enumerate}
+
+\begin{notebox}
+\textbf{Important:} A polar ordered pair is written $(r,\theta)$. First determine the angle $\theta$; then use the directed radius $r$ to locate the point.
+\end{notebox}
+
+%-------------------------------------------------
+\item \textbf{Plotting Points in Polar Coordinates}
+
+To plot a polar point $(r,\theta)$:
+\begin{enumerate}
+\item Locate the angle $\theta$.
+\item If $r>0$, move $r$ units along the terminal side of the angle.
+\item If $r<0$, move $|r|$ units in the opposite direction.
+\item Plot the point.
+\end{enumerate}
+
+%-------------------------------------------------
+\item \textbf{Example 1.} Plot the point
+\[
+\left(2,\frac{2\pi}{3}\right)
+\]
+and convert it to rectangular coordinates.
+
+\textbf{Solution.} The angle $2\pi/3$ is measured counterclockwise from the positive $x$-axis. Since $r=2>0$, move two units from the pole along the terminal side of $2\pi/3$.
+
+To convert to rectangular coordinates, use $x=r\cos\theta$ and $y=r\sin\theta$:
+\begin{align*}
+x&=2\cos\left(\frac{2\pi}{3}\right)
+  =2\left(-\frac12\right)=-1,\\
+y&=2\sin\left(\frac{2\pi}{3}\right)
+  =2\left(\frac{\sqrt3}{2}\right)=\sqrt3.
+\end{align*}
+Therefore,
+\[
+\boxed{(x,y)=(-1,\sqrt3)}.
+\]
+
+%\smallgraphplaceholder{Plot of $\left(2,\frac{2\pi}{3}\right)$}
+\coursegraph{10_4_Ex1}{Plot of $\left(2,\frac{2\pi}{3}\right)$}
+%-------------------------------------------------
+\item \textbf{Example 2.} Plot the point
+\[
+\left(-3,-\frac{\pi}{2}\right)
+\]
+and convert it to rectangular coordinates.
+
+\textbf{Solution.} The angle $-\pi/2$ points downward. Because $r=-3$ is negative, move three units in the direction opposite the terminal side of $-\pi/2$. Therefore, the point lies three units above the pole on the positive $y$-axis.
+
+Using the conversion formulas,
+\begin{align*}
+x&=-3\cos\left(-\frac{\pi}{2}\right)=0,\\
+y&=-3\sin\left(-\frac{\pi}{2}\right)
+  =-3(-1)=3.
+\end{align*}
+Thus,
+\[
+\boxed{(x,y)=(0,3)}.
+\]
+
+An equivalent polar representation with a positive radius is
+\[
+\left(3,\frac{\pi}{2}\right).
+\]
+
+%\smallgraphplaceholder{Plot of $\left(-3,-\frac{\pi}{2}\right)$}
+\coursegraph{10_4_Ex2}{Plot of $\left(-3,-\frac{\pi}{2}\right)$}
+%-------------------------------------------------
+\item \textbf{Polar Functions and Graphs}
+
+A polar function has the form
+\[
+r=f(\theta),
+\]
+where $\theta$ is the independent variable and $r$ is the dependent variable. Each chosen value of $\theta$ produces a polar point
+\[
+\bigl(f(\theta),\theta\bigr).
+\]
+As $\theta$ changes, the point moves and traces a curve.
+
+\begin{notebox}
+\textbf{How to sketch a polar curve}
+\begin{enumerate}
+\item Choose values of $\theta$ that reveal the important behavior of the function.
+\item Calculate the corresponding values of $r$.
+\item Plot each polar point $(r,\theta)$.
+\item Connect the points \textbf{in order of increasing $\theta$}.
+\item Continue until the complete curve has been traced and the graph closes.
+\end{enumerate}
+\end{notebox}
+
+A negative value of $r$ is not discarded. It means that the point is plotted on the ray opposite the terminal side of $\theta$. Negative values of $r$ are responsible for many of the loops and petals seen in polar graphs.
+
+The order in which the graph is traced matters. Later, when we find polar area, the limits of integration will describe the interval of $\theta$ that traces the desired region.
+
+%-------------------------------------------------
+\item \textbf{Example 3: A Circle.} Sketch the graph of
+\[
+r=2\cos\theta.
+\]
+
+\textbf{Solution.} We first calculate several values of $r$ as $\theta$ increases from $0$ to $\pi$.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.75}
+\setlength{\tabcolsep}{13pt}
+\begin{tabular}{|c|c|c|}
+\hline
+$\theta$ & $r=2\cos\theta$ & Polar point \\ \hline
+$0$ & $2$ & $(2,0)$ \\ \hline
+$\dfrac{\pi}{4}$ & $\sqrt2$ & $\left(\sqrt2,\dfrac{\pi}{4}\right)$ \\ \hline
+$\dfrac{\pi}{2}$ & $0$ & pole \\ \hline
+$\dfrac{3\pi}{4}$ & $-\sqrt2$ & $\left(-\sqrt2,\dfrac{3\pi}{4}\right)$ \\ \hline
+$\pi$ & $-2$ & $(-2,\pi)$ \\ \hline
+\end{tabular}
+\end{center}
+
+At $\theta=0$, the graph begins at $(2,0)$. As $\theta$ increases to $\pi/2$, the radius decreases to $0$, so the upper half of the circle is traced toward the pole. For $\pi/2<\theta\leq\pi$, the radius is negative. These points are plotted opposite their stated angles, tracing the lower half of the circle and returning to $(2,0)$.
+
+The interval $0\leq\theta\leq\pi$ traces the complete circle once.
+
+We can identify the circle algebraically. Since $r=2\cos\theta$,
+\[
+r^2=2r\cos\theta.
+\]
+Using $r^2=x^2+y^2$ and $r\cos\theta=x$ gives
+\[
+x^2+y^2=2x.
+\]
+Completing the square,
+\[
+(x-1)^2+y^2=1.
+\]
+Therefore, the graph is a circle centered at $(1,0)$ with radius $1$.
+
+%\graphplaceholder{Graph of $r=2\cos\theta$}
+\coursegraph{10_4_Ex3}{Graph of $r=2\cos\theta$}
+
+\begin{notebox}
+\textbf{Circles through the pole:}
+\[
+r=a\cos\theta
+\]
+is a circle centered on the $x$-axis, while
+\[
+r=a\sin\theta
+\]
+is a circle centered on the $y$-axis. In each case, the circle passes through the pole.
+\end{notebox}
+
+%-------------------------------------------------
+\item \textbf{Example 4: A Rose with an Odd Number of Petals.} Sketch the graph of
+\[
+r=2\cos(3\theta).
+\]
+
+\textbf{Solution.} This equation has the form
+\[
+r=a\cos(n\theta),
+\]
+with $a=2$ and $n=3$. Because $n$ is odd, the graph has $3$ petals. The maximum distance from the pole is $|a|=2$, so each petal has length $2$.
+
+We use angles that make $3\theta$ a multiple of $\pi/2$.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.75}
+\setlength{\tabcolsep}{13pt}
+\begin{tabular}{|c|c|c|}
+\hline
+$\theta$ & $3\theta$ & $r=2\cos(3\theta)$ \\ \hline
+$0$ & $0$ & $2$ \\ \hline
+$\dfrac{\pi}{6}$ & $\dfrac{\pi}{2}$ & $0$ \\ \hline
+$\dfrac{\pi}{3}$ & $\pi$ & $-2$ \\ \hline
+$\dfrac{\pi}{2}$ & $\dfrac{3\pi}{2}$ & $0$ \\ \hline
+$\dfrac{2\pi}{3}$ & $2\pi$ & $2$ \\ \hline
+$\dfrac{5\pi}{6}$ & $\dfrac{5\pi}{2}$ & $0$ \\ \hline
+$\pi$ & $3\pi$ & $-2$ \\ \hline
+\end{tabular}
+\end{center}
+
+At $\theta=0$, $r=2$, so the graph begins at the tip of the petal on the positive $x$-axis. At $\theta=\pi/6$, $r=0$, so the curve reaches the pole. When $\theta=\pi/3$, $r=-2$; this point is plotted two units opposite the angle $\pi/3$, placing the tip of another petal in the direction $4\pi/3$. Continuing in order of increasing $\theta$ produces the remaining petals.
+
+The complete three-petal rose is traced once on
+\[
+0\leq\theta\leq\pi.
+\]
+
+%\graphplaceholder{Graph of $r=2\cos(3\theta)$}
+\coursegraph{10_4_Ex4}{Graph of $r=2\cos(3\theta)$}
+
+\begin{notebox}
+\textbf{Rose curves:} For
+\[
+r=a\cos(n\theta)\qquad\text{or}\qquad r=a\sin(n\theta),
+\]
+\begin{itemize}
+\item if $n$ is odd, the graph has $n$ petals;
+\item if $n$ is even, the graph has $2n$ petals;
+\item the length of each petal is $|a|$.
+\end{itemize}
+\end{notebox}
+
+%-------------------------------------------------
+\item \textbf{Example 5: A Rose with an Even Number of Petals.} Sketch the graph of
+\[
+r=3\sin(4\theta).
+\]
+
+\textbf{Solution.} Here $a=3$ and $n=4$. Since $n$ is even, the graph has
+\[
+2n=2(4)=8
+\]
+petals. Each petal has length $3$.
+
+We choose values of $\theta$ for which $4\theta$ is a multiple of $\pi/2$.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.75}
+\setlength{\tabcolsep}{13pt}
+\begin{tabular}{|c|c|c|}
+\hline
+$\theta$ & $4\theta$ & $r=3\sin(4\theta)$ \\ \hline
+$0$ & $0$ & $0$ \\ \hline
+$\dfrac{\pi}{8}$ & $\dfrac{\pi}{2}$ & $3$ \\ \hline
+$\dfrac{\pi}{4}$ & $\pi$ & $0$ \\ \hline
+$\dfrac{3\pi}{8}$ & $\dfrac{3\pi}{2}$ & $-3$ \\ \hline
+$\dfrac{\pi}{2}$ & $2\pi$ & $0$ \\ \hline
+$\dfrac{5\pi}{8}$ & $\dfrac{5\pi}{2}$ & $3$ \\ \hline
+$\dfrac{3\pi}{4}$ & $3\pi$ & $0$ \\ \hline
+$\dfrac{7\pi}{8}$ & $\dfrac{7\pi}{2}$ & $-3$ \\ \hline
+$\pi$ & $4\pi$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+
+The table above traces four petals as $\theta$ increases from $0$ to $\pi$. The remaining four petals are traced as $\theta$ continues from $\pi$ to $2\pi$. At values where $r=-3$, the point is plotted in the direction opposite $\theta$, producing petals between those obtained from positive values of $r$.
+
+The full eight-petal rose is traced once on
+\[
+0\leq\theta\leq2\pi.
+\]
+Because this is a sine rose, the first petal is centered at $\theta=\pi/8$, rather than on the positive $x$-axis.
+
+%\graphplaceholder{Graph of $r=3\sin(4\theta)$}
+\coursegraph{10_4_Ex5}{Graph of $r=3\sin(4\theta)$}
+
+%-------------------------------------------------
+\item \textbf{Example 6: A Cardioid.} Sketch the graph of
+\[
+r=2-2\cos\theta.
+\]
+
+\textbf{Solution.} This equation has the form
+\[
+r=a-a\cos\theta,
+\]
+so it is a cardioid. A cardioid is a special lima\c{c}on in which the two coefficients have equal magnitude.
+
+The radius is always nonnegative because
+\[
+0\leq 2-2\cos\theta\leq4.
+\]
+We calculate values over one complete revolution.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.75}
+\setlength{\tabcolsep}{13pt}
+\begin{tabular}{|c|c|}
+\hline
+$\theta$ & $r=2-2\cos\theta$ \\ \hline
+$0$ & $0$ \\ \hline
+$\dfrac{\pi}{4}$ & $2-\sqrt2$ \\ \hline
+$\dfrac{\pi}{2}$ & $2$ \\ \hline
+$\dfrac{3\pi}{4}$ & $2+\sqrt2$ \\ \hline
+$\pi$ & $4$ \\ \hline
+$\dfrac{5\pi}{4}$ & $2+\sqrt2$ \\ \hline
+$\dfrac{3\pi}{2}$ & $2$ \\ \hline
+$\dfrac{7\pi}{4}$ & $2-\sqrt2$ \\ \hline
+$2\pi$ & $0$ \\ \hline
+\end{tabular}
+\end{center}
+
+At $\theta=0$, $r=0$, so the graph begins at the pole. As $\theta$ increases, the radius increases and the upper half of the curve is traced. The greatest radius occurs when $\theta=\pi$:
+\[
+r=2-2\cos\pi=4.
+\]
+Thus, the cardioid extends four units to the left. The lower half is traced as $\theta$ increases from $\pi$ to $2\pi$, and the curve returns to the pole.
+
+The graph is symmetric about the polar axis because
+\[
+r(-\theta)=2-2\cos(-\theta)=2-2\cos\theta=r(\theta).
+\]
+The complete cardioid is traced once on
+\[
+0\leq\theta\leq2\pi.
+\]
+
+%\graphplaceholder{Graph of $r=2-2\cos\theta$}
+\coursegraph{10_4_Ex6}{Graph of $r=2-2\cos\theta$}
+
+\begin{notebox}
+\textbf{Cardioids:} Equations of the forms
+\[
+r=a\pm a\cos\theta
+\qquad\text{and}\qquad
+r=a\pm a\sin\theta
+\]
+produce cardioids. The curve reaches the pole where $r=0$ and has one cusp there.
+\end{notebox}
+
+%-------------------------------------------------
+\item \textbf{Example 7: A Lima\c{c}on with an Inner Loop.} Sketch the graph of
+\[
+r=1-2\sin\theta.
+\]
+
+\textbf{Solution.} This equation has the form
+\[
+r=a-b\sin\theta,
+\]
+where $a=1$ and $b=2$. Since
+\[
+0<a<b,
+\]
+the graph is a lima\c{c}on with an inner loop.
+
+The curve passes through the pole whenever $r=0$:
+\begin{align*}
+1-2\sin\theta&=0,\\
+\sin\theta&=\frac12.
+\end{align*}
+Thus,
+\[
+\theta=\frac{\pi}{6}
+\qquad\text{or}\qquad
+\theta=\frac{5\pi}{6}.
+\]
+Between these two angles, $\sin\theta>1/2$, so $r<0$. This interval traces the inner loop.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.75}
+\setlength{\tabcolsep}{13pt}
+\begin{tabular}{|c|c|c|}
+\hline
+$\theta$ & $r=1-2\sin\theta$ & Description \\ \hline
+$0$ & $1$ & point on positive polar axis \\ \hline
+$\dfrac{\pi}{6}$ & $0$ & pole \\ \hline
+$\dfrac{\pi}{2}$ & $-1$ & tip of inner loop \\ \hline
+$\dfrac{5\pi}{6}$ & $0$ & pole \\ \hline
+$\pi$ & $1$ & point on negative polar axis \\ \hline
+$\dfrac{3\pi}{2}$ & $3$ & farthest point on outer loop \\ \hline
+$2\pi$ & $1$ & returns to starting point \\ \hline
+\end{tabular}
+\end{center}
+
+Starting at $\theta=0$, the graph moves from $(1,0)$ to the pole at $\theta=\pi/6$. For
+\[
+\frac{\pi}{6}<\theta<\frac{5\pi}{6},
+\]
+the radius is negative, so the plotted points lie opposite their stated angles. These points create the inner loop. The curve returns to the pole at $\theta=5\pi/6$.
+
+For the remaining values of $\theta$, the radius is positive and the outer loop is traced. The largest radius occurs at $\theta=3\pi/2$:
+\[
+r=1-2\sin\left(\frac{3\pi}{2}\right)=1-2(-1)=3.
+\]
+Therefore, the outer loop extends three units downward.
+
+The graph is symmetric about the vertical axis. The complete lima\c{c}on is traced once on
+\[
+0\leq\theta\leq2\pi.
+\]
+
+%\graphplaceholder{Graph of $r=1-2\sin\theta$}
+\coursegraph{10_4_Ex7}{Graph of $r=1-2\sin\theta$}
+\begin{notebox}
+\textbf{Lima\c{c}ons with inner loops:} An equation of the form
+\[
+r=a\pm b\cos\theta
+\qquad\text{or}\qquad
+r=a\pm b\sin\theta
+\]
+has an inner loop when
+\[
+0<|a|<|b|.
+\]
+The inner loop occurs over the interval of $\theta$ for which $r$ has the opposite sign from its value on the outer loop. The endpoints of that interval are found by solving $r=0$.
+\end{notebox}
+
+%-------------------------------------------------
+\item \textbf{Summary of Polar Curves}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{1.15in}|>{\centering\arraybackslash}p{2.75in}|>{\raggedright\arraybackslash}p{2.75in}|}
+\hline
+\textbf{Curve} & \textbf{Typical Form} & \textbf{Features} \\ \hline
+Circle & $r=a\cos\theta$ or $r=a\sin\theta$ & Circle passing through the pole. The cosine form is centered on the $x$-axis; the sine form is centered on the $y$-axis. \\ \hline
+Rose & $r=a\cos(n\theta)$ or $r=a\sin(n\theta)$ & If $n$ is odd, there are $n$ petals. If $n$ is even, there are $2n$ petals. Each petal has length $|a|$. \\ \hline
+Cardioid & $r=a\pm a\cos\theta$ or $r=a\pm a\sin\theta$ & A special lima\c{c}on with one cusp at the pole. \\ \hline
+Lima\c{c}on with inner loop & $r=a\pm b\cos\theta$ or $r=a\pm b\sin\theta$, $0<|a|<|b|$ & The graph crosses the pole twice. Solve $r=0$ to find the angles that bound the inner loop. \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{notebox}
+\textbf{Connection to polar area:} When we find the area of a polar region, we must know which interval of $\theta$ traces the desired boundary. For this reason, always plot and connect points in order of increasing $\theta$, and identify the values of $\theta$ at which the curve reaches the pole or completes a petal or loop.
+\end{notebox}
+
+\end{enumerate}
+
+\end{document}
