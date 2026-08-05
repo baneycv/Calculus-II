@@ -657,3 +657,17 @@ details.solution[open] summary {
     padding: 16px;
     background: white;
 }
+/* 3. STYLE THE OUTER BOX AND CENTER IT */
+.video-container {
+  width: 100%;
+  max-width: 800px;     /* Limits how big it gets on desktop */
+  aspect-ratio: 16 / 9; /* Maintains perfect video shape */
+  margin: 0 auto;       /* Centers the box horizontally */
+}
+
+/* 4. MAKE THE YOUTUBE IFRAME FILL THAT BOX */
+.video-container iframe {
+  width: 100%;          /* Stretches to 100% of the 800px container */
+  height: 100%;         /* Stretches to fill the 16:9 height */
+  border: none;         /* Removes ugly default borders */
+}
