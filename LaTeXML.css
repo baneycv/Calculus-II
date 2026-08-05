@@ -659,10 +659,10 @@ details.solution[open] summary {
 }
 /* 3. STYLE THE OUTER BOX AND CENTER IT */
 .video-container {
-    width: 100%;
-    max-width: 800px;
+    width: 800px;
+    max-width: 100%;
     aspect-ratio: 16 / 9;
-    margin: 2rem auto;   /* <-- centers it */
+    margin: 2rem auto;
 }
 
 .video-container iframe {
