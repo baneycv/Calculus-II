@@ -658,11 +658,13 @@ details.solution[open] summary {
     background: white;
 }
 /* 3. STYLE THE OUTER BOX AND CENTER IT */
+/* Center responsive YouTube video */
 .video-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;      /* gap above the video */
-    margin-bottom: 2rem;   /* optional gap below */
+    width: 100%;
+    margin-top: 3rem;     
+    margin-bottom: 2rem;
 }
 
 .video-container {
@@ -672,8 +674,8 @@ details.solution[open] summary {
 }
 
 .video-container iframe {
+    display: block;
     width: 100%;
     height: 100%;
     border: none;
-    display: block;
 }
