@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Cross-Sectional Area</title>
+<!--Generated on Thu Jun  5 10:05:33 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="../LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../ltx-article.css" type="text/css">
+
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    background: #fff;
+    color: #000;
+  }
+
+  .ltx_text.ltx_font_bold,
+  .ltx_font_bold {
+    font-weight: 700 !important;
+  }
+
+  math {
+    font-size: 1em;
+  }
+
+  math[display="block"],
+  .ltx_equation math {
+    font-size: 1.05em;
+  }
+
+  .ltx_equation,
+  .displaymath,
+  div.displaymath {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1em 0 !important;
+  }
+
+  table.ltx_eqn_table,
+  .ltx_eqn_table {
+    border: none !important;
+    border-collapse: collapse !important;
+    box-shadow: none !important;
+    background: none !important;
+    width: 100%;
+  }
+
+  .ltx_eqn_table td {
+    border: none !important;
+  }
+
+  .ltx_tag_item {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  img.ltx_graphics {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 50%;
+    width: auto;
+    height: auto;
+}
+
+  img.ltx_graphics {
+    cursor: zoom-in;
+  }
+  table.ltx_tabular img.ltx_graphics {
+    max-width: 90%;
+  }
+  .ltx_image_link { display: inline-block; max-width: 100%; }
+
+</style>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div class="ltx_logical-block">
+    
+<div id="p1" class="ltx_para">
+<p class="ltx_p ltx_align_center"><span class="ltx_text" style="font-size:144%;">Math 252, 7.3 Shell Method
+<br class="ltx_break"></span></p>
+</div>
+  
+</div>
+<div id="p2" class="ltx_para">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Situation.</span> We now turn to problems involving surfaces formed by revolving a region <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> around the <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis. <span class="ltx_text ltx_font_bold">Note:</span> The presentation of the material is different than it is in your textbook. I find this approach to the derivation of the formula much more intuitive than your textbook. The concept is the same though. The set up of the problem is such that we have two graphs <math id="S0.I1.i1.p1.m3" class="ltx_Math" alttext="g(x)" display="inline"><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="S0.I1.i1.p1.m4" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> on <math id="S0.I1.i1.p1.m5" class="ltx_Math" alttext="[a,b]" display="inline"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math>. We assume both functions are continuous on the interval. Secondly <math id="S0.I1.i1.p1.m6" class="ltx_Math" alttext="g(x)\leq f(x)" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> for all <math id="S0.I1.i1.p1.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> on <math id="S0.I1.i1.p1.m8" class="ltx_Math" alttext="[a,b]" display="inline"><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></math>. Let <math id="S0.I1.i1.p1.m9" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> be the region bounded between the two graphs, and suppose that we want to find the volume of the solid obtained by revolving <math id="S0.I1.i1.p1.m10" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> around the <math id="S0.I1.i1.p1.m11" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis.
+<br class="ltx_break"></p>
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left"><a class="ltx_image_link" href="image732.jpg" target="_blank" rel="noopener" title="Click to view full-size image"><img src="image732.jpg" id="S0.I1.i1.p1.g1" class="ltx_graphics ltx_img_landscape" width="127" height="95" alt="[Uncaptioned image]"></a></td>
+<td class="ltx_td ltx_align_left"><a class="ltx_image_link" href="image731.jpg" target="_blank" rel="noopener" title="Click to view full-size image"><img src="image731.jpg" id="S0.I1.i1.p1.g2" class="ltx_graphics ltx_img_square" width="142" height="122" alt="[Uncaptioned image]"></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.I1.i1.p2" class="ltx_para">
+<p class="ltx_p">Our desire is to use some partition of the <math id="S0.I1.i1.p2.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> axis in order to accomplish this. Hence, we partition the interval up into <math id="S0.I1.i1.p2.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-subintervals, each of width <math id="S0.I1.i1.p2.m3" class="ltx_Math" alttext="\displaystyle\Delta x=\frac{b-a}{n}" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mi>n</mi></mfrac></mstyle></mrow></math>. The points created by such a partition are <math id="S0.I1.i1.p2.m4" class="ltx_Math" alttext="a=x_{0}&lt;x_{1}&lt;x_{2}&lt;\dots&lt;x_{k}&lt;\dots&lt;x_{n}=b" display="inline"><mrow><mi>a</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>k</mi></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mi>b</mi></mrow></math>, for <math id="S0.I1.i1.p2.m5" class="ltx_Math" alttext="1\leq k\leq n" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mi>n</mi></mrow></math>, where <math id="S0.I1.i1.p2.m6" class="ltx_Math" alttext="x_{k}=a+k\Delta x" display="inline"><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math>. In each interval we can define a rectangle by defining the height of the rectangle by the function value at some point, <math id="S0.I1.i1.p2.m7" class="ltx_Math" alttext="t_{k}" display="inline"><msub><mi>t</mi><mi>k</mi></msub></math>. In this case, I am going to take <math id="S0.I1.i1.p2.m8" class="ltx_Math" alttext="t_{k}" display="inline"><msub><mi>t</mi><mi>k</mi></msub></math> to be the midpoint, thus</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="t_{k}=\frac{x_{k}+x_{k-1}}{2}." display="block"><mrow><mrow><msub><mi>t</mi><mi>k</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>+</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mn>2</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">So we have a rectangle of width <math id="S0.I1.i1.p2.m9" class="ltx_Math" alttext="\Delta x" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></math> and height <math id="S0.I1.i1.p2.m10" class="ltx_Math" alttext="f(t_{k})-g(t_{k})" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math> . We spin this rectangle around the <math id="S0.I1.i1.p2.m11" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis, creating a cylindrical shell (cylinder with a hole in it).</p>
+<a class="ltx_image_link" href="Slide1.jpg" target="_blank" rel="noopener" title="Click to view full-size image"><img src="Slide1.jpg" id="S0.I1.i1.p2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="475" height="207" alt="[Uncaptioned image]"></a>
+<p class="ltx_p">We do this for each rectangle, creating something like a bunch of nesting cups each with a certain volume. We will add up all those smaller volumes to get the bigger one.
+<br class="ltx_break"></p>
+<ol id="S0.I1.i1.I1" class="ltx_enumerate">
+<li id="S0.I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Volume of one cylindrical shell</span>. The height is <math id="S0.I1.i1.I1.i1.p1.m1" class="ltx_Math" alttext="f(t_{k})-g(t_{k})" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Since there is an inner and outer portion to the cylinder we need the inner and outer radii. The inner one is going to be <math id="S0.I1.i1.I1.i1.p1.m2" class="ltx_Math" alttext="x_{k-1}" display="inline"><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></math>, and the outer radius is <math id="S0.I1.i1.I1.i1.p1.m3" class="ltx_Math" alttext="x_{k}" display="inline"><msub><mi>x</mi><mi>k</mi></msub></math>. Hence the volume is</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\displaystyle\Delta V" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>V</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex2.m2" class="ltx_Math" alttext="\displaystyle=\left(\pi x_{k}^{2}-\pi x_{k-1}^{2}\right)\left(f(t_{k})-g(t_{k}%
+)\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mrow><mi>π</mi><mo>⁢</mo><msubsup><mi>x</mi><mi>k</mi><mn>2</mn></msubsup></mrow><mo>−</mo><mrow><mi>π</mi><mo>⁢</mo><msubsup><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mn>2</mn></msubsup></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\displaystyle=\pi\left(f(t_{k})-g(t_{k})\right)(x_{k}^{2}-x_{k-1}^{2})" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>x</mi><mi>k</mi><mn>2</mn></msubsup><mo>−</mo><msubsup><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mn>2</mn></msubsup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\displaystyle=\pi\left(f(t_{k})-g(t_{k})\right)(x_{k}+x_{k-1})(x_{k}-x_{k-1})" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>+</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\displaystyle=2t_{k}\pi\left(f(t_{k})-g(t_{k})\right)\Delta x" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>t</mi><mi>k</mi></msub><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">In the last step, I used the fact that each point is spaced <math id="S0.I1.i1.I1.i1.p1.m4" class="ltx_Math" alttext="\Delta x" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></math> from its neighbor, and so <math id="S0.I1.i1.I1.i1.p1.m5" class="ltx_Math" alttext="x_{k}-x_{k-1}=\Delta x" display="inline"><mrow><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo>=</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math>. Also, since <math id="S0.I1.i1.I1.i1.p1.m6" class="ltx_Math" alttext="t_{k}=\frac{x_{k}+x_{k-1}}{2}" display="inline"><mrow><msub><mi>t</mi><mi>k</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>+</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mn>2</mn></mfrac></mrow></math>, I can replace the expression with <math id="S0.I1.i1.I1.i1.p1.m7" class="ltx_Math" alttext="2t_{k}" display="inline"><mrow><mn>2</mn><mo>⁢</mo><msub><mi>t</mi><mi>k</mi></msub></mrow></math>.
+<br class="ltx_break"></p>
+</div>
+</li>
+<li id="S0.I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Adding up all the volumes, we get</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="V_{n}=\sum_{k=1}^{n}2t_{k}\pi\left(f(t_{k})-g(t_{k})\right)\Delta x" display="block"><mrow><msub><mi>V</mi><mi>n</mi></msub><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mn>2</mn><mo>⁢</mo><msub><mi>t</mi><mi>k</mi></msub><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Taking <math id="S0.I1.i1.I1.i2.p1.m1" class="ltx_Math" alttext="n\rightarrow\infty" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, this Riemann Sum converges, and it converges to</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="V=\int_{a}^{b}2\pi x(f(x)-g(x))\,dx" display="block"><mrow><mi>V</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<br class="ltx_break">
+</div>
+</li>
+<li id="S0.I1.i1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i1.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">REMEMBER</span> We do the Riemann Sum so that we know what each of the components of the integral formula represent. You should be able to identify that difference in <math id="S0.I1.i1.I1.i3.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and <math id="S0.I1.i1.I1.i3.p1.m2" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math> is the height of the object, the <math id="S0.I1.i1.I1.i3.p1.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="S0.I1.i1.I1.i3.p1.m4" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math> collectively represent the volume. Since <math id="S0.I1.i1.I1.i3.p1.m5" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math> represents a change in the <math id="S0.I1.i1.I1.i3.p1.m6" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-values, any shift left or right of the axis or rotation will only affect the <math id="S0.I1.i1.I1.i3.p1.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, NOT the <math id="S0.I1.i1.I1.i3.p1.m8" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math>.
+<br class="ltx_break"></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 1:</span> Let <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="f(x)=x-x^{3}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>−</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mrow></math>, and let <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> be the region bounded between the graph of <math id="S0.I1.i2.p1.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and the positive <math id="S0.I1.i2.p1.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-axis. Determine the volume of the solid formed revolving <math id="S0.I1.i2.p1.m5" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> around the <math id="S0.I1.i2.p1.m6" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> We draw a 2-D picture of <math id="S0.I1.i2.p1.m7" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>. Since we are given only one function, we can assume <math id="S0.I1.i2.p1.m8" class="ltx_Math" alttext="g(x)=0" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+<br class="ltx_break"></p>
+<a class="ltx_image_link" href="Slide103.jpg" target="_blank" rel="noopener" title="Click to view full-size image"><img src="Slide103.jpg" id="S0.I1.i2.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="180" height="135" alt="[Uncaptioned image]"></a>
+<p class="ltx_p">We can see from the graph, the interval is <math id="S0.I1.i2.p1.m9" class="ltx_Math" alttext="[0,1]" display="inline"><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></math>. The height of the revolved object is going to be <math id="S0.I1.i2.p1.m10" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>. The radius is <math id="S0.I1.i2.p1.m11" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, and the shell thickness is <math id="S0.I1.i2.p1.m12" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math>, and so the integral for the volume becomes,
+<br class="ltx_break"></p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex8.m1" class="ltx_Math" alttext="\displaystyle V" display="inline"><mi>V</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex8.m2" class="ltx_Math" alttext="\displaystyle=\int_{0}^{1}2\pi xf(x)\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex9.m1" class="ltx_Math" alttext="\displaystyle=\int_{0}^{1}2\pi x(x-x^{3})\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex10.m1" class="ltx_Math" alttext="\displaystyle=\int_{0}^{1}2\pi(x^{2}-x^{4})\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex11.m1" class="ltx_Math" alttext="\displaystyle=2\pi\left[\frac{x^{3}}{3}-\frac{x^{5}}{5}\right]_{0}^{1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msubsup><mrow><mo>[</mo><mrow><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>5</mn></msup><mn>5</mn></mfrac></mstyle></mrow><mo>]</mo></mrow><mn>0</mn><mn>1</mn></msubsup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex12.m1" class="ltx_Math" alttext="\displaystyle=\frac{4\pi}{15}" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow><mn>15</mn></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 2:</span> Let <math id="S0.I1.i3.p1.m1" class="ltx_Math" alttext="f(x)=x^{2}+1" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mrow></math>, and let <math id="S0.I1.i3.p1.m2" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> be the region bounded between <math id="S0.I1.i3.p1.m3" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>, <math id="S0.I1.i3.p1.m4" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S0.I1.i3.p1.m5" class="ltx_Math" alttext="y=1" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></math>. Determine the volume of the solid formed by revolving <math id="S0.I1.i3.p1.m6" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> around the <math id="S0.I1.i3.p1.m7" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> We start by drawing a picture of the situation.
+<br class="ltx_break"></p>
+<a class="ltx_image_link" href="Slide110.jpg" target="_blank" rel="noopener" title="Click to view full-size image"><img src="Slide110.jpg" id="S0.I1.i3.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="180" height="135" alt="[Uncaptioned image]"></a>
+<p class="ltx_p">We identify the important parts of the formula. The radius is <math id="S0.I1.i3.p1.m8" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and the shell thickness is <math id="S0.I1.i3.p1.m9" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math>, the height, will be <math id="S0.I1.i3.p1.m10" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, and so we get</p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex14.m1" class="ltx_Math" alttext="\displaystyle V" display="inline"><mi>V</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex14.m2" class="ltx_Math" alttext="\displaystyle=\int_{0}^{1}2\pi xf(x)\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex15.m1" class="ltx_Math" alttext="\displaystyle=\int_{0}^{1}2\pi x(x^{2}+1)\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex16.m1" class="ltx_Math" alttext="\displaystyle=2\pi\left[\frac{x^{4}}{4}+\frac{x^{2}}{2}\right]_{0}^{1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msubsup><mrow><mo>[</mo><mrow><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>4</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mstyle></mrow><mo>]</mo></mrow><mn>0</mn><mn>1</mn></msubsup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex17.m1" class="ltx_Math" alttext="\displaystyle=\frac{3\pi}{2}" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example 3:</span> Find the volume of the solid formed by revolving the region bounded by the graphs of <math id="S0.I1.i4.p1.m1" class="ltx_Math" alttext="y=x^{3}+x+1" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mrow></math> , <math id="S0.I1.i4.p1.m2" class="ltx_Math" alttext="y=1" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></math>, and <math id="S0.I1.i4.p1.m3" class="ltx_Math" alttext="x=1" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math>, around the line <math id="S0.I1.i4.p1.m4" class="ltx_Math" alttext="x=2" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> Since this graph is being revolved around an axis parallel to the <math id="S0.I1.i4.p1.m5" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>-axis, we use the Shell Method. We first draw a picture of the situation.
+<br class="ltx_break"></p>
+<a class="ltx_image_link" href="Slide113.jpg" target="_blank" rel="noopener" title="Click to view full-size image"><img src="Slide113.jpg" id="S0.I1.i4.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="180" height="135" alt="[Uncaptioned image]"></a>
+<p class="ltx_p">Since the axis is shifted this means the radius of our formula will be altered. Writing down the formula for the Shell Method (with the terms moved about),</p>
+<table id="S0.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex19.m1" class="ltx_Math" alttext="V=\int_{a}^{b}\underbrace{x\,dx}_{\text{together these terms make the radius}}%
+2\pi\underbrace{(f(x)-g(x))}_{\text{height}}." display="block"><mrow><mrow><mi>V</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><munder><munder accentunder="true"><mrow><mi>x</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>⏟</mo></munder><mtext>together these terms make the radius</mtext></munder><mo>⁢</mo><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><munder><munder accentunder="true"><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⏟</mo></munder><mtext>height</mtext></munder></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since the radius is to the right of the graph, its value will be <math id="S0.I1.i4.p1.m6" class="ltx_Math" alttext="(2-x)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></math>. Furthermore, <math id="S0.I1.i4.p1.m7" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math> represents the change in <math id="S0.I1.i4.p1.m8" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and so since all the <math id="S0.I1.i4.p1.m9" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> values are shifting to the right by 2, <math id="S0.I1.i4.p1.m10" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math> should remain unchanged. If we were to dilate the function (make everything twice as big or small), then <math id="S0.I1.i4.p1.m11" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math> would need to reflect this. Remember <math id="S0.I1.i4.p1.m12" class="ltx_Math" alttext="dx" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></math> represents how we are measuring along the <math id="S0.I1.i4.p1.m13" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> axis. 
+<br class="ltx_break">Also, since the function is bounded between <math id="S0.I1.i4.p1.m14" class="ltx_Math" alttext="y=1" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></math> and the value <math id="S0.I1.i4.p1.m15" class="ltx_Math" alttext="y=3" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>3</mn></mrow></math>. The height of the function is going to be <math id="S0.I1.i4.p1.m16" class="ltx_Math" alttext="f(x)-1" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="S0.I1.i4.p2" class="ltx_para">
+<p class="ltx_p">Setting up our integral we get,
+<br class="ltx_break"></p>
+<table id="S0.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.Ex20"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex20.m1" class="ltx_Math" alttext="\displaystyle V" display="inline"><mi>V</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex20.m2" class="ltx_Math" alttext="\displaystyle=2\pi\int_{0}^{1}(2-x)(x^{3}+x+1-1)\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex21.m1" class="ltx_Math" alttext="\displaystyle=2\pi\int_{0}^{1}(-x^{4}+2x^{3}-x^{2}+2x)\,dx" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mrow><mo>−</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex22.m1" class="ltx_Math" alttext="\displaystyle=2\pi\left[-\frac{x^{5}}{5}+\frac{x^{4}}{2}-\frac{x^{3}}{3}+x^{2}%
+\right]_{0}^{1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msubsup><mrow><mo>[</mo><mrow><mrow><mrow><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>5</mn></msup><mn>5</mn></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>2</mn></mfrac></mstyle></mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mstyle></mrow><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>]</mo></mrow><mn>0</mn><mn>1</mn></msubsup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex23.m1" class="ltx_Math" alttext="\displaystyle=\frac{29\pi}{15}" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>29</mn><mo>⁢</mo><mi>π</mi></mrow><mn>15</mn></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Wed Aug 12 08:22:07 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>
